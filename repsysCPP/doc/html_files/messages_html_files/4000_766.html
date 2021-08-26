@@ -1,0 +1,42 @@
+﻿<html>
+  <head>
+    <title>4000_766</title>
+    <link rel="StyleSheet" href="document.css" type="text/css">
+    <link rel="StyleSheet" href="catalog.css" type="text/css">
+  </head>
+  <body>
+    <p class="pCreationDate">Messages</p>
+    <hr noshade size="1" align="left">
+    <h2 class="pUeberschrift1">4000_766</h2>
+    <p class="pStandard">Inertia parameters for joint %1 are physically inconsistent (%2-direction)</p>
+    <h3 class="pUeberschrift3">Parameter:</h3>
+    <table width="400" border="0" cellspacing="0" cellpadding="3">
+      <tr>
+        <td width="50">
+          <p class="pTabelle_Standard">%1......</p>
+        </td>
+        <td width="350">
+          <p class="pTabelle_Standard">Joint number</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="pTabelle_Standard">%2......</p>
+        </td>
+        <td>
+          <p class="pTabelle_Standard">Coordinate direction</p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="pUeberschrift3">Message Class:</h3>
+    <p class="pStandard">4 -Warning</p>
+    <h3 class="pUeberschrift3">Reason:</h3>
+    <p class="pStandard">After transformation of inertia moments from the original coordinate system (cog) to the link system (using parallel axis theorem) the resulting inertia moments are negative.</p>
+    <h3 class="pUeberschrift3">Effect:</h3>
+    <p class="pStandard">Calculated torques will not be physical.</p>
+    <h3 class="pUeberschrift3">Solution:</h3>
+    <p class="pStandard">Review the following cfg-entries for the joint indicated: mass, distanceCenterGravityX, distanceCenterGravityY, distanceCenterGravityZ, inertiaMomentJxx, inertiaMomentJyy, inertiaMomentJzz,  and inertiaMomentAroundCG</p>
+    <hr size="1" noshade>
+    <p class="pCreationDate">2020-12-11</p>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+﻿<html>
+  <head>
+    <title>6605_1</title>
+    <link rel="StyleSheet" href="document.css" type="text/css">
+    <link rel="StyleSheet" href="catalog.css" type="text/css">
+  </head>
+  <body>
+    <p class="pCreationDate">Messages</p>
+    <hr noshade size="1" align="left">
+    <h2 class="pUeberschrift1">6605_1</h2>
+    <p class="pStandard">%1: Invalid configuration: Sample time (%2 sec) too short for baudrate (%3 kBaud) and/or number of databits (%4).</p>
+    <h3 class="pUeberschrift3">Parameter:</h3>
+    <table width="400" border="0" cellspacing="0" cellpadding="3">
+      <tr>
+        <td width="50">
+          <p class="pTabelle_Standard">%1......</p>
+        </td>
+        <td width="350">
+          <p class="pTabelle_Standard">Configuration path or name of object</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="pTabelle_Standard">%2......</p>
+        </td>
+        <td>
+          <p class="pTabelle_Standard">sampleTime [seconds]</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="pTabelle_Standard">%3......</p>
+        </td>
+        <td>
+          <p class="pTabelle_Standard">baudrate (kBaud)</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="pTabelle_Standard">%4......</p>
+        </td>
+        <td>
+          <p class="pTabelle_Standard">Number of databits (of SSIDEVICE)</p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="pUeberschrift3">Message Class:</h3>
+    <p class="pStandard">3 -Error Minor</p>
+    <h3 class="pUeberschrift3">Reason:</h3>
+    <p class="pStandard">The configured sample time is too short for transmitting the configured number of databits in time (with the baudrate configured). </p>
+    <h3 class="pUeberschrift3">Effect:</h3>
+    <p class="pStandard">The SSI-Bus can not operate.</p>
+    <h3 class="pUeberschrift3">Solution:</h3>
+    <p class="pStandard">Use greater values for sample time and/or baudrate.</p>
+    <hr size="1" noshade>
+    <p class="pCreationDate">2020-12-11</p>
+  </body>
+</html>

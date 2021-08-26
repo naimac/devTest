@@ -1,0 +1,86 @@
+/* Default style for links */
+a:active  { color: #0000CC}
+a:hover   { color: #CC0033}
+a:link    { color: #3366CC}
+a:visited { color: #9999CC}
+/* Default style */
+body
+{
+  background-color: #FFFFFF;
+}
+/* Use this style for footnote numbers */
+sup.Footnote
+{
+}
+blockquote {
+	margin-left : 10px;
+	margin-right : 10px;
+}
+/* Use this style to control spacing for inline related topics tags */
+div.WWHInlineRelatedTopics
+{
+  margin-top:    8px;
+  margin-bottom: 4px;
+}
+.pAnweisung {
+	margin-bottom : 6pt;
+	margin-top : 6pt;
+	list-style-image : url(images/anw.gif);
+	margin-left : 100px;
+}
+.pTabelle_Anweisung {
+	margin-bottom : 6pt;
+	margin-top : 6pt;
+	list-style-image : url(images/anw.gif);
+}
+.pAufzaehlung1 {
+	margin-bottom : 6pt;
+	margin-top : 6pt;
+	list-style-image : url(images/aufz1.gif);
+	margin-left : 100px;
+}
+.pAufzaehlung2 {
+	margin-bottom : 6pt;
+	margin-top : 6pt;
+	list-style-image : url(images/aufz2.gif);
+	margin-left : 140px;
+}
+.pTabelle_Aufzaehlung1 {
+	margin-bottom : 6pt;
+	margin-top : 6pt;
+	list-style-image : url(images/aufz1.gif);
+}
+.pTabelle_Aufzaehlung2 {
+	margin-bottom : 6pt;
+	margin-top : 6pt;
+	list-style-image : url(images/aufz2.gif);
+	margin-left : 40px;
+}
+.Beschriftung {
+	margin-left : 80px;
+	border-top : 1px solid;
+}
+.Tabelle_Beschriftung {
+	border-top : 1px solid;
+}
+p.pCreationDate
+{
+	color: Black;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: normal;
+	text-align: right;
+	text-decoration: none;
+	text-indent: 0em;
+	text-transform: none;
+	margin: 0px;
+	padding: 0px;
+}
+TABLE {
+	margin-left : 80px;
+}
+TABLE.kopf {
+	margin-left : 0px;
+}

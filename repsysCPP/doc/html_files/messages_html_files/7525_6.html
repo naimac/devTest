@@ -1,0 +1,50 @@
+﻿<html>
+  <head>
+    <title>7525_6</title>
+    <link rel="StyleSheet" href="document.css" type="text/css">
+    <link rel="StyleSheet" href="catalog.css" type="text/css">
+  </head>
+  <body>
+    <p class="pCreationDate">Messages</p>
+    <hr noshade size="1" align="left">
+    <h2 class="pUeberschrift1">7525_6</h2>
+    <p class="pStandard">%1: Invalid sync control 0x%2 in DC mode %3.</p>
+    <h3 class="pUeberschrift3">Parameter:</h3>
+    <table width="400" border="0" cellspacing="0" cellpadding="3">
+      <tr>
+        <td width="50">
+          <p class="pTabelle_Standard">%1......</p>
+        </td>
+        <td width="350">
+          <p class="pTabelle_Standard">Configuration path or name of object</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="pTabelle_Standard">%2......</p>
+        </td>
+        <td>
+          <p class="pTabelle_Standard">Value of Sync control register 0x980:0x981 of EtherCAT Slave</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="pTabelle_Standard">%3......</p>
+        </td>
+        <td>
+          <p class="pTabelle_Standard">Configured DC mode (0=DC off, 1=DC Sync0, 2=DC Sync1)</p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="pUeberschrift3">Message Class:</h3>
+    <p class="pStandard">3 -Error Minor</p>
+    <h3 class="pUeberschrift3">Reason:</h3>
+    <p class="pStandard">DC configuration in EtherCAT master doesn&apos;t match with DC coniguration in EtherCAT slave.</p>
+    <h3 class="pUeberschrift3">Effect:</h3>
+    <p class="pStandard">EtherCAT operation is not possible, EtherCAT state bootup is aborted with error.</p>
+    <h3 class="pUeberschrift3">Solution:</h3>
+    <p class="pStandard">DC configuration in EtherCAT master and slave has to be checked.</p>
+    <hr size="1" noshade>
+    <p class="pCreationDate">2020-12-11</p>
+  </body>
+</html>

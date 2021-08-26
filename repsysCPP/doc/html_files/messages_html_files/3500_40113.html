@@ -1,0 +1,43 @@
+﻿<html>
+  <head>
+    <title>3500_40113</title>
+    <link rel="StyleSheet" href="document.css" type="text/css">
+    <link rel="StyleSheet" href="catalog.css" type="text/css">
+  </head>
+  <body>
+    <p class="pCreationDate">Messages</p>
+    <hr noshade size="1" align="left">
+    <h2 class="pUeberschrift1">3500_40113</h2>
+    <p class="pStandard">Exception (part 4/4) / Err: &apos;%1&apos; ErrId: %2</p>
+    <h3 class="pUeberschrift3">Parameter:</h3>
+    <table width="400" border="0" cellspacing="0" cellpadding="3">
+      <tr>
+        <td width="50">
+          <p class="pTabelle_Standard">%1......</p>
+        </td>
+        <td width="350">
+          <p class="pTabelle_Standard">Error string (string, max. 76 chars)</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="pTabelle_Standard">%2......</p>
+        </td>
+        <td>
+          <p class="pTabelle_Standard">Error id (4 bytes)</p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="pUeberschrift3">Message Class:</h3>
+    <p class="pStandard">5 -Info</p>
+    <h3 class="pUeberschrift3">Reason:</h3>
+    <p class="pStandard">Exception or runtime error occured (part 4/4). Error-types are: 1.... NULL_POINTER - system-variable(ref) not linked or has a illegal value 2.... INDEX_OUT_OF_RANGE - index is out of array-bounds 3.... not used 4.... DIVISION_BY_ZERO - the result is undefined 5.... INTEGER_OVERFLOW - value doesnt fit into variable 6.... STACK_OVERFLOW - the stack-limit is or will be reached or overwritten 7.... ILLEGAL_SET_EVENT - will be triggered by the SPS, if an event with illegal data is set 8.... STACK_CHECKSUM - internal: illegal stackpointer 9.... ILLEGAL_WRITE_POS - illegal write position of system-variable (IkbSysVariable) 10... ILLEGAL_COPY_INFO - internal: illegal copy information 11... OUT_OF_SUBRANGE - value out of subrange 12... NONSET_ACTION_RESETTED - SFC: reset action that was not active 13... MULTIPLE_TIME_QUALIFIERS - SFC: multiple action activations with time-related qualifiers 14... LINK_ERROR - STANDARD-Function is not linked 48... EVENT_DATAMEM_FULL - at event-trigger there is not enough event-data-memory available to hold event data 49... EVENT_QUEUEMEM_FULL - the event-queue-memory is full. In order to get the full message take a look at the InfoLog one line before this error mesaage.</p>
+    <h3 class="pUeberschrift3">Effect:</h3>
+    <p class="pStandard">application stopped</p>
+    <h3 class="pUeberschrift3">Solution:</h3>
+    <p class="pStandard">1,2,4,5,6,7,11,12,13, - check iec-code and correct problem(s) 6 - decrease stack-usage (maybe string-operations, large local vars, decrease call-depth) or enlarge stack and try again 8,9,10, - firmware or compiler-problem 14 - the specified STANDARD-AB, -FB or -function ist not available on this system, check iec-libraries, check version of studio4 (compiler) and control4 (iec-runtime-system), or it is a firmware-problem 48,49 - to many events at a time (maybe a prioirity-problem), to much event-data, to less performance to process the event-algos 
+</p>
+    <hr size="1" noshade>
+    <p class="pCreationDate">2020-12-11</p>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+FIRST HISTO MSG for given handler [------------------------- System ready --------------------]
+Message retCode : 0
+oldMsg(msgHdl)
+
+        msgClassId [100]
+        compNr [32]
+        instNr [0]
+        msgNr [d7a]
+        paramCount [3]
+        msgState [5]
+        protocol_var [0]
+Message retCode : 0
+newMsg(msgHdl)
+
+        msgClassId [1000]
+        compNr [32]
+        instNr [0]
+        msgNr [d7a]
+        paramCount [1]
+        msgState [5]
+        protocol_var [0]
+
+LAST HISTO MSG for given handler [------------------------- System ready --------------------]

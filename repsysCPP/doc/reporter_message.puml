@@ -1,0 +1,127 @@
+@startuml
+class Message {
+.. constructors ..
+Message()
+Message(Message const & src)
+Message(const BPApiRepSysMsgHdl &msgHdl)
+.. destructor ..
+~Message()
+.. operator overload ..
+Message & operator=(Message const &src) = delete
+bool operator==(Message const &src)
+bool operator!=(Message const &src)
+friend std::ostream & operator<<(std::ostream &os, Message const &src)
+.. getter / setter ..
+static std::string getMsgContent(const BPApiRepSysMsgHdl &msgHdl, size_t len)
+void setClassId(BPApiRepSysMsgClass newMsgClassId)
+}
+@enduml
+
+@startuml
+
+class           MessageProcessor
+{
+.. constructor ..
++MessageProcessor(BPApiRepSysMsgClass p_classId, size_t p_len)
+.. destructor ..
++~MessageProcessor()
+.. initialization : signal handling init maybe it'll be trashed ..
+-bool init(void)
+.. stop handler for signals : not working as expected / it'll be trash ..
+-{static} stop(int sigNum)
+.. getters : wrapper for the BPApiRepSys ..
++bool        getMsgCount(BPApiRepSysMsgClass msgClassId, uint32_t *count)
++Message     GetFirstMessage(BPApiRepSysMsgClass msgClassId)
++Message     GetLastMessage(BPApiRepSysMsgClass msgClassId)
++Message     GetNextMessage(BPApiRepSysMsgClass msgClassId)
++Message     GetPrevMessage(BPApiRepSysMsgClass msgClassId)
+.. processing on messages ..
++bool        NewMsgRetriever(BPApiRepSysMsgClass msgClassId)
+-bool		 IsMsgNew(const BPApiRepSysMsgClass &msgClassId, const uint32_t &compNr, const uint32_t &instNr, const uint32_t &msgNr))
+
+}
+@enduml
+ 
+@startuml
+class           DisplayChecker
+{
++{static} void DisplayBPApiState(const char *functionNameMsgPrefix, const BPApiState &BPApiRetCode)
+}
+@enduml
+
+@startuml
+
+participant     Application
+participant     IO
+database        VariablePool 
+participant     OS
+participant     Hardware
+participant     Services
+
+Application -> VariablePool
+IO -> VariablePool
+Hardware -> VariablePool
+Services -> VariablePool
+OS -> VariablePool
+
+@enduml
+
+@startuml
+actor User
+Participant Controller
+database VariablePool
+participant BPApiRepSys #cyan
+participant MsgProcessor
+
+User -> Controller:operation
+Controller <-> VariablePool
+VariablePool <-> BPApiRepSys
+BPApiRepSys <-> MsgProcessor
+User <-- Controller:message
+@enduml
+
+@startuml
+
+loop while true
+NewMsgRetriever -> msgQ: **set Retrieved Msg From Repsys**
+end
+
+@enduml
+
+@startuml
+database Repsys
+participant MessageRetriever
+queue msgQ
+participant MessageMapper
+database 	logMapperDB
+collections msgMap
+participant MessageDisplayer
+
+
+loop while true
+Repsys -> MessageRetriever: retrievening new messages
+MessageRetriever -> msgQ: set the queue with retrieved messages
+msgQ -> MessageMapper: retrieving msgQ
+end
+logMapperDB <- MessageMapper : request from DB for getting matching rule for making keba log to sepro one
+MessageMapper <-- logMapperDB : log matching rules
+loop while true
+MessageMapper -> msgMap: mapping the keba msg to sepro one (class modification)
+msgMap -> MessageDisplayer: get/display messages from the map
+end
+@enduml
+
+@startuml
+
+state fork_state <<fork>>
+[*] --> fork_state
+fork_state --> State2
+fork_state --> State3
+
+state join_state <<join>>
+State2 --> join_state
+State3 --> join_state
+join_state --> State4
+State4 --> [*]
+
+@enduml

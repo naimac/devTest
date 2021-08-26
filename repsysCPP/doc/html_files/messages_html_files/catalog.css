@@ -1,0 +1,1197 @@
+b.cBold
+{
+  font-weight: bold
+}
+code.cCode
+{
+  font-family: Courier New, Courier, mono
+}
+em.cEmphasis
+{
+  font-style: italic
+}
+span.cHyperlink
+{
+  font-family: Arial, Verdana, Helvetica, sans-serif
+}
+span.cProgrammtext
+{
+  font-family: Courier New, Courier, mono;
+  font-size: 10pt
+}
+em.cKommandobezeichnung
+{
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-style: italic
+}
+b.cMenuename
+{
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold
+}
+code.cProgrammtext
+{
+  font-family: Courier New, Courier, mono
+}
+span.cQuerverweis
+{
+  color: #008000;
+  font-family: Arial, Verdana, Helvetica, sans-serif
+}
+span.cStandardFett
+{
+  font-weight: bold
+}
+sub.cSubscript
+{
+  vertical-align: sub
+}
+sup.cSuperscript
+{
+  vertical-align: super
+}
+u.cUnderline
+{
+  text-decoration: underline
+}
+div.pAbsatz_Standardschriftart
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pAchtung
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-left: 80px;
+  margin-right: 0em;
+  margin-top: 50px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pAnweisung
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pAufzaehlung1
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pAufzaehlung2
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 10px;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pBeschriftung
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pBody
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pBodyRelative
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pCaption
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pCellBody
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pCellHeading
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 0em;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pDropDownClosed
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pDropDownOpen
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pFussnotentext
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 80px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pFusszeile
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 80px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pFusszeile2
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 80px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pGrafik
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 15px;
+  margin-left: 80px;
+  margin-right: 0em;
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h1
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h2.pHeading2
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h3.pHeading3
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h4.pHeading4
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h5.pHeading5
+{
+  color: #003366;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h6.pHeading6
+{
+  color: #003366;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+td.pHinweis
+{
+  color: Maroon;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pIndented1
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 2.5em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pIndented2
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 5em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pIndented3
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 7.5em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pIndented4
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 10em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pIndented5
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 12.5em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pIndentedRelative
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 2.5em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pKopfzeile
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 80px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pNotiz
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 80px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pPopup
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pPopupAppend
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pPopupOnly
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pPopupOnlyAppend
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pPreformatted
+{
+  color: Black;
+  font-family: Courier New, Courier, mono;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pPreformattedRelative
+{
+  color: Black;
+  font-family: Courier New, Courier, mono;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+pre.pProgrammcode
+{
+  color: Black;
+  font-family: Courier New, Courier, mono;
+  font-size: 9pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 80%;
+  margin-bottom: 0px;
+  margin-left: 80px;
+  margin-right: 0em;
+  margin-top: 0px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+blockquote.pQuotation
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 2.5em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pRelatedTopic
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pRelatedTopicOnly
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pSeeAlso
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pSeitenzahl
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pSicherheitshinweis
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 6pt;
+  margin-left: 0px;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pStandard
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 80px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pSmartList1
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pSmartList2
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pSmartList3
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pSmartList4
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pSmartList5
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pTabelle_Achtung
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 10px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pTabelle_Anweisung
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pTabelle_Aufzaehlung1
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pTabelle_Aufzaehlung2
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pTabelle_Beschriftung
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 50px;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pTabelle_Grafik
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 15px;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+pre.pTabelle_Programmcode
+{
+  color: Black;
+  font-family: Courier New, Courier, mono;
+  font-size: 9pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 80%;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0em;
+  margin-top: 0px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pTabelle_Standard
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pTabelle_Ueberschrift
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-right: 0em;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pTabelle_Techdat_gerade_Zeilen
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pTabelle_Techdat_Ueberschrift
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pTabelle_Techdat_ungerade_Zeilen
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+div.pTabelleAnweisung
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6pt;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 6pt;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pTabelleNotiz
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pTabellentext
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 0px;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h2.pTitle
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h2.pUeberschrift1
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h2.pUeberschrift2
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+h3.pUeberschrift3
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-left: 0em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pUeberschriftUntertitel
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  margin-right: 0em;
+  margin-top: 20px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pUntertitel
+{
+  color: Black;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 50px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}

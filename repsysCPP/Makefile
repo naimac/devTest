@@ -1,0 +1,139 @@
+.PHONY: all clean fclean re write
+
+CXX ?= g++
+
+# flags #
+
+CXXFLAGS += -std=c++14
+CXXFLAGS += -Werror
+# CXXFLAGS += -fmessage-length=0
+CXXFLAGS += -fexceptions -fdiagnostics-color -fdiagnostics-show-option
+CXXFLAGS += -Wformat-security -Wformat -Wwrite-strings -Wsign-compare
+CXXFLAGS += -Wall -Wextra -Wno-unused-parameter
+CXXFLAGS += -m32 -march=i586 -g -O0
+
+LDFLAGS += -m32 -march=i586 -lpthread
+
+
+# editing paths
+
+SRC_PATH = ./src/
+LIB_PATH = ./lib/
+INC_PATH = ./include/
+BUILD_PATH = ./build/
+BIN_PATH = ./bin
+SUBMODULE_PATH = ./system/
+RM_CMD = $(shell which \rm) -fr
+
+# src extensions
+
+SRC_EXTENSION = cpp
+
+# executable name & path
+
+BIN_NAME = reporter_message
+
+
+# find all file sources in the source directory, sorted by the most recently modified
+
+SRC = $(shell find $(SRC_PATH) -name '*.$(SRC_EXTENSION)' | sort) 
+
+
+# Set the object file names, with the source directory stripped
+# from the path, and the build path prepended in its place
+
+OBJ = $(SRC:$(SRC_PATH)%.$(SRC_EXTENSION)=$(BUILD_PATH)%.o)
+
+
+# Set the dependency files that will be used to add header dependencies
+
+# DEPS = $(OBJ:.o=.d)
+
+# find directories from the submodule containing the *.h files
+# extract their relative path
+# prefix each path with "-I"
+# echo the result in one line
+
+SUBMODULE_INCLUDE_PATH = $(shell find $(SUBMODULE_PATH) -type f -name '*.h' -exec dirname {} \; | uniq | grep bp | sed -e 's/^/-I/')
+
+
+# voir si c est utile de rajouter /usr/local/include
+
+INCLUDES = -I $(INC_PATH) $(SUBMODULE_INCLUDE_PATH) 
+
+
+# same mechanism as SUBMODULE_INCLUDE
+
+SUBMODULE_LIB_DIR = $(shell find $(SUBMODULE_PATH) -type f -name '*.so' -exec dirname {} \; | uniq | grep -v armhf | grep bp | sed -e 's/^/-L/')
+
+
+# get *.so and prefix them with "-l"
+SUBMODULE_LIB_FILE = $(shell find $(SUBMODULE_PATH) -type f -name '*.so' | grep -v armhf | xargs -L 1 basename | grep BP | sed -e 's/lib\(.*\).so/-l\1/')
+
+# contient deja les -L... et -l...
+LIBS = $(SUBMODULE_LIB_DIR) $(SUBMODULE_LIB_FILE)
+
+
+# voir si on garde cette partie "release"
+# .PHONY: default_target
+# default_target: release
+
+# [ DIRS ] 
+
+.PHONY: dirs
+dirs:
+	@echo "\033[1;34m \n Creating directories \n \033[1;0m"
+	@mkdir -p $(dir $(OBJ))
+	@mkdir -p $(BIN_PATH)
+	@mkdir -p $(BUILD_PATH)
+
+
+# [ CLEAN ] 
+
+.PHONY: clean
+clean:
+	@echo "\033[1;34m Deleting $(BIN_NAME) symlink && $(BIN_PATH)/$(BIN_NAME) \033[1;0m"
+	@$(RM_CMD) $(BIN_NAME) $(BIN_PATH)/$(BIN_NAME)
+	@echo "\033[1;34m Deleting directories \033[1;0m"
+	@$(RM_CMD) $(BUILD_PATH)
+	@$(RM_CMD) $(BIN_PATH)
+
+
+# [ ALL ] 
+# checks the executable and symlinks to the output
+
+.PHONY: all
+all: dirs $(BIN_PATH)/$(BIN_NAME)
+	@echo "\033[1;34m Making symlink: $(BIN_NAME) -> $<\033[1;0m"
+	$(RM_CMD) $(BIN_NAME)
+	@ln -s $(BIN_PATH)/$(BIN_NAME) $(BIN_NAME)
+
+
+# [ BIN ]
+# Creation of the executable
+# LINK creation with LIBS
+# no need of $INCLUDES here (normalement ?)
+
+$(BIN_PATH)/$(BIN_NAME): $(OBJ)
+	@echo "\033[1;34m Linking: $@\033[1;0m"
+	$(CXX) $(OBJ) $(LIBS) $(LDFLAGS) -o $@
+
+# Add dependency files, if they exist
+
+# -include $(DEPS)
+
+# [ $(SRC.c=.o) --> get source file name, create from it the corresponding .o ]
+# Source file rules
+# After the first compilation they will be joined with the rules from the
+# dependency files to provide header dependencies
+# original command --->>> $(CXX) $(CXXFLAGS) $(INCLUDES) -MP -MMD -c $< -o $@
+# see if -MP and -MMD are usefull
+
+# Uuse $(INCLUDES)
+# %.o:%.c
+$(BUILD_PATH)%.o: $(SRC_PATH)%.$(SRC_EXTENSION)
+	@echo "\033[1;34m Compiling: $< -> $@\033[1;0m"
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+
+re: clean all

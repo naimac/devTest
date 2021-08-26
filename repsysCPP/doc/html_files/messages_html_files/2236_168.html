@@ -1,0 +1,50 @@
+﻿<html>
+  <head>
+    <title>2236_168</title>
+    <link rel="StyleSheet" href="document.css" type="text/css">
+    <link rel="StyleSheet" href="catalog.css" type="text/css">
+  </head>
+  <body>
+    <p class="pCreationDate">Messages</p>
+    <hr noshade size="1" align="left">
+    <h2 class="pUeberschrift1">2236_168</h2>
+    <p class="pStandard">%1: Invalid SERCOS parameter switching to phase %2: %3.</p>
+    <h3 class="pUeberschrift3">Parameter:</h3>
+    <table width="400" border="0" cellspacing="0" cellpadding="3">
+      <tr>
+        <td width="50">
+          <p class="pTabelle_Standard">%1......</p>
+        </td>
+        <td width="350">
+          <p class="pTabelle_Standard">Hardware configuration path or name of drive</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="pTabelle_Standard">%2......</p>
+        </td>
+        <td>
+          <p class="pTabelle_Standard">Intended new phase</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="pTabelle_Standard">%3......</p>
+        </td>
+        <td>
+          <p class="pTabelle_Standard">List of invalid parameters</p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="pUeberschrift3">Message Class:</h3>
+    <p class="pStandard">4 -Warning</p>
+    <h3 class="pUeberschrift3">Reason:</h3>
+    <p class="pStandard">One or more parameters of the drive are not valid. That was detected on sercos phase switch preparation.</p>
+    <h3 class="pUeberschrift3">Effect:</h3>
+    <p class="pStandard">The command phase 3/4 transition check couldn&apos;t be performed due to invalid parameters. Phase 3/4 couldn&apos;t be reached.</p>
+    <h3 class="pUeberschrift3">Solution:</h3>
+    <p class="pStandard">Parameter values must be changed</p>
+    <hr size="1" noshade>
+    <p class="pCreationDate">2020-12-11</p>
+  </body>
+</html>
