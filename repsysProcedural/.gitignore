@@ -1,0 +1,9 @@
+bin
+reporter_message
+build
+.vscode
+a.out
+*.o
+*.swp
+./system/bp/external/BPApiRepSys.h
+raw_attempt

@@ -1,0 +1,55 @@
+workflow:
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+
+stages:
+  - prebuild
+  - build
+  - publish
+
+variables:
+  CI_REGISTRY: "registry.gitlab.sepro-group.com"
+  VERSION: "$CI_PIPELINE_ID"
+  CI_REGISTRY_IMAGE: "$CI_REGISTRY/applicative/system"
+
+docker build test:
+  stage: build
+  script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - docker build --pull --cache-from $CI_REGISTRY_IMAGE:latest -t $CI_REGISTRY_IMAGE:$VERSION .
+  tags:
+     - dind
+  only:
+    - push
+    - web
+
+docker build release:
+  stage: build
+  script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - docker build --pull --cache-from $CI_REGISTRY_IMAGE:latest -t $CI_REGISTRY_IMAGE:$VERSION .
+  - docker push $CI_REGISTRY_IMAGE:$VERSION
+  tags:
+     - dind
+  only:
+    - master
+    - merge_requests
+
+docker push latest:
+  stage: publish
+  only:
+     - master
+     - features/MVP3
+  services:
+        - docker:19.03.8-dind
+  script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - docker pull $CI_REGISTRY_IMAGE:$VERSION
+  - docker tag $CI_REGISTRY_IMAGE:$VERSION $CI_REGISTRY_IMAGE:latest
+  - docker tag $CI_REGISTRY_IMAGE:$VERSION $CI_REGISTRY_IMAGE:release-$VERSION
+  - docker push $CI_REGISTRY_IMAGE:latest
+  - docker push $CI_REGISTRY_IMAGE:release-$VERSION
+  tags:
+     - dind

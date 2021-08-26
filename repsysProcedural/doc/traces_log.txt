@@ -1,0 +1,1778 @@
+DevSvc   2021-05-03 09:43:14.194| No MachineSoftware Update configured
+######################### control-plcrt #########################
+DevSvc   2021-05-03 09:43:19.549| configure civetweb
+DevSvc   2021-05-03 09:43:19.592| kernel soft and hard lockup thresholds: configure hard lockup threshold to 3
+DevSvc   2021-05-03 09:43:19.601| ftrace: set /sys/kernel/debug/tracing/events/irq/enable
+DevSvc   2021-05-03 09:43:19.601| ftrace: set /sys/kernel/debug/tracing/events/ktick/enable
+DevSvc   2021-05-03 09:43:19.602| ftrace: set /sys/kernel/debug/tracing/events/sched/enable
+DevSvc   2021-05-03 09:43:19.602| ftrace: set /sys/kernel/debug/tracing/events/watchdog/enable
+DevSvc   2021-05-03 09:43:19.621| BaseLib heap size is 419430400
+Ctrl     2021-05-03 09:43:19.717| Initializing instance 0, pipe /tmp/CtrlCmd_FIFO.0
+Ctrl     2021-05-03 09:43:19.718| Starting CtrlPipeHandler
+Ctrl     2021-05-03 09:43:19.833| Loading libBulkDataBaseLib.so.0 OK, address 0xb7204000
+Ctrl     2021-05-03 09:43:20.802| Loading libMemoryPrioLock.so.0 OK, address 0x9e1c0000
+Ctrl     2021-05-03 09:43:20.812| Loading libKSEH.so.0 OK, address 0xb771a000
+DevSvc   2021-05-03 09:43:20.822| Setting up KSEH... done.
+Ctrl     2021-05-03 09:43:20.832| Loading libvDSOclock.so.0 OK, address 0xb7715000
+DevSvc   2021-05-03 09:43:20.842| Setting up vDSO... done. Using fast clock functions now.
+Ctrl     2021-05-03 09:43:21.280| Loading libK2Ctrl.so OK, address 0x9cfb4000
+DevSvc   2021-05-03 09:43:22.411| UOS uses platform specific clock functions.
+UOS      2021-05-03 09:43:22.434| UOS BEGIN init
+UOS      2021-05-03 09:43:22.434| Using OS-specific time.
+UOS      2021-05-03 09:43:22.434| Using OS-specific functions for tickwait cycles.
+UOS      2021-05-03 09:43:22.434| CREATE Task "UOS.Intr-Task" 43e80024(4298)
+UOS      2021-05-03 09:43:22.435| CREATE Task "UOS.Output_task" 4d980029(0)
+UOS      2021-05-03 09:43:22.437| UOS END init
+UOS      2021-05-03 09:43:22.437| CREATE Task "SLx.WatchTimeChange" 5368002c(0)
+VarSv    2021-05-03 09:43:22.507| VarSvr_3.20.0 BEGIN init
+VarSv    2021-05-03 09:43:22.510| VarSvr_3.20.0 END init, ok, t = 0.01s
+Cfg      2021-05-03 09:43:22.553| CfgAnalyser BEGIN init
+Cfg      2021-05-03 09:43:22.554| CfgAnalyser END init, ok
+UOS      2021-05-03 09:43:22.632| CREATE Task "CFG.PCallTask" 2f980e09(4358)
+UOS      2021-05-03 09:43:22.633| CREATE Task "UOS.Rpc-Task" 48c80e16(4359)
+UOS      2021-05-03 09:43:22.635| CREATE Task "UOS.CmdLine-Task" 79380e2f(4360)
+SLx      2021-05-03 09:43:22.635| StartupLinux BEGIN init
+SLx      2021-05-03 09:43:22.636| ##### control-plcrt_3.2.2 #####
+SLx      2021-05-03 09:43:22.636| StartupLinux END init, t = 0.00s
+UOS      2021-05-03 09:43:22.636| CREATE Task "SLx.Root-Task" 02e80e34(0)
+DevSvc   2021-05-03 09:43:22.686| Searching for C-FB libaries in /opt/kecontrolapplication/application/control/ccontrol/
+DevSvc   2021-05-03 09:43:22.687| libsepro-periph.so.0.1.1.RC-17338...
+DevSvc   2021-05-03 09:43:22.769| libsepro-periph.so...
+DevSvc   2021-05-03 09:43:23.393| Setting CoDeSys TargetID for Device (Ordernumber=106049) to 0360
+Ctrl     2021-05-03 09:43:23.767| Loading /opt/codesys/v3/lib/libcodesyscontrol_shared.so OK, address 0x9bf66000
+UOS      2021-05-03 09:43:23.777| CREATE Task "CoDeSys.Root-Task" 08b80e37(0)
+KSAreaV3 2021-05-03 09:43:23.826| Info: Mapping of /dev/I (16384 bytes) to 0x9BE87000
+KSAreaV3 2021-05-03 09:43:23.827| Info: Mapping of /dev/Q (16384 bytes) to 0x9BE83000
+KSAreaV3 2021-05-03 09:43:23.827| Info: Mapping of /dev/M (16384 bytes) to 0x9BE7F000
+KSTarV3  2021-05-03 09:43:23.827| CoDeSysControl target id is 0360
+CSRTSV3  2021-05-03 09:43:23.967| ============================================================================================================================
+CSRTSV3  2021-05-03 09:43:23.967| Cmp=CM, Class=1, Error=0, Info=4, pszInfo=CoDeSysRT
+CSRTSV3  2021-05-03 09:43:23.967| Cmp=CM, Class=1, Error=0, Info=4, pszInfo=OS=Linux, CPU=x86, Arch=32Bit, Coding=C
+CSRTSV3  2021-05-03 09:43:23.967| Cmp=CM, Class=1, Error=0, Info=6, pszInfo=<version>3.5.16.20</version> <builddate>Dec 11 2020</builddate>
+CSRTSV3  2021-05-03 09:43:23.967| Cmp=CM, Class=1, Error=0, Info=5, pszInfo=Copyright (c) 3S - Smart Software Solutions GmbH
+CSRTSV3  2021-05-03 09:43:23.967| ============================================================================================================================
+CSRTSV3  2021-05-03 09:43:23.967| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>CM</cmp>, <id>0x00000001</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.967| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>CmpMemPool</cmp>, <id>0x0000001e</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.967| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>CmpLog</cmp>, <id>0x00000013</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>CmpSettings</cmp>, <id>0x0000001a</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysFile</cmp>, <id>0x00000104</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysCom</cmp>, <id>0x00000100</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysCpuHandling</cmp>, <id>0x00000101</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysDir</cmp>, <id>0x0000011b</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysEthernet</cmp>, <id>0x0000011c</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysEvent</cmp>, <id>0x00000102</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysExcept</cmp>, <id>0x00000103</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysFileStream</cmp>, <id>0x00000120</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysInternalLib</cmp>, <id>0x00000107</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysMem</cmp>, <id>0x00000108</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.968| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysModule</cmp>, <id>0x00000109</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysMsgQ</cmp>, <id>0x0000010a</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysMutex</cmp>, <id>0x0000013a</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysOut</cmp>, <id>0x0000010b</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysProcess</cmp>, <id>0x0000010e</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysSem</cmp>, <id>0x0000010f</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysSemCount</cmp>, <id>0x00000139</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysSemProcess</cmp>, <id>0x00000119</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysShm</cmp>, <id>0x00000110</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysSocket</cmp>, <id>0x00000111</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysTarget</cmp>, <id>0x00000112</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysTask</cmp>, <id>0x00000114</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.969| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysTime</cmp>, <id>0x00000115</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysTimeRtc</cmp>, <id>0x00000127</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System: <cmp>SysTimer</cmp>, <id>0x00000116</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System|Dynamic: <cmp>SysKArea</cmp>, <id>0x100b0018</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System|Dynamic: <cmp>SysKTarget</cmp>, <id>0x100b001b</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System|Dynamic: <cmp>SysKBinFramework</cmp>, <id>0x100b001e</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=System|Dynamic: <cmp>SysSFDL</cmp>, <id>0x100b0011</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpAlarmManager</cmp>, <id>0x0000007c</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpApp</cmp>, <id>0x00000002</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpAppBP</cmp>, <id>0x00000073</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpAppForce</cmp>, <id>0x00000074</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpAsyncMgr</cmp>, <id>0x0000005f</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.970| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpBinTagUtil</cmp>, <id>0x00000004</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpBinTagUtilIec</cmp>, <id>0x0000005c</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpBlkDrvTcp</cmp>, <id>0x00000030</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpBlkDrvUdp</cmp>, <id>0x00000007</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAAAsyncMan</cmp>, <id>0x00004007</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAABehaviourModel</cmp>, <id>0x00004015</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAACallback</cmp>, <id>0x00004001</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAACanL2</cmp>, <id>0x00004004</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAADTUtil</cmp>, <id>0x00004013</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAAFile</cmp>, <id>0x00004008</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAAMemBlockMan</cmp>, <id>0x00004003</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAANetBaseServices</cmp>, <id>0x00004018</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAARealTimeClock</cmp>, <id>0x00004014</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.971| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAASdoClient</cmp>, <id>0x00004011</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAASdoServer</cmp>, <id>0x00004017</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAASegBufferMan</cmp>, <id>0x00004019</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAASerialCom</cmp>, <id>0x00004012</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAAStorage</cmp>, <id>0x0000007e</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAATick</cmp>, <id>0x00004009</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAATickUtil</cmp>, <id>0x00004010</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAATimer</cmp>, <id>0x00004016</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCAATypes</cmp>, <id>0x00004006</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpChannelClient</cmp>, <id>0x00000008</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpChannelClientIec</cmp>, <id>0x0000005d</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.972| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpChannelMgr</cmp>, <id>0x00000009</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpChannelServer</cmp>, <id>0x0000000a</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCharDevice</cmp>, <id>0x00000300</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpChecksum</cmp>, <id>0x0000000b</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCommunicationLib</cmp>, <id>0x0000000c</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCoreDump</cmp>, <id>0x00000083</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpCryptMD5</cmp>, <id>0x0000006a</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpDevice</cmp>, <id>0x0000000e</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpEventMgr</cmp>, <id>0x0000005b</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpFileTransfer</cmp>, <id>0x0000005e</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpGateway</cmp>, <id>0x0000000f</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpGwCommDrvTcp</cmp>, <id>0x00000010</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.973| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpIecStringUtils</cmp>, <id>0x0000007f</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpIecTask</cmp>, <id>0x00000011</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpIecVarAccess</cmp>, <id>0x00000060</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpIoDrvIec</cmp>, <id>0x0000005a</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpIoMgr</cmp>, <id>0x00000012</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpMonitor2</cmp>, <id>0x00000032</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpNameServiceClient</cmp>, <id>0x00000015</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpNameServiceClientIec</cmp>, <id>0x0000011d</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpNameServiceServer</cmp>, <id>0x00000016</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpOpenSSL</cmp>, <id>0x00000033</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpPlcShell</cmp>, <id>0x00000128</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpRetain</cmp>, <id>0x00000017</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpRouter</cmp>, <id>0x00000018</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.974| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpSchedule</cmp>, <id>0x00000019</id> <ver>48.81.0.20</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpSecureChannel</cmp>, <id>0x00000090</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpSecurityManager</cmp>, <id>0x0000008e</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpSessionInformation</cmp>, <id>0x00000097</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpSrv</cmp>, <id>0x0000001c</id> <ver>3.5.16.0</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpTraceMgr</cmp>, <id>0x00000070</id> <ver>3.5.16.10</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpUserDBFile</cmp>, <id>0x00000098</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpUserGroupsDBFile</cmp>, <id>0x00000099</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpUserObjectsDBFile</cmp>, <id>0x0000009c</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=<cmp>CmpUserMgr</cmp>, <id>0x00000061</id> <ver>3.5.16.20</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKBasePackage</cmp>, <id>0x100b001d</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.975| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKControlLib</cmp>, <id>0x100b0114</id> <ver>3.5.0.0</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKDataRecorder</cmp>, <id>0x100b0020</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKIo</cmp>, <id>0x100b001c</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKLog2RepSys</cmp>, <id>0x100b0016</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKState</cmp>, <id>0x100b0012</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKVarIF</cmp>, <id>0x100b0010</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>KSys</cmp>, <id>0x100b001a</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>cmpkmodbusv3</cmp>, <id>0x100b0021</id> <ver>4.3.2.3</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKLog</cmp>, <id>0x100b0112</id> <ver>3.4.11.0</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKTC</cmp>, <id>0x100b0110</id> <ver>3.5.2.2</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKRC</cmp>, <id>0x100b0111</id> <ver>3.4.2.1</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKMcu</cmp>, <id>0x100b0113</id> <ver>3.4.2.1</ver>
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=SysFile, Class=1, Error=0, Info=2, pszInfo=PlcLogicPrefix=-1: Be aware backup/restore feature cannot be used
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CmpBlkDrvUdp, Class=1, Error=0, Info=6, pszInfo=Network interface: <ipaddress>172.16.11.24</ipaddress>, subnetmask <subnetmask>255.255.0.0</subnetmask>
+CSRTSV3  2021-05-03 09:43:23.977| Cmp=CmpRouter, Class=1, Error=0, Info=4, pszInfo=Network interface <interface>ether 2</interface> at router <instance>0</instance> registered
+CSRTSV3  2021-05-03 09:43:23.977| Cmp=CmpBlkDrvUdp, Class=1, Error=0, Info=6, pszInfo=Network interface: <ipaddress>192.168.100.100</ipaddress>, subnetmask <subnetmask>255.255.255.0</subnetmask>
+CSRTSV3  2021-05-03 09:43:23.977| Cmp=CmpRouter, Class=1, Error=0, Info=4, pszInfo=Network interface <interface>ether 4</interface> at router <instance>1</instance> registered
+CSRTSV3  2021-05-03 09:43:23.977| Cmp=CmpChannelMgr, Class=1, Error=0, Info=2, pszInfo=Running as network server
+CSRTSV3  2021-05-03 09:43:23.977| Cmp=CmpChannelMgr, Class=1, Error=0, Info=1, pszInfo=Running as network client
+CSRTSV3  2021-05-03 09:43:23.977| Cmp=CmpChannelServer, Class=1, Error=0, Info=0, pszInfo=<NumOfChannels>4</NumOfChannels> channels available, each of the size <BufferSize>100000</BufferSize> Bytes
+CSRTSV3  2021-05-03 09:43:23.977| Cmp=CmpBlkDrvTcp, Class=1, Error=0, Info=6, pszInfo=Local network address: <ipaddress>172.16.11.24</ipaddress>
+CSRTSV3  2021-05-03 09:43:23.977| Cmp=CmpRouter, Class=1, Error=0, Info=4, pszInfo=Network interface <interface>BlkDrvTcp</interface> at router <instance>2</instance> registered
+KCmpSTV3 2021-05-03 09:43:23.981| Wait for boot state 1
+Ctrl     2021-05-03 09:43:24.557| Loading libMcCore6.so.0 OK, address 0x9b2f2000
+ItfReAs  2021-05-03 09:43:24.586| InterfaceReAssign BEGIN init
+ItfReAs  2021-05-03 09:43:24.586| InterfaceReAssign END init, ok, t = 0.00s
+BoSupLnx 2021-05-03 09:43:24.587| BoardSupportLnx BEGIN init
+BoSupLnx 2021-05-03 09:43:24.587| Number EEPROMS registered: 2
+BoSupLnx 2021-05-03 09:43:24.587| SRAM found: fast_size: 65536
+BoSupLnx 2021-05-03 09:43:24.587| IOBoard available: NO
+BoSupLnx 2021-05-03 09:43:24.587| BoardSupportLnx END init, ok, t = 0.00s
+Hsk      2021-05-03 09:43:24.587| Housekeeper BEGIN init
+UOS      2021-05-03 09:43:24.587| CREATE Task "HSK.HighestPriorTask" 67a80e68(4683)
+UOS      2021-05-03 09:43:24.588| CREATE Task "HSK.HighPriorTask" 75380e6f(4684)
+UOS      2021-05-03 09:43:24.588| CREATE Task "HSK.MidPriorTask" 00d80e75(4686)
+UOS      2021-05-03 09:43:24.589| CREATE Task "HSK.LowPriorTask" 0c780e7b(0)
+Hsk      2021-05-03 09:43:24.590| Housekeeper END init (ok) t = 0.00s
+Pma      2021-05-03 09:43:24.590| PostMortemAnalyser BEGIN init
+UOS      2021-05-03 09:43:24.591| CREATE Task "PMA-Handler" 14380e7f(4691)
+Pma      2021-05-03 09:43:24.597| PostMortemAnalyser END init, ok, t = 0.01s
+STA      2021-05-03 09:43:24.597| Statusreport BEGIN init
+UOS      2021-05-03 09:43:24.598| CREATE Task "STA.StatusreportWorkTask" 48880e9a(0)
+UOS      2021-05-03 09:43:24.598| CREATE Task "STA.StatusreportCopyTask" 4c680e9c(0)
+STA      2021-05-03 09:43:24.599| Statusreport END init (ok) t = 0.00s
+SMemAd   2021-05-03 09:43:24.599| StaticMemoryAdmin BEGIN init
+SMemAd   2021-05-03 09:43:24.599| StaticMemoryAdmin END init (ok) t = 0.00s
+SMemAd   2021-05-03 09:43:24.599| SMemAd::ctor() done
+SLx      2021-05-03 09:43:24.599| SRAM detected
+SMemAd   2021-05-03 09:43:24.599| SMemAd::Init(): start addr: 0x9b2c1000, size: 65536, isCold: no
+LicMan   2021-05-03 09:43:24.607| LicenseManager BEGIN init
+LicMan   2021-05-03 09:43:24.607| LicenseManager END init, ok, t = 0.00s
+Swo      2021-05-03 09:43:24.607| SwoServer BEGIN init
+UOS      2021-05-03 09:43:24.609| CREATE Task "Swo.Server-Task" 00b80eb7(4698)
+UOS      2021-05-03 09:43:24.610| CREATE Task "Swo.PCallTask" 12280ec0(4699)
+Swo      2021-05-03 09:43:24.610| SwoServer END init, ok, t = 0.00s
+RepSys   2021-05-03 09:43:24.612| ReportSystem BEGIN init
+RepSys   2021-05-03 09:43:24.828| --------
+RepSys   2021-05-03 09:43:24.828| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:24.828| INFO Ackn (4700/24) 00000000
+RepSys   2021-05-03 09:43:24.828| uos.cfg(2,22): entry 'systemTraceEventMask' exists, overwritten
+RepSys   2021-05-03 09:43:24.828| --------
+RepSys   2021-05-03 09:43:24.828| --------
+RepSys   2021-05-03 09:43:24.828| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:24.828| INFO Ackn (4700/24) 00000000
+RepSys   2021-05-03 09:43:24.828| system.cfg(77,15): entry 'motionControl' exists, overwritten
+RepSys   2021-05-03 09:43:24.828| --------
+RepSys   2021-05-03 09:43:24.829| --------
+RepSys   2021-05-03 09:43:24.829| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:24.829| INFO Ackn (4700/24) 00000000
+RepSys   2021-05-03 09:43:24.829| system.cfg(78,14): entry 'teachControl' exists, overwritten
+RepSys   2021-05-03 09:43:24.829| --------
+UOS      2021-05-03 09:43:24.830| CREATE Task "RepSys.PCallTask" 38880f9a(4730)
+RepSys   2021-05-03 09:43:24.830| ReportSystem END init, ok, t = 0.22s
+DevUpd   2021-05-03 09:43:24.833| DeviceUpdate BEGIN init
+DevUpd   2021-05-03 09:43:24.874| DeviceUpdate END init, ok, t = 0.04s
+SysDgRep 2021-05-03 09:43:24.874| SysDiagReport BEGIN init
+UOS      2021-05-03 09:43:24.875| CREATE Task "SysDgRep.CheckTask" 02280fc0(0)
+SysDgRep 2021-05-03 09:43:24.875| SysDiagReport END init, ok, t = 0.00s
+DataRec  2021-05-03 09:43:24.914| DataRecorder BEGIN init
+DataRec  2021-05-03 09:43:24.914| DataRecorder END init, ok, t = 0.00s
+DRecVA   2021-05-03 09:43:24.914| DataRecVarAttrDB BEGIN init
+DRecVA   2021-05-03 09:43:24.920| DataRecVarAttrDB END init, ok, t = 0.01s
+HwInt    2021-05-03 09:43:24.930| Drv_HwInt BEGIN init, TargetOS Linux TargetHardware HW_PC
+HwInt    2021-05-03 09:43:24.930| Drv_HwInt END init, ok, t = 0.00s
+SLx      2021-05-03 09:43:24.930| Starting Diag routines ...
+AAd      2021-05-03 09:43:24.930| AccessAdmin BEGIN init
+UOS      2021-05-03 09:43:24.947| CREATE Task "AAd.PCallTask" 5d380fef(4738)
+AAd      2021-05-03 09:43:24.947| AccessAdmin END init, ok, t = 0.02s
+SysSm    2021-05-03 09:43:24.947| SystemStateManager BEGIN init
+SysSm    2021-05-03 09:43:24.947| SystemStateManager END init, ok, t = 0.00s
+ShRtc    2021-05-03 09:43:24.948| ShadowRtc BEGIN init
+ShRtc    2021-05-03 09:43:24.949| ShadowRtc END init (ok) t = 0.00s
+TickSim  2021-05-03 09:43:24.949| TickSimulation BEGIN init
+TickSim  2021-05-03 09:43:24.949| TickSimulation END init, ok, t = 0.00s
+VDI      2021-05-03 09:43:24.949| ValidateDataIntegrity BEGIN init
+VDI      2021-05-03 09:43:24.949| ValidateDataIntegrity END init, ok, t = 0.00s
+UOS      2021-05-03 09:43:24.949| CREATE Task "SwoApi.SampleTask" 68b81037(4739)
+NetApi   2021-05-03 09:43:24.950| NetworkApi BEGIN init
+UOS      2021-05-03 09:43:24.950| CREATE Task "NetApi.PCallTask" 09a81048(4740)
+UOS      2021-05-03 09:43:24.950| CREATE Task "NetApi.DirectPCallTask" 0d88104a(4741)
+NetApi   2021-05-03 09:43:24.951| NetworkApi END init, ok, t = 0.00s
+DrvSvc   2021-05-03 09:43:24.951| DriveService BEGIN init
+DrvSvc   2021-05-03 09:43:24.951| DriveService END init, ok, t = 0.00s
+TftpIf   2021-05-03 09:43:24.951| TftpClientInterface BEGIN init
+UOS      2021-05-03 09:43:24.952| CREATE Task "TftpIf.PCallTask" 62c81076(4742)
+TftpIf   2021-05-03 09:43:24.952| TftpClientInterface END init, ok, t = 0.00s
+ChmK     2021-05-03 09:43:24.952| ChmKemro BEGIN init
+ChmK     2021-05-03 09:43:24.952| ChmKemro END init, ok, t = 0.00s
+Pcb      2021-05-03 09:43:24.952| PcbManager BEGIN init
+UOS      2021-05-03 09:43:24.953| CREATE Task "Pcb-SignalHandler" 7de81084(4743)
+Pcb      2021-05-03 09:43:24.953| PcbManager END init (ok)
+RPCMan   2021-05-03 09:43:24.953| RpcManager BEGIN init
+RPCMan   2021-05-03 09:43:24.953| RpcManager END init, t = 0.00s
+SercIf   2021-05-03 09:43:24.954| Sercos3Interface BEGIN init
+SercIf   2021-05-03 09:43:24.954| Sercos3Interface END init, ok
+Rtnc     2021-05-03 09:43:24.955| Rtnc BEGIN init
+Rtnc     2021-05-03 09:43:24.955| Rtnc END init, ok
+KBus     2021-05-03 09:43:24.955| Drv_KBus BEGIN init
+KBus     2021-05-03 09:43:24.955| Drv_KBus END init, ok, t = 0.00s
+KAm280   2021-05-03 09:43:24.955| KBus_DrvAm280 BEGIN init
+KAm280   2021-05-03 09:43:24.955| KBus_DrvAm280 END init, ok, t = 0.00s
+KAm299   2021-05-03 09:43:24.956| KBus_DrvAm299 BEGIN init
+KAm299   2021-05-03 09:43:24.956| KBus_DrvAm299 END init, ok, t = 0.00s
+KMm280   2021-05-03 09:43:24.956| KBus_DrvMm280 BEGIN init
+KMm280   2021-05-03 09:43:24.956| KBus_DrvMm280 END init, ok, t = 0.00s
+KDm260   2021-05-03 09:43:24.956| KBus_DrvDm260 BEGIN init
+KDm260   2021-05-03 09:43:24.956| KBus_DrvDm260 END init, ok, t = 0.00s
+KTm220   2021-05-03 09:43:24.956| KBus_DrvTm220 BEGIN init
+KTm220   2021-05-03 09:43:24.956| KBus_DrvTm220 END init, ok, t = 0.00s
+KTm225   2021-05-03 09:43:24.956| KBus_DrvTm225 BEGIN init
+KTm225   2021-05-03 09:43:24.956| KBus_DrvTm225 END init, ok, t = 0.00s
+KMm240   2021-05-03 09:43:24.957| KBus_DrvMm240 BEGIN init
+KMm240   2021-05-03 09:43:24.957| KBus_DrvMm240 END init, ok, t = 0.00s
+KSm250   2021-05-03 09:43:24.957| KBus_DrvSm250 BEGIN init
+KSm250   2021-05-03 09:43:24.957| KBus_DrvSm250 END init, ok, t = 0.00s
+DrvFm200 2021-05-03 09:43:24.957| Can_DrvFm200 BEGIN init
+DrvFm200 2021-05-03 09:43:24.957| Can_DrvFm200 END init, ok, t = 0.00s
+DrvKCan  2021-05-03 09:43:24.957| Can_DrvKCan BEGIN init
+DrvKCan  2021-05-03 09:43:24.958| Can_DrvKCan END init, ok, t = 0.00s
+SerOnb   2021-05-03 09:43:24.958| Serial_Onboard BEGIN init
+SerOnb   2021-05-03 09:43:24.959| Serial_Onboard END init, ok, t = 0.00s
+SerSm2x0 2021-05-03 09:43:24.959| Serial_DrvSm2x0 BEGIN init
+SerSm2x0 2021-05-03 09:43:24.959| Serial_DrvSm2x0 END init, ok, t = 0.00s
+Cp250Pa  2021-05-03 09:43:24.959| Drv_Cp250Pa BEGIN init
+Cp250Pa  2021-05-03 09:43:24.959| Drv_Cp250Pa END init, ok, t = 0.00s
+Cp031Pa  2021-05-03 09:43:24.960| Drv_Cp031Pa BEGIN init
+Cp031Pa  2021-05-03 09:43:24.960| Drv_Cp031Pa END init, ok, t = 0.00s
+CanMan   2021-05-03 09:43:24.960| CanManager BEGIN init
+UOS      2021-05-03 09:43:24.960| CREATE Task "CanManReportTask" 5ae810b4(4745)
+CanMan   2021-05-03 09:43:24.960| CanManager END init, ok, t = 0.00s
+EcatMEcm 2021-05-03 09:43:24.961| EcatM_Ecm BEGIN init
+EcatMEcm 2021-05-03 09:43:24.961| EcatM_Ecm END init, ok
+EcatMNic 2021-05-03 09:43:24.962| EcatM_Nic BEGIN init
+EcatMNic 2021-05-03 09:43:24.962| EcatM_Nic END init, ok
+RtncTapM 2021-05-03 09:43:24.963| RtncTapMediator BEGIN init
+RtncTapM 2021-05-03 09:43:24.972| RtncTapMediator END init, ok
+Serc100M 2021-05-03 09:43:24.972| Drv_Sercon100M BEGIN init
+Serc100M 2021-05-03 09:43:24.972| Drv_Sercon100M END init, ok, t = 0.00s
+DrvCifx  2021-05-03 09:43:24.972| Drv_HilscherCifX BEGIN init
+DrvCifx  2021-05-03 09:43:24.975| Drv_HilscherCifX END init, ok, t = 0.00s
+EcatSCfx 2021-05-03 09:43:24.975| EcatS_HilscherCifX BEGIN init
+EcatSCfx 2021-05-03 09:43:24.975| EcatS_HilscherCifX END init, ok, t = 0.00s
+EipSCfx  2021-05-03 09:43:24.975| EipS_HilscherCifX BEGIN init
+EipSCfx  2021-05-03 09:43:24.975| EipS_HilscherCifX END init, ok, t = 0.00s
+PnioSCfx 2021-05-03 09:43:24.976| PnioS_HilscherCifX BEGIN init
+PnioSCfx 2021-05-03 09:43:24.976| PnioS_HilscherCifX END init, ok, t = 0.00s
+FWU      2021-05-03 09:43:24.976| FirmwareUpdate BEGIN init
+FWU      2021-05-03 09:43:24.978| FirmwareUpdate END init (ok) t = 0.00s
+SOM      2021-05-03 09:43:24.985| SysObjectMan BEGIN init
+SOM      2021-05-03 09:43:24.985| SOM-Tracer initialized: Bufsize 10000, EventMask 0
+AM       2021-05-03 09:43:24.986| AlarmManager BEGIN init
+AM       2021-05-03 09:43:24.986| AlarmManager END init, ok, t = 0.00s
+UOS      2021-05-03 09:43:24.987| CREATE Task "SOM.PCallTask" 7da81108(4746)
+SOM      2021-05-03 09:43:24.988| SysObjectMan END init, ok, t = 0.00s
+StdSvc   2021-05-03 09:43:24.988| StdSvcInterface BEGIN init
+StdSvc   2021-05-03 09:43:24.988| StdSvcInterface END init, ok, t = 0.00s
+SvcTcpIp 2021-05-03 09:43:25.004| SvcCommTcpIp BEGIN init
+SvcTcpIp 2021-05-03 09:43:25.004| SvcCommTcpIp END init, ok, t = 0.00s
+SysRpc   2021-05-03 09:43:25.004| SystemRpc BEGIN init
+SysRpc   2021-05-03 09:43:25.004| SystemRpc END init, ok, t = 0.00s
+SvcComm  2021-05-03 09:43:25.004| SvcComm BEGIN init
+UOS      2021-05-03 09:43:25.005| CREATE Task "SvcCommL1SendTask1" 4368112c(4747)
+UOS      2021-05-03 09:43:25.005| CREATE Task "SvcCommTcpIpNet2000" 4f081132(4748)
+UOS      2021-05-03 09:43:25.105| CREATE Task "SvcCommTcpIpNet2001" 56c81136(4749)
+UOS      2021-05-03 09:43:25.205| CREATE Task "SvcPcServerTcpIpReport2002" 6c181141(4750)
+UOS      2021-05-03 09:43:25.206| CREATE Task "SvcPcServerTcpIpNet2003" 75c81146(4751)
+UOS      2021-05-03 09:43:25.206| CREATE Task "SvcPcServerTcpIpNet2002" 7d88114a(4752)
+UOS      2021-05-03 09:43:25.207| CREATE Task "SvcCommLogMonitor" 0548114e(4753)
+SvcComm  2021-05-03 09:43:25.207| SvcComm END init, ok, t = 0.20s
+UOS      2021-05-03 09:43:25.207| CREATE Task "ServiceTask_2004" 0d081152(0)
+VarSvRpc 2021-05-03 09:43:25.210| VarSvrSysRpc_3.20.0 BEGIN init
+VarSvRpc 2021-05-03 09:43:25.211| VarSvrSysRpc_3.20.0 END init, ok, t = 0.00s
+CatRet   2021-05-03 09:43:25.307| CatalogRetain BEGIN init
+CatRet   2021-05-03 09:43:25.309| CatalogRetain END init, ok, t = 0.00s
+IoDrvMsg 2021-05-03 09:43:25.309| IoDriveMessages BEGIN init
+IoDrvMsg 2021-05-03 09:43:25.309| IoDriveMessages END init, ok, t = 0.00s
+IoBl210  2021-05-03 09:43:25.309| IoBL210 BEGIN init
+IoBl210  2021-05-03 09:43:25.309| IoBL210 END init, ok, t = 0.00s
+IoBl270  2021-05-03 09:43:25.309| IoBL270 BEGIN init
+IoBl270  2021-05-03 09:43:25.309| IoBL270 END init, ok, t = 0.00s
+IoC5     2021-05-03 09:43:25.309| IoC5 BEGIN init
+IoC5     2021-05-03 09:43:25.310| IoC5 END init, ok, t = 0.00s
+IoIm030  2021-05-03 09:43:25.310| IoIm030 BEGIN init
+IoIm030  2021-05-03 09:43:25.310| IoIm030 END init, ok, t = 0.00s
+IoBoard  2021-05-03 09:43:25.310| IoBoard BEGIN init
+IoBoard  2021-05-03 09:43:25.310| IoBoard END init, ok, t = 0.00s
+IoCan    2021-05-03 09:43:25.310| IoCan BEGIN init
+IoCan    2021-05-03 09:43:25.311| IoCan END init, ok, t = 0.00s
+IoCop    2021-05-03 09:43:25.311| IoCanOpenInterface BEGIN init
+UOS      2021-05-03 09:43:25.312| CREATE Task "IO.CANOPEN.PCallTask" 5ff81243(4774)
+UOS      2021-05-03 09:43:25.313| CREATE Task "IO.CANOPEN.AsyncPCallTask" 63d81245(4775)
+IoCop    2021-05-03 09:43:25.313| IoCanOpenInterface END init, ok, t = 0.00s
+IoCpu    2021-05-03 09:43:25.313| IoCpu BEGIN init
+IoCpu    2021-05-03 09:43:25.313| IoCpu END init, ok, t = 0.00s
+IoEcat   2021-05-03 09:43:25.313| IoEtherCAT BEGIN init
+UOS      2021-05-03 09:43:25.315| CREATE Task "IO.ECAT.PCallTask" 7cc812d6(4776)
+UOS      2021-05-03 09:43:25.315| CREATE Task "IO.ECAT.AsyncPCallTask" 00a812d8(4777)
+IoEcat   2021-05-03 09:43:25.315| IoEtherCAT END init, ok, t = 0.00s
+IoExtBus 2021-05-03 09:43:25.315| IoExtBus BEGIN init
+IoExtBus 2021-05-03 09:43:25.315| IoExtBus END init, ok, t = 0.00s
+IoDa300  2021-05-03 09:43:25.316| IoDa300 BEGIN init
+IoDa300  2021-05-03 09:43:25.319| IoDa300 END init, ok, t = 0.00s
+IoMbxGtw 2021-05-03 09:43:25.319| IoMailboxGateway BEGIN init
+IoMbxGtw 2021-05-03 09:43:25.320| IoMailboxGateway END init, ok, t = 0.00s
+IoAds    2021-05-03 09:43:25.320| IoAds BEGIN init
+IoAds    2021-05-03 09:43:25.320| IoAds END init, ok, t = 0.00s
+IoHtKvc  2021-05-03 09:43:25.320| IoHTKvc BEGIN init
+IoHtKvc  2021-05-03 09:43:25.320| IoHTKvc END init, ok, t = 0.00s
+IoHtLd   2021-05-03 09:43:25.320| IoHTLegacyDevices BEGIN init
+IoHtLd   2021-05-03 09:43:25.320| IoHTLegacyDevices END init, ok, t = 0.00s
+IoEKvc   2021-05-03 09:43:25.320| IoEKvc BEGIN init
+IoEKvc   2021-05-03 09:43:25.321| IoEKvc END init, ok, t = 0.00s
+IoKBus   2021-05-03 09:43:25.321| IoKBus BEGIN init
+IoKBus   2021-05-03 09:43:25.321| IoKBus END init, ok, t = 0.00s
+IoKBusBa 2021-05-03 09:43:25.322| IoKBusBase BEGIN init
+IoKBusBa 2021-05-03 09:43:25.322| IoKBusBase END init, ok, t = 0.00s
+IoPanel  2021-05-03 09:43:25.322| IoPanel BEGIN init
+IoPanel  2021-05-03 09:43:25.322| IoPanel END init, ok, t = 0.00s
+IoPci    2021-05-03 09:43:25.323| IoPci BEGIN init
+IoPci    2021-05-03 09:43:25.323| IoPci END init, ok, t = 0.00s
+IoPnioS  2021-05-03 09:43:25.323| IoPnioSlave BEGIN init
+UOS      2021-05-03 09:43:25.323| CREATE Task "IO.PNIOS.PCallTask" 45e81404(4778)
+IoPnioS  2021-05-03 09:43:25.323| IoPnioSlave END init, ok, t = 0.00s
+IoSercBa 2021-05-03 09:43:25.324| IoSercosBase BEGIN init
+UOS      2021-05-03 09:43:25.324| CREATE Task "IO.SERCOS.PCallTask" 4b981449(4779)
+UOS      2021-05-03 09:43:25.325| CREATE Task "IO.SERCOS.AsyncPCallTask" 4f78144b(4780)
+UOS      2021-05-03 09:43:25.325| CREATE Task "IoSercosBase.Event-Task" 5548144e(4781)
+IoSercBa 2021-05-03 09:43:25.325| IoSercosBase END init, ok, t = 0.00s
+IoSercos 2021-05-03 09:43:25.325| IoSercos BEGIN init
+IoSercos 2021-05-03 09:43:25.326| IoSercos END init, ok, t = 0.00s
+IoSio    2021-05-03 09:43:25.326| IoSio BEGIN init
+IoSio    2021-05-03 09:43:25.326| IoSio END init, ok, t = 0.00s
+IoSlot   2021-05-03 09:43:25.326| IoSlotBus BEGIN init
+IoSlot   2021-05-03 09:43:25.326| IoSlotBus END init, ok, t = 0.00s
+IoSsi    2021-05-03 09:43:25.326| IoSsi BEGIN init
+IoSsi    2021-05-03 09:43:25.326| IoSsi END init, ok, t = 0.00s
+IoEcatS  2021-05-03 09:43:25.327| IoEcatSlave BEGIN init
+UOS      2021-05-03 09:43:25.327| CREATE Task "IO.ECATS.PCallTask" 59081492(4782)
+IoEcatS  2021-05-03 09:43:25.327| IoEcatSlave END init, ok, t = 0.00s
+IoEipS   2021-05-03 09:43:25.327| IoEipSlave BEGIN init
+UOS      2021-05-03 09:43:25.328| CREATE Task "IO.EIPS.PCallTask" 7fc814a6(4783)
+IoEipS   2021-05-03 09:43:25.328| IoEipSlave END init, ok, t = 0.00s
+IoScp    2021-05-03 09:43:25.328| IoScp BEGIN init
+IoScp    2021-05-03 09:43:25.328| IoScp END init, ok, t = 0.00s
+IoSem    2021-05-03 09:43:25.329| IoSem BEGIN init
+IoSem    2021-05-03 09:43:25.329| IoSem END init, ok, t = 0.00s
+IoWmSysB 2021-05-03 09:43:25.329| IoWmSysBus BEGIN init
+IoWmSysB 2021-05-03 09:43:25.329| IoWmSysBus END init, ok, t = 0.00s
+IoHwCtrl 2021-05-03 09:43:25.329| IoHwControl BEGIN init
+IoHwCtrl 2021-05-03 09:43:25.329| IoHwControl END init, ok, t = 0.00s
+IO       2021-05-03 09:43:25.329| IOSystem BEGIN init
+UOS      2021-05-03 09:43:25.330| CREATE Task "IO.Param-Task" 550814d2(4784)
+UOS      2021-05-03 09:43:25.330| CREATE Task "IO.Msg-Task" 5ad814d5(4785)
+UOS      2021-05-03 09:43:25.331| CREATE Task "IO.PCallTask" 75d81525(0)
+IO       2021-05-03 09:43:25.332| IoSystem tracer: eventMask=0x0, bufferSize=1024
+UOS      2021-05-03 09:43:25.332| CREATE Task "IO.QuitError-Task" 68281560(4787)
+UOS      2021-05-03 09:43:25.685| CREATE Task "IO.SockServer-Task-7-10240" 75d81d25(4788)
+UOS      2021-05-03 09:43:25.708| CREATE Task "IO.ONBOARD.ETHERNET:1.HTKVC:0.ServerTask" 6d581ead(4789)
+UOS      2021-05-03 09:43:25.857| CREATE Task "IO.IoUpdate-Task" 2e3820df(4792)
+IO       2021-05-03 09:43:25.860| IOSystem END init, ok, t = 0.53s
+ScpSvc   2021-05-03 09:43:25.860| ScpService BEGIN init
+ScpSvc   2021-05-03 09:43:25.861| ScpService END init, ok, t = 0.00s
+MCoreWd  2021-05-03 09:43:25.861| MCoreWorkDistributor BEGIN init
+MCoreWd  2021-05-03 09:43:25.861| MCoreWorkDistributor END init, is initalized = 1
+Xcrt     2021-05-03 09:43:25.861| ExtCodeRt BEGIN init
+Xcrt     2021-05-03 09:43:25.865| ExtCodeRt END init, ok, t = 0.00s
+UOS      2021-05-03 09:43:25.866| CREATE Task "IRT.TIMER1" 4f2820f0(4793)
+IRT      2021-05-03 09:43:25.866| Trace-Output initialized (Default - IRT.traceWord = 0xffffffff)
+IRT      2021-05-03 09:43:25.866| IecRt BEGIN init
+IRT      2021-05-03 09:43:25.866| create <System>
+IRT      2021-05-03 09:43:25.866| System.applPath = /opt/kecontrolapplication/;
+IRT      2021-05-03 09:43:25.866| IRT.applNecessary = 0;
+IRT      2021-05-03 09:43:25.866| IRT.autoStart = 1;
+IRT      2021-05-03 09:43:25.867| IRT.traceWord = 0;
+IRT      2021-05-03 09:43:25.867| IRT.errorQuitTime = 0;
+IRT      2021-05-03 09:43:25.867| IRT.loadFileCheck = 0;
+IRT      2021-05-03 09:43:25.867| IRT.tracerBufferSize = 10000;
+IRT      2021-05-03 09:43:25.867| IRT.tracerEventMask = 0;
+IRT      2021-05-03 09:43:25.867| IRT.userTracerBufferSize = 8192;
+IRT      2021-05-03 09:43:25.867| IRT.userTracerEventMask = 0;
+IRT      2021-05-03 09:43:25.867| IRT.maxEventSize = 2048;
+IRT      2021-05-03 09:43:25.867| Project.projectPath = application/control/ieccontrol/;
+IRT      2021-05-03 09:43:25.869| IecRt END init, ok, t = 0.00s
+TC       2021-05-03 09:43:25.869| TeachControl BEGIN init
+UOS      2021-05-03 09:43:25.887| CREATE Task "TC.Compiler-Task" 10e82154(4794)
+UOS      2021-05-03 09:43:25.888| CREATE Task "TC.Interpreter-Task" 16982199(4795)
+UOS      2021-05-03 09:43:25.906| CREATE Task "TC.Stream-Task" 15f822e3(4796)
+TC       2021-05-03 09:43:25.908| TeachControl END init, ok, t = 0.04s
+UOS      2021-05-03 09:43:25.909| CREATE Task "TC.Rpc-Task" 002823e0(4797)
+UOS      2021-05-03 09:43:25.909| CREATE Task "TC.CheckClients-Task" 040823e2(0)
+IecSAlgo 2021-05-03 09:43:25.910| Trace-Output initialized (IecSAlgo.traceWord = 15)
+IecSAlgo 2021-05-03 09:43:25.910| IecStdAlgorithms BEGIN init
+IecSAlgo 2021-05-03 09:43:25.910| 32000 IEC handles available
+UOS      2021-05-03 09:43:25.911| CREATE Task "IecSAlgo.PCallTask" 195823ed(4799)
+IecSAlgo 2021-05-03 09:43:25.912| Config entry IEC.Memory not found or invalid - no memory reserved for dynamic elements (Value: 0)
+IecSAlgo 2021-05-03 09:43:25.914| IecStdAlgorithms END init, ok, t = 0.00s
+CTRL     2021-05-03 09:43:25.914| ControlLib: ControlLib.Professional BEGIN init
+CTRL     2021-05-03 09:43:25.915| CTRL heap size: 4194304
+CTRL     2021-05-03 09:43:25.916| ControlLib: ControlLib.Professional END init, ok, t = 0.00s
+ODC      2021-05-03 09:43:25.916| ODC BEGIN init
+ODC      2021-05-03 09:43:25.917| ODC END init, ok, t = 0.00s
+TUtl     2021-05-03 09:43:25.917| TechnologyUtilities BEGIN init
+TUtl     2021-05-03 09:43:25.917| TechnologyUtilities END init, ok, t = 0.00s
+UOS      2021-05-03 09:43:25.919| CREATE Task "CatRet-SignalHandler" 1178242b(4800)
+UOS      2021-05-03 09:43:25.945| CREATE Task "SOM.RetainTask" 26c82436(4801)
+UOS      2021-05-03 09:43:25.948| CREATE Task "PlausObserverTask" 3a282440(4802)
+IRT      2021-05-03 09:43:25.949| IEC Application not found
+TC       2021-05-03 09:43:25.960| TeachControl BEGIN load
+RepSys   2021-05-03 09:43:26.081| --------
+RepSys   2021-05-03 09:43:26.081| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:26.081| INFO Ackn (3700/150) 00000000
+RepSys   2021-05-03 09:43:26.081| Project _base.tt / Pass 1
+RepSys   2021-05-03 09:43:26.081| --------
+RepSys   2021-05-03 09:43:29.555| --------
+RepSys   2021-05-03 09:43:29.555| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:29.555| INFO Ackn (3700/150) 00000000
+RepSys   2021-05-03 09:43:29.555| Project _base.tt / Pass 2
+RepSys   2021-05-03 09:43:29.555| --------
+RepSys   2021-05-03 09:43:31.587| --------
+RepSys   2021-05-03 09:43:31.587| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:31.587| INFO Ackn (3700/152) 00000000
+RepSys   2021-05-03 09:43:31.587| 351 files compiled
+RepSys   2021-05-03 09:43:31.587| --------
+TC       2021-05-03 09:43:31.608| TeachControl END load, ok, t = 5.65s
+RepSys   2021-05-03 09:43:31.609| --------
+RepSys   2021-05-03 09:43:31.609| "SLx.Root-Task" 02e80e34
+RepSys   2021-05-03 09:43:31.609| INFO Ackn (2220/120) 35b80167
+RepSys   2021-05-03 09:43:31.609| IO: 'freeze'
+RepSys   2021-05-03 09:43:31.609| --------
+SLx      2021-05-03 09:43:31.610| IoSystem started
+HMS      2021-05-03 09:43:31.610| HmiServer BEGIN init
+UOS      2021-05-03 09:43:31.611| CREATE Task "HMS.WDThread" 22a824b8(4806)
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:31.611| INFO Ackn (2220/300) 340808e2
+RepSys   2021-05-03 09:43:31.611| BL570: Connected
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:31.611| INFO Ackn (2220/300) 1468021c
+RepSys   2021-05-03 09:43:31.611| CP500_Switch: Connected
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:31.611| INFO Ackn (2220/300) 23e80224
+RepSys   2021-05-03 09:43:31.611| FM500: Connected
+RepSys   2021-05-03 09:43:31.611| --------
+UOS      2021-05-03 09:43:31.613| CREATE Task "HMS.SioMonitorThread" 2e4824be(4807)
+RepSys   2021-05-03 09:43:31.613| --------
+RepSys   2021-05-03 09:43:31.613| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:31.613| INFO Ackn (2220/300) 438808ea
+RepSys   2021-05-03 09:43:31.613| DM570: Connected
+RepSys   2021-05-03 09:43:31.613| --------
+HMS      2021-05-03 09:43:31.614| HmiServer END init, ok, t = 0.00s
+UOS      2021-05-03 09:43:31.614| CREATE Task "ServerManager" 3fb824c7(0)
+MS       2021-05-03 09:43:31.616| MeasureStatistic BEGIN init
+UOS      2021-05-03 09:43:31.617| CREATE Task "MS.ManagerTask" 58e824d4(0)
+MS       2021-05-03 09:43:31.617| MeasureStatistic END init, ok, t = 0.00s
+UOS      2021-05-03 09:43:31.617| CREATE Task "MSIL-Manager-Task" 6e3824df(4810)
+Pcb      2021-05-03 09:43:31.644| CPcbProtocolChange::CheckVersion(): eIoSwInfoxxx = 8 not defined
+MC       2021-05-03 09:43:31.744| MotionControl6_49.0.1 BEGIN init (11/13/2020, 6b7d1af58d4ed35)
+UOS      2021-05-03 09:43:31.746| CREATE Task "MC.CalculationTask" 2c182541(0)
+MC       2021-05-03 09:43:31.821| MotionControl6_49.0.1 END init, ok, t = 0.08s
+Ctrl     2021-05-03 09:43:31.860| Loading /opt/kecontrolapplication/application/control/ccontrol/libsepro-periph.so OK, address 0x9afc8000
+KCmpSTV3 2021-05-03 09:43:31.987| Continue from boot state 1
+TP3KTC   2021-05-03 09:43:31.989| P-Call 'IEC.TC.PostEvent' created.
+TP3KTC   2021-05-03 09:43:31.989| P-Call 'IEC.TC.CallFunction' created.
+TP3KTC   2021-05-03 09:43:31.989| P-Call 'IEC.TC.CallMethod' created.
+TP3KRC   2021-05-03 09:43:31.989| Info: Event 'PredictionRequest' created. (hdl=0xA83E2368)
+TP3KRC   2021-05-03 09:43:31.989| MCU update function 'McuMainUpdate' successfully imported.
+TP3KRC   2021-05-03 09:43:31.989| MCU update function 'McuMicroUpdate' successfully imported.
+RepSys   2021-05-03 09:43:32.021| --------
+RepSys   2021-05-03 09:43:32.021| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.021| INFO Ackn (2220/300) 2f080332
+RepSys   2021-05-03 09:43:32.021| SEPRO_INTERFACE: Connected
+RepSys   2021-05-03 09:43:32.021| --------
+KSAreaV3 2021-05-03 09:43:32.154| AllocAreaEvent(DA_INPUT , 16384) - /dev/I - 0x9be87000 (16384)
+KSAreaV3 2021-05-03 09:43:32.154| AllocAreaEvent(DA_OUTPUT, 16384) - /dev/Q - 0x9be83000 (16384)
+KSAreaV3 2021-05-03 09:43:32.154| AllocAreaEvent(DA_MEMORY, 16384) - /dev/M - 0x9be7f000 (16384)
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.181| INFO Ackn (2220/300) 46c80236
+RepSys   2021-05-03 09:43:32.181| SICK: Connected
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.181| INFO Ackn (2220/300) 67b80247
+RepSys   2021-05-03 09:43:32.181| SEPRO_16IO_N4: Connected
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.181| INFO Ackn (2220/300) 7548024e
+RepSys   2021-05-03 09:43:32.181| SEPRO_16IO_N5: Connected
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.181| INFO Ackn (2220/300) 02d80255
+RepSys   2021-05-03 09:43:32.181| SEPRO_16IO_N7: Connected
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.271| INFO Ackn (2220/300) 3d980929
+RepSys   2021-05-03 09:43:32.271| XtrapulsPAC_A1: Connected
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.271| INFO Ackn (2220/300) 44d80a35
+RepSys   2021-05-03 09:43:32.271| XtrapulsPAC_A2: Connected
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.271| INFO Ackn (2220/300) 4c180b41
+RepSys   2021-05-03 09:43:32.271| XtrapulsPAC_A3: Connected
+RepSys   2021-05-03 09:43:32.271| --------
+KSysV3   2021-05-03 09:43:32.324| K_RC.KRcEventHandler_AfterReadWriteIOs: INIT SLOT -2147483648 (Event Handling)!
+KSysV3   2021-05-03 09:43:32.324| K_Base.ExceptionHandler: INIT SLOT -10000 (Event Handling)!
+KSysV3   2021-05-03 09:43:32.325| K_Base.InitSlot_10000: INIT SLOT 10000 (Event Handling)!
+KSysV3   2021-05-03 09:43:32.325| K_AIF.library: INIT SLOT 11000! (Exception Handling)
+KSysV3   2021-05-03 09:43:32.325| K_AIF.library: INIT SLOT 11000! (Event Handling)
+KSysV3   2021-05-03 09:43:32.325| K_AIF.library: INIT SLOT 11000! (StarepCallBack)
+KSysV3   2021-05-03 09:43:32.325| K_MC.library: INIT SLOT 11000! (StarepCallBack)
+KSysV3   2021-05-03 09:43:32.325| K_AIF.library: INIT SLOT 11010 BEGIN!
+TP3KLog  2021-05-03 09:43:32.326| EvtLog AIF_MC_Evt: CREATED
+TP3KLog  2021-05-03 09:43:32.326| K_Log.EventLogger.Starep Callback registered
+KSysV3   2021-05-03 09:43:32.326| K_AIF.library: Logging initialized!
+KSysV3   2021-05-03 09:43:32.326| K_AIF.library: INIT SLOT 11010 END!
+KSysV3   2021-05-03 09:43:32.326| K_TC.KTc_Init: INIT SLOT 11500
+KSysV3   2021-05-03 09:43:32.326| EventInit: PCall "TC/TeachControl/BuildProject" mapped!
+KSysV3   2021-05-03 09:43:32.326| EventInit: PCall "TC/TeachControl/LoadProject" mapped!
+KSysV3   2021-05-03 09:43:32.326| EventInit: PCall "TC/TeachControl/UnloadProject" mapped!
+KSysV3   2021-05-03 09:43:32.327| EventInit: PCall "TC/TeachControl/DestroyProject" mapped!
+KSysV3   2021-05-03 09:43:32.327| EventInit: PCall "TC/StateMgr/Command" mapped!
+KSysV3   2021-05-03 09:43:32.327| EventInit: PCall "TC/TeachControl/GetProjectState" mapped!
+KSysV3   2021-05-03 09:43:32.327| K_TC.StateEventHandler: INIT SLOT 11500 (Event Handling)!
+KSysV3   2021-05-03 09:43:32.330| gMcuPredictionCallbackHandler: Info: PredictionRequest-Event successfully registered.
+KSysV3   2021-05-03 09:43:32.331| K_RC.StateHandler: INIT SLOT 12010 (Event Handling)!
+KSysV3   2021-05-03 09:43:32.331| K_RC.BEGIN_INIT: INIT SLOT 15000
+KSysV3   2021-05-03 09:43:32.332| Global control authority is used
+KSysV3   2021-05-03 09:43:32.332| K_RC.END_INIT: INIT SLOT 15000
+KSysV3   2021-05-03 09:43:32.332| K_RC.KRcEventHandler_CheckStart: INIT SLOT 15000 (Event Handling)!
+KSysV3   2021-05-03 09:43:32.332| K_RC.KRcEventHandler_ReadWriteInputs: INIT SLOT 15000 (Event Handling)!
+KSysV3   2021-05-03 09:43:32.333| .FB_INIT() of Handterminal_S7x
+KSysV3   2021-05-03 09:43:32.333| ## InitInstance SG7X
+KSysV3   2021-05-03 09:43:32.333| SG7X:  Handterminal registered at index 0
+KSysV3   2021-05-03 09:43:32.333| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:0.state", size: 4 @: 2822909152
+KSysV3   2021-05-03 09:43:32.333| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:0.keyMem", size: 64 @: 2822909488
+KSysV3   2021-05-03 09:43:32.334| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:0.ledMem", size: 64 @: 2822909776
+KSysV3   2021-05-03 09:43:32.334| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:0.ledAttrMem", size: 64 @: 2822910064
+KSysV3   2021-05-03 09:43:32.334| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:0.ledControl", size: 1 @: 2822910352
+KSysV3   2021-05-03 09:43:32.334|  Device is used wherever the first standard handterminal is evaluated
+KSysV3   2021-05-03 09:43:32.334| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL.deviceHoldingCA", size: 1 @: 2822910592
+KSysV3   2021-05-03 09:43:32.334| ## InitInstance SG7X done
+KSysV3   2021-05-03 09:43:32.334| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:0.additionalData", size: 2 @: 2822911072
+KSysV3   2021-05-03 09:43:32.335| KSharedMemory: + Shared Memory created: "IEC.SeproRobotData:0", size: 16 @: 2822911360
+KSysV3   2021-05-03 09:43:32.335| #####: CAN_Axis1.FB_INIT(.., FALSE) 0x9ABB714C
+KSysV3   2021-05-03 09:43:32.335| #####: CAN_Axis2.FB_INIT(.., FALSE) 0x9ABB8CF4
+KSysV3   2021-05-03 09:43:32.335| #####: CAN_Axis3.FB_INIT(.., FALSE) 0x9ABBA89C
+KSysV3   2021-05-03 09:43:32.335| K_AIF.library: INIT SLOT 61000!
+KSysV3   2021-05-03 09:43:32.335| K_RC.BEGIN_INIT: INIT SLOT 62000
+KSysV3   2021-05-03 09:43:32.336| 0 InitFbIds: MoveAbs 1, MoveRel 2, Halt 3
+KSysV3   2021-05-03 09:43:32.336| 1 InitFbIds: MoveAbs 4, MoveRel 5, Halt 6
+KSysV3   2021-05-03 09:43:32.336| 2 InitFbIds: MoveAbs 7, MoveRel 8, Halt 9
+KSysV3   2021-05-03 09:43:32.336| InitSingleAxis: Nr of axis: 3
+KSysV3   2021-05-03 09:43:32.336| K_RC.END_INIT: INIT SLOT 62000
+KSysV3   2021-05-03 09:43:32.336| K_RC.KRcEventHandler_BeforeReadWriteIOs: INIT SLOT 2147483647 (Event Handling)!
+KSysV3   2021-05-03 09:43:32.337| #####: CAN_Axis1.Initialize(.., .., 0x9ABC3EDC) 0x9ABB714C
+TP3KLog  2021-05-03 09:43:32.339| SigLog IEC_MotionTask: Offline logger CREATED
+TP3KLog  2021-05-03 09:43:32.342| SigLog IEC_MotionTask: Online logger CREATED
+TP3KLog  2021-05-03 09:43:32.342| K_Log.SignalLogger.StaRepTrigger Callback registered
+TP3KLog  2021-05-03 09:43:32.342| K_Log.SignalLogger.StaRepWrite Callback registered
+TP3KLog  2021-05-03 09:43:32.342| K_Log.Signal.AutoSample Callback registered
+KSysV3   2021-05-03 09:43:32.345| #####: CAN_Axis2.Initialize(.., .., 0x9ABC3F24) 0x9ABB8CF4
+KSysV3   2021-05-03 09:43:32.349| #####: CAN_Axis3.Initialize(.., .., 0x9ABC3F6C) 0x9ABBA89C
+KSysV3   2021-05-03 09:43:32.353| ## Init T150R
+KSysV3   2021-05-03 09:43:32.354| T150R:  Handterminal registered at index 1
+KSysV3   2021-05-03 09:43:32.354| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:1.state", size: 4 @: 2824044704
+KSysV3   2021-05-03 09:43:32.354| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:1.keyMem", size: 64 @: 2824044992
+KSysV3   2021-05-03 09:43:32.354| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:1.ledMem", size: 64 @: 2824045280
+KSysV3   2021-05-03 09:43:32.354| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:1.ledAttrMem", size: 64 @: 2824045568
+KSysV3   2021-05-03 09:43:32.354| KSharedMemory: + Shared Memory created: "IEC.HANDTERMINAL:1.ledControl", size: 1 @: 2824045856
+KSysV3   2021-05-03 09:43:32.355| 1: T150R : T150
+KSysV3   2021-05-03 09:43:32.355| ## Init T150R done
+KSysV3   2021-05-03 09:43:32.355| AXES_GROUP_REF:InitializeAsAll BEGIN
+KSysV3   2021-05-03 09:43:32.355| mAxesGroup.name is: ALLROBOTS
+KSysV3   2021-05-03 09:43:32.355| RcGetSignalLoggerMicroUpd: Logger=2591263536, task=MotionTask
+KSysV3   2021-05-03 09:43:32.355| RcGetSignalLoggerMicroUpd: Detach signal logger auto sampling, task=MotionTask (sampling is done via K_RC)
+TP3KLog  2021-05-03 09:43:32.355| K_Log.Signal.AutoSample Callback unregistered
+KSysV3   2021-05-03 09:43:32.356| INFO: RcInitSwo done
+KSysV3   2021-05-03 09:43:32.356| AXES_GROUP_REF:InitializeAsAll END
+KSysV3   2021-05-03 09:43:32.357| AXES_GROUP_REF:Initialize BEGIN
+KSysV3   2021-05-03 09:43:32.357| mAxesGroup.name is: Success7_Can
+KSysV3   2021-05-03 09:43:32.357| Success7_Can: Found my index at: 0
+KSysV3   2021-05-03 09:43:32.357| Success7_Can: Kinematic registered at idx: 0, number of robots now: 1
+KSysV3   2021-05-03 09:43:32.358| AXES_GROUP_REF:Initialize END Success7_Can
+KSysV3   2021-05-03 09:43:32.359| KSharedMemory: + Shared Memory created: "IEC.TCITF.GVL_HT.SG7x_KairoItf", size: 12 @: 2824099136
+KSysV3   2021-05-03 09:43:32.359| SG7x_KairoItf: Initialize ok!
+KCmpVIV3 2021-05-03 09:43:32.364| Variables for application Application registered.
+RepSys   2021-05-03 09:43:32.364| --------
+RepSys   2021-05-03 09:43:32.364| "CMHooksTask" 18380e3f
+RepSys   2021-05-03 09:43:32.364| INFO Ackn (7512/3) 00000000
+RepSys   2021-05-03 09:43:32.364| Download of application Application successful
+RepSys   2021-05-03 09:43:32.364| --------
+CSRTSV3  2021-05-03 09:43:32.365| Cmp=CmpApp, Class=1, Error=0, Info=22, pszInfo=No retain area in bootproject of application [<app>Application</app>]
+RepSys   2021-05-03 09:43:32.366| --------
+RepSys   2021-05-03 09:43:32.366| "CMHooksTask" 18380e3f
+RepSys   2021-05-03 09:43:32.366| INFO Ackn (7512/7) 00000000
+RepSys   2021-05-03 09:43:32.366| Loading bootproject Application successful
+RepSys   2021-05-03 09:43:32.366| --------
+CSRTSV3  2021-05-03 09:43:32.366| Cmp=CmpApp, Class=1, Error=0, Info=6, pszInfo=Bootproject of application [<app>Application</app>] loaded
+KSAreaV3 2021-05-03 09:43:32.367| Info: Mapping R and RP (33000 bytes) to 0x9B2C8F18
+CSRTSV3  2021-05-03 09:43:32.367| Cmp=CmpRouter, Class=1, Error=0, Info=1, pszInfo=Setting router <instance>0</instance> address to <address>(0000:0b18)</address>
+CSRTSV3  2021-05-03 09:43:32.367| Cmp=CmpRouter, Class=1, Error=0, Info=1, pszInfo=Setting router <instance>1</instance> address to <address>(0064)</address>
+CSRTSV3  2021-05-03 09:43:32.367| Cmp=CmpRouter, Class=1, Error=0, Info=1, pszInfo=Setting router <instance>2</instance> address to <address>(2ddc:ac10:0b18)</address>
+KCmpSTV3 2021-05-03 09:43:32.369| Wait for boot state 2
+KCmpSTV3 2021-05-03 09:43:32.469| Continue from boot state 2
+CSRTSV3  2021-05-03 09:43:32.474| Cmp=CmpApp, Class=1, Error=1, Info=33, pszInfo=Application [<app>Application</app>] denied to start <source>event</source>
+CSRTSV3  2021-05-03 09:43:32.474| Cmp=CmpApp, Class=1, Error=24, Info=39, pszInfo=Application [<app>Application</app>] not started
+RepSys   2021-05-03 09:43:32.474| --------
+RepSys   2021-05-03 09:43:32.474| "CMHooksTask" 18380e3f
+RepSys   2021-05-03 09:43:32.474| INFO Ackn (7512/8) 00000000
+RepSys   2021-05-03 09:43:32.474| Starting bootproject Application successful
+RepSys   2021-05-03 09:43:32.474| --------
+CSRTSV3  2021-05-03 09:43:32.475| Cmp=CM, Class=1, Error=0, Info=34, pszInfo=CODESYS Control ready
+DevSvc   2021-05-03 09:43:32.506| This is the O70 item's Init Controller (dotransition)
+DevSvc   2021-05-03 09:43:32.507| No KeTop O70 configured 1
+SEPRO    2021-05-03 09:43:32.515| INFO    PERIPH_CTR EntryPoint.cpp:54 InitPeriphController - Init parameters module
+
+SEPRO    2021-05-03 09:43:32.542| INFO    SEPRO_PARAMS ParamsTreeList.cpp:209 create - JSON default-setting file /opt/sepro/config/default-settings.json loaded with success
+SEPRO    2021-05-03 09:43:32.546| INFO    SEPRO_PARAMS ParamsTreeList.cpp:225 create - JSON source file /home/sepro/config/configurator.json loaded and merged with success
+SEPRO    2021-05-03 09:43:32.618| INFO    SEPRO_PARAMS ParamsTreeList.cpp:238 create - Check of JSON config /opt/sepro/config/default-settings.json with schema /opt/sepro/config/schemas/sch_params_ref.json success
+SEPRO    2021-05-03 09:43:32.623| INFO    SEPRO_PARAMS treeParams2cfg.cpp:294 generateExpertEntries - Create Expert Entries to /opt/kecontrolapplication/application/control/config/ directory
+SEPRO    2021-05-03 09:43:32.624| INFO    SEPRO_PARAMS treeParams2cfg.cpp:334 generateExpertEntries - Expert Entries is up to date
+SEPRO    2021-05-03 09:43:32.624| INFO    CONTROL    EntryPoint.cpp:172 initSeproParams - Parameters Module Init done
+####################### Start Application #######################
+RepSys   2021-05-03 09:43:32.915| --------
+RepSys   2021-05-03 09:43:32.915| "SLx.Root-Task" 02e80e34
+RepSys   2021-05-03 09:43:32.915| INFO Ackn (2220/120) 35b80167
+RepSys   2021-05-03 09:43:32.915| IO: 'unfreeze'
+RepSys   2021-05-03 09:43:32.915| --------
+TC       2021-05-03 09:43:32.916| TeachControl BEGIN activate
+RepSys   2021-05-03 09:43:32.918| --------
+RepSys   2021-05-03 09:43:32.918| "SLx.Root-Task" 02e80e34
+RepSys   2021-05-03 09:43:32.918| INFO Ackn (3700/282) 00000000
+RepSys   2021-05-03 09:43:32.918| LoadProject _base
+RepSys   2021-05-03 09:43:32.918| --------
+TC       2021-05-03 09:43:32.918| TeachControl END activate, ok, t = 0.00s
+KSysV3   2021-05-03 09:43:32.967| TcStateEventHandler: EVT_PrepareStart - State=STOP
+KSysV3   2021-05-03 09:43:32.968| Callback to activate TC done - TC already in running state
+TC       2021-05-03 09:43:33.053| TC->IEC P-Calls ready!
+TC       2021-05-03 09:43:33.055| IP address: 172.16.11.24
+TC       2021-05-03 09:43:33.055| TeachControl cycle time = 10000us
+TC       2021-05-03 09:43:33.066| RobotControl_4.45.2-AsyncMovement-kuer.4 BEGIN init
+TC       2021-05-03 09:43:33.164| Events are not configured
+TC       2021-05-03 09:43:33.165| ********
+TC       2021-05-03 09:43:33.165| CheckErrors - Update error state
+TC       2021-05-03 09:43:33.165| No errors present
+TC       2021-05-03 09:43:33.165| ********
+TC       2021-05-03 09:43:33.203| Number of robots configured: 1
+TC       2021-05-03 09:43:33.223| Number of robots configured: 1
+TC       2021-05-03 09:43:33.232| Success7_Can: #1 Added 4000:10223622 at [0][0]
+TC       2021-05-03 09:43:33.232| Success7_Can: #2 Added 4000:1168641160 at [0][1]
+TC       2021-05-03 09:43:33.233| Success7_Can: #3 Added 50:10223622 at [0][0]
+TC       2021-05-03 09:43:33.233| Success7_Can: #4 Added 50:1545602592 at [0][1]
+TC       2021-05-03 09:43:33.233| Success7_Can: #5 Added 50:1643120163 at [0][2]
+TC       2021-05-03 09:43:33.233| Success7_Can: #6 Added 50:1708131877 at [0][3]
+TC       2021-05-03 09:43:33.234| Success7_Can: #7 Added 50:1773143591 at [0][4]
+TC       2021-05-03 09:43:33.234| Success7_Can: #8 Added 50:1838155305 at [0][5]
+TC       2021-05-03 09:43:33.234| Success7_Can: #9 Added 50:1903167019 at [0][6]
+TC       2021-05-03 09:43:33.234| Success7_Can: Workspace monitoring deactivated
+TC       2021-05-03 09:43:33.235| Success7_Can: No working range available
+TC       2021-05-03 09:43:33.236| Kinematic directory '/opt/kecontrolapplication/application/control/teachcontrol/Success7_Can' present
+TC       2021-05-03 09:43:33.238| Success7_Can: #10 Added 3700:411576730 at [1][0]
+TC       2021-05-03 09:43:33.239| Success7_Can: Actual object system set to #0/'_base.World'/id=2097154
+TC       2021-05-03 09:43:33.248| CAN_Axis1: moduleName=XtrapulsPAC_A1
+TC       2021-05-03 09:43:33.248| CAN_Axis1: deviceNr=0
+TC       2021-05-03 09:43:33.248| CAN_Axis1: AXIS_IF.AXIS:0
+TC       2021-05-03 09:43:33.248| Success7_Can: #11 Added 50:2079850627 at [0][7]
+TC       2021-05-03 09:43:33.248| Success7_Can: #12 Added 56:2079850627 at [1][0]
+TC       2021-05-03 09:43:33.248|   deviceHdl=2079850627
+TC       2021-05-03 09:43:33.249| CAN_Axis1 (parent): IO.ONBOARD.CAN:0.COPDEVICE:0
+TC       2021-05-03 09:43:33.249|   module=XtrapulsPAC_A1, moduleHdl=1033373993
+TC       2021-05-03 09:43:33.249| Success7_Can: #13 Added 2220:1033373993 at [2][0]
+TC       2021-05-03 09:43:33.249| Success7_Can: #14 Added 2236:1033373993 at [3][0]
+TC       2021-05-03 09:43:33.251| Success7_Can: #15 Added 6353:1033373993 at [6][0]
+TC       2021-05-03 09:43:33.252| Success7_Can: #16 Added 7261:1033373993 at [7][0]
+TC       2021-05-03 09:43:33.252| RC controls CAN_Axis1
+TC       2021-05-03 09:43:33.252| CAN_Axis1_Success7_Can.Init: axisPort interface activated
+MC       2021-05-03 09:43:33.253| Success7_Can: ApplyServo: Joint 0 -> 0; ShMem-Hdl 1622147255, Addr. a0100450
+TC       2021-05-03 09:43:33.255| CAN_Axis2: moduleName=XtrapulsPAC_A2
+TC       2021-05-03 09:43:33.255| CAN_Axis2: deviceNr=0
+TC       2021-05-03 09:43:33.255| CAN_Axis2: AXIS_IF.AXIS:1
+TC       2021-05-03 09:43:33.256| Success7_Can: #17 Added 50:60293321 at [0][1]
+TC       2021-05-03 09:43:33.256| Success7_Can: #18 Added 56:60293321 at [1][0]
+TC       2021-05-03 09:43:33.256|   deviceHdl=60293321
+TC       2021-05-03 09:43:33.256| CAN_Axis2 (parent): IO.ONBOARD.CAN:0.COPDEVICE:1
+TC       2021-05-03 09:43:33.256|   module=XtrapulsPAC_A2, moduleHdl=1155009077
+TC       2021-05-03 09:43:33.256| Success7_Can: #19 Added 2220:1155009077 at [2][1]
+TC       2021-05-03 09:43:33.256| Success7_Can: #20 Added 2236:1155009077 at [3][1]
+TC       2021-05-03 09:43:33.257| Success7_Can: #21 Added 6353:1155009077 at [6][1]
+TC       2021-05-03 09:43:33.257| Success7_Can: #22 Added 7261:1155009077 at [7][1]
+TC       2021-05-03 09:43:33.257| RC controls CAN_Axis2
+TC       2021-05-03 09:43:33.257| CAN_Axis2_Success7_Can.Init: axisPort interface activated
+MC       2021-05-03 09:43:33.259| Success7_Can: ApplyServo: Joint 1 -> 1; ShMem-Hdl 1622147255, Addr. a010047c
+TC       2021-05-03 09:43:33.262| CAN_Axis3: moduleName=XtrapulsPAC_A3
+TC       2021-05-03 09:43:33.262| CAN_Axis3: deviceNr=0
+TC       2021-05-03 09:43:33.263| CAN_Axis3: AXIS_IF.AXIS:2
+TC       2021-05-03 09:43:33.263| Success7_Can: #23 Added 50:188219663 at [0][2]
+TC       2021-05-03 09:43:33.263| Success7_Can: #24 Added 56:188219663 at [1][1]
+TC       2021-05-03 09:43:33.263|   deviceHdl=188219663
+TC       2021-05-03 09:43:33.263| CAN_Axis3 (parent): IO.ONBOARD.CAN:0.COPDEVICE:2
+TC       2021-05-03 09:43:33.263|   module=XtrapulsPAC_A3, moduleHdl=1276644161
+TC       2021-05-03 09:43:33.264| Success7_Can: #25 Added 2220:1276644161 at [2][2]
+TC       2021-05-03 09:43:33.264| Success7_Can: #26 Added 2236:1276644161 at [3][2]
+TC       2021-05-03 09:43:33.264| Success7_Can: #27 Added 6353:1276644161 at [6][2]
+TC       2021-05-03 09:43:33.264| Success7_Can: #28 Added 7261:1276644161 at [7][2]
+TC       2021-05-03 09:43:33.265| RC controls CAN_Axis3
+TC       2021-05-03 09:43:33.265| CAN_Axis3_Success7_Can.Init: axisPort interface activated
+MC       2021-05-03 09:43:33.266| Success7_Can: ApplyServo: Joint 2 -> 2; ShMem-Hdl 1622147255, Addr. a01004a8
+TC       2021-05-03 09:43:33.273| Success7_Can: #29 Added 50:418909363 at [0][3]
+TC       2021-05-03 09:43:33.274| Success7_Can: #30 Added 4000:418909363 at [5][1]
+TC       2021-05-03 09:43:33.274| Success7_Can: #31 Added 50:906497218 at [0][4]
+TC       2021-05-03 09:43:33.274| Success7_Can: #32 Added 4000:906497218 at [5][2]
+TC       2021-05-03 09:43:33.275| Success7_Can: #33 Added 50:1394085073 at [0][5]
+TC       2021-05-03 09:43:33.275| Success7_Can: #34 Added 4000:1394085073 at [5][4]
+TC       2021-05-03 09:43:33.285| Success7_Can: PowerAxis: Start ObservePosition
+TC       2021-05-03 09:43:33.286| Tool-data for Flange not changed
+TC       2021-05-03 09:43:33.286| Success7_Can.jogPath: Change tool 0 -> 3932163
+TC       2021-05-03 09:43:33.321| **************************************************************
+TC       2021-05-03 09:43:33.321| Jogging: Check configuration for Success7_Can
+TC       2021-05-03 09:43:33.321| Jogging: Calculate acceleration ramp with ramp factor 2.000%
+TC       2021-05-03 09:43:33.321|    ! Velocity has to be reduced from 10.0% to 1.5% because of acceleration ramp
+TC       2021-05-03 09:43:33.321| !  Jogging: Acceleration ramp calculated, settings modified (final settings will be deduced after calculation of deceleration ramp)
+TC       2021-05-03 09:43:33.321| Jogging: Calculate deceleration ramp
+TC       2021-05-03 09:43:33.321|    Check dynamic for deceleration ramp during Cartesian jogging
+TC       2021-05-03 09:43:33.321|    ! Max. velo for joint #1 reduced to 488.0 (v_cfg=4000.0) due to configured deceleration
+TC       2021-05-03 09:43:33.321|    ! Max. velo for joint #2 reduced to 732.0 (v_cfg=3000.0) due to configured deceleration
+TC       2021-05-03 09:43:33.321|    ! Max. dece for joint #3 reduced to 8000.0 (d_cfg=8000.0) due to configured jerk
+TC       2021-05-03 09:43:33.321|    ! Max. velo for joint #3 reduced to 976.0 (v_cfg=3000.0) due to limited deceleration
+TC       2021-05-03 09:43:33.321|    Joint 1: Required deceleration (82.0%) to reach configured velocity exceeds configured value (12.0%)
+TC       2021-05-03 09:43:33.321|    Joint 2: Required deceleration (41.0%) to reach configured velocity exceeds configured value (12.0%)
+TC       2021-05-03 09:43:33.321|    Joint 3: Required deceleration (30.7%) to reach configured velocity exceeds configured value (12.0%)
+TC       2021-05-03 09:43:33.322|    Calculate ramp factors for deceleration ramp using minJerk ramp
+TC       2021-05-03 09:43:33.322|       Joint 1: Required deceleration can't be achieved using a minJerk ramp - max=4000.0, req=4615.4
+TC       2021-05-03 09:43:33.322|       Joint 1: Required deceleration for trapez ramp (82.0%) exceeds configured value (12.0%)
+TC       2021-05-03 09:43:33.322|       Joint 2: Required deceleration for minJerkRamp (57.7%) exceeds configured value (12.0%)
+TC       2021-05-03 09:43:33.322|       Joint 3: Required deceleration for minJerkRamp (43.3%) exceeds configured value (12.0%)
+TC       2021-05-03 09:43:33.322|    Calculation of ramp factors for deceleration done, optimal ramp: trapez, ramp factor 6.154%
+TC       2021-05-03 09:43:33.322| !  Configured deceleration increased from 12.0% to 82.0% because of deceleration ramp
+TC       2021-05-03 09:43:33.322|    Reachable velocity due to acceleration ramp (1.53%) is lower than velocity due to deceleration ramp (10.00%) because of deceleration ramp, try to optimize acceleration ramp
+TC       2021-05-03 09:43:33.322|       Calculate reachable velocity with ramp factor 10.000%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 10.000% is 1.40%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 6.000% is 1.47%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 4.000% is 1.50%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 3.000% is 1.51%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 2.500% is 1.52%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 2.250% is 1.52%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 2.125% is 1.53%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 2.062% is 1.53%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 2.031% is 1.53%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 2.016% is 1.53%
+TC       2021-05-03 09:43:33.322|       Reachable velocity due to acceleration ramp with ramp factor 2.008% is 1.53%
+TC       2021-05-03 09:43:33.322|    Best fitting acceleration ramp has ramp factor 2.000%
+TC       2021-05-03 09:43:33.322|    Re-calculate acceleration ramp with best fitting ramp factor 2.000%
+TC       2021-05-03 09:43:33.322|       ! Joint 1: configured velocity (10.0%) not achievable because of acceleration (480.0), v_max=1.5%
+TC       2021-05-03 09:43:33.322|       !   required jerk (2415167.5) to reach acceleration exceeds configured joint limit (1000000.0)
+TC       2021-05-03 09:43:33.322|       !   required acceleration (a_rel=78.5%) exceeds reachable (jerk-limited) acceleration (a_max=12.0%)
+TC       2021-05-03 09:43:33.322|       ! Joint 2: configured velocity (10.0%) not achievable because of acceleration (720.0), v_max=3.1%
+TC       2021-05-03 09:43:33.322|       !   required jerk (1811375.5) to reach acceleration exceeds configured joint limit (1000000.0)
+TC       2021-05-03 09:43:33.322|       !   required acceleration (a_rel=39.2%) exceeds reachable (jerk-limited) acceleration (a_max=12.0%)
+TC       2021-05-03 09:43:33.322|       ! Joint 3: configured velocity (10.0%) not achievable because of acceleration (960.0), v_max=4.1%
+TC       2021-05-03 09:43:33.322|       !   required jerk (1811375.5) to reach acceleration exceeds configured joint limit (1000000.0)
+TC       2021-05-03 09:43:33.322|       !   required acceleration (a_rel=29.4%) exceeds reachable (jerk-limited) acceleration (a_max=12.0%)
+TC       2021-05-03 09:43:33.322|    !  Jogging: Acceleration ramp calculated, settings modified
+TC       2021-05-03 09:43:33.322|    Calculate deceleration ramp again, using reduced velocity (1.53%) from acceleration ramp
+TC       2021-05-03 09:43:33.322|    Check dynamic for deceleration ramp during Cartesian jogging
+TC       2021-05-03 09:43:33.322|    ! Max. velo for joint #1 reduced to 488.0 (v_cfg=4000.0) due to configured deceleration
+TC       2021-05-03 09:43:33.322|    ! Max. velo for joint #2 reduced to 732.0 (v_cfg=3000.0) due to configured deceleration
+TC       2021-05-03 09:43:33.322|    ! Max. dece for joint #3 reduced to 8000.0 (d_cfg=8000.0) due to configured jerk
+TC       2021-05-03 09:43:33.322|    ! Max. velo for joint #3 reduced to 976.0 (v_cfg=3000.0) due to limited deceleration
+TC       2021-05-03 09:43:33.322|    Joint 1: Required deceleration (12.5%) to reach configured velocity exceeds configured value (12.0%)
+TC       2021-05-03 09:43:33.322|    Calculate ramp factors for deceleration ramp using minJerk ramp
+TC       2021-05-03 09:43:33.322|       Joint 1: Required deceleration for minJerkRamp (17.6%) exceeds configured value (12.0%)
+TC       2021-05-03 09:43:33.322|    Calculation of ramp factors for deceleration done, optimal ramp: minJerk
+TC       2021-05-03 09:43:33.322| !  Configured deceleration increased from 12.0% to 17.6% because of deceleration ramp
+TC       2021-05-03 09:43:33.322| !  Jogging: Deceleration ramp calculated, settings modified
+TC       2021-05-03 09:43:33.322| Jogging: Check Cartesian dynamic
+TC       2021-05-03 09:43:33.322| !  Configured Cartesian velocity reduced from 250.0 to 173.3 because of configured deceleration (2000.0)
+TC       2021-05-03 09:43:33.322|    Cartesian jerk set to 1046572.5 stipulated by the acceleration ramp
+TC       2021-05-03 09:43:33.322|    Cartesian orientation jerk set to 543412.7 stipulated by the acceleration ramp
+TC       2021-05-03 09:43:33.322| !  Jogging: Cartesian dynamic check done, settings modified
+TC       2021-05-03 09:43:33.322| Jogging: Configuration check done, using these settings:
+TC       2021-05-03 09:43:33.322| ! velo =   1.5% (cfg =  10.0%)
+TC       2021-05-03 09:43:33.322|   acce =  12.0%
+TC       2021-05-03 09:43:33.322| ! dece =  17.6% (cfg =  12.0%)
+TC       2021-05-03 09:43:33.322|   jerk = 100.0%
+TC       2021-05-03 09:43:33.322| ! cart pos velo =   173.3 (cfg =   250.0)
+TC       2021-05-03 09:43:33.322|   cart pos acce =  2000.0
+TC       2021-05-03 09:43:33.322|   cart pos dece =  2000.0
+TC       2021-05-03 09:43:33.322|   cart pos jerk = 1046572.5
+TC       2021-05-03 09:43:33.322|   cart ori velo =    90.0
+TC       2021-05-03 09:43:33.322|   cart ori acce =  3600.0
+TC       2021-05-03 09:43:33.322|   cart ori dece =  3600.0
+TC       2021-05-03 09:43:33.322|   cart ori jerk = 543412.7
+TC       2021-05-03 09:43:33.322|   acceRamp:    type = Trapez, factor =  2.000%
+TC       2021-05-03 09:43:33.322|   deceRamp:    type = MinimumJerk
+TC       2021-05-03 09:43:33.322|   incrJogRamp: type = MinimumJerk
+TC       2021-05-03 09:43:33.322| **************************************************************
+TC       2021-05-03 09:43:33.322| (printed 80 lines from output buffer)
+TC       2021-05-03 09:43:33.322| Success7_Can: Actual jogging refSys is on object 'World'
+RepSys   2021-05-03 09:43:33.323| --------
+RepSys   2021-05-03 09:43:33.323| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:43:33.323| CLASS_8 Ackn (50/2346) 69b00627
+RepSys   2021-05-03 09:43:33.323| Success7_Can.jogPath: unsupported or not achievable defaultsettings have been corrected
+RepSys   2021-05-03 09:43:33.323| --------
+TC       2021-05-03 09:43:33.324| Success7_Can: McuSetTimeOverride(1,1,1) - ovr was 1
+TC       2021-05-03 09:43:33.325| JointPosCheck deactivated for joint 'CAN_Axis1' (rob.ObserveReference)
+TC       2021-05-03 09:43:33.325| JointPosCheck deactivated for joint 'CAN_Axis2' (rob.ObserveReference)
+TC       2021-05-03 09:43:33.325| JointPosCheck deactivated for joint 'CAN_Axis3' (rob.ObserveReference)
+TC       2021-05-03 09:43:33.334| Success7_Can: Initiate QuickStop on all drives
+TC       2021-05-03 09:43:33.335| RC released control over CAN_Axis1
+TC       2021-05-03 09:43:33.335| CAN_Axis1: Axis-Interface not active
+TC       2021-05-03 09:43:33.335| RC released control over CAN_Axis2
+TC       2021-05-03 09:43:33.335| CAN_Axis2: Axis-Interface not active
+TC       2021-05-03 09:43:33.335| RC released control over CAN_Axis3
+TC       2021-05-03 09:43:33.335| CAN_Axis3: Axis-Interface not active
+TC       2021-05-03 09:43:33.335| Success7_Can: QuickStop on all connected drives completed
+RepSys   2021-05-03 09:43:33.337| --------
+RepSys   2021-05-03 09:43:33.337| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:43:33.337| CLASS_9 Ackn (50/3480) 009c0006
+RepSys   2021-05-03 09:43:33.337| Robot Success7_Can (ROBOT) has been created
+RepSys   2021-05-03 09:43:33.337| --------
+TC       2021-05-03 09:43:33.342| Tool noWp (2) created
+TC       2021-05-03 09:43:33.343| SetupIsActiveInMRFlag: #2 'noWp' (id=99614756, idx=1)
+TC       2021-05-03 09:43:33.355| .ResetOperatorMessage()
+TC       2021-05-03 09:43:33.362| Success7_Can: McuSetTimeOverride(0.15,1,1) - ovr was 1
+TC       2021-05-03 09:43:33.362| SetKvSepro(150) : gS_RobotData[0].SetOverride(0.15) function returns TRUE
+TC       2021-05-03 09:43:33.365| Success7_Can: Init ObserveRefSys chgRob -> '_base.World'
+TC       2021-05-03 09:43:33.366| TV Tool for robot 'Success7_Can' set to _base.Flange (0)
+TC       2021-05-03 09:43:33.366| TV Tool for robot 'Success7_Can' changed to _base.Flange (0)
+TC       2021-05-03 09:43:33.366| Tool-data for Flange not changed
+TC       2021-05-03 09:43:33.366| Success7_Can.jogPath: Change tool 28311567 -> 3932163
+TC       2021-05-03 09:43:33.373| Active jog controller changed from #0 to #611321083
+TC       2021-05-03 09:43:33.374| InitJogDimensions - active controller = #611321083
+TC       2021-05-03 09:43:33.382| Collision monitoring is NOT available
+TC       2021-05-03 09:43:33.385| InitJogDimensions - active controller = #611321083
+TC       2021-05-03 09:43:33.463| SetupIsActiveInMRFlag: #0 'Flange' (id=3932163, idx=1)
+TC       2021-05-03 09:43:33.464| _base.DefaultTool.INIT() while initDone is not set
+TC       2021-05-03 09:43:33.475| RobotControl_4.45.2-AsyncMovement-kuer.4 END init, ok, t = 0.41s
+TC       2021-05-03 09:43:33.475| Wait until PLC application is running ...
+TC       2021-05-03 09:43:33.482| Success7_Can.GetStartablePrograms: No available user flows
+RepSys   2021-05-03 09:43:33.502| --------
+RepSys   2021-05-03 09:43:33.502| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.502| INFO Ackn (3700/150) 00000000
+RepSys   2021-05-03 09:43:33.502| Project _system.tt / Pass 1
+RepSys   2021-05-03 09:43:33.502| --------
+RepSys   2021-05-03 09:43:33.524| --------
+RepSys   2021-05-03 09:43:33.524| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.524| INFO Ackn (3700/150) 00000000
+RepSys   2021-05-03 09:43:33.524| Project _system.tt / Pass 2
+RepSys   2021-05-03 09:43:33.524| --------
+RepSys   2021-05-03 09:43:33.540| --------
+RepSys   2021-05-03 09:43:33.540| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.540| INFO Ackn (3700/152) 00000000
+RepSys   2021-05-03 09:43:33.540| 4 files compiled
+RepSys   2021-05-03 09:43:33.540| --------
+KSysV3   2021-05-03 09:43:33.547| Build TC project _system - ok, t_build=T#48ms
+RepSys   2021-05-03 09:43:33.547| --------
+RepSys   2021-05-03 09:43:33.547| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:33.547| INFO Ackn (3700/282) 00000000
+RepSys   2021-05-03 09:43:33.547| LoadProject _system
+RepSys   2021-05-03 09:43:33.547| --------
+KSysV3   2021-05-03 09:43:33.550| EventHandler_StateChange.EVT_StateChanged: State changed from STOP to RUN
+RepSys   2021-05-03 09:43:33.550| --------
+RepSys   2021-05-03 09:43:33.550| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:33.550| INFO Ackn (7512/1) 00000000
+RepSys   2021-05-03 09:43:33.550| Started application Application
+RepSys   2021-05-03 09:43:33.550| --------
+KSysV3   2021-05-03 09:43:33.551| CAN_Axis1: is updated in "MotionTask" (10000us)
+KSysV3   2021-05-03 09:43:33.551| CAN_Axis2: is updated in "MotionTask" (10000us)
+KSysV3   2021-05-03 09:43:33.551| CAN_Axis3: is updated in "MotionTask" (10000us)
+KSysV3   2021-05-03 09:43:33.552| TaskSynchronizer: Slow Task="MotionTask" (10000us)
+KSysV3   2021-05-03 09:43:33.552| TaskSynchronizer: Fast Task="MotionTask" (10000us)
+KSysV3   2021-05-03 09:43:33.552| TaskSynchronizer: Called from same task: MotionTask
+KSysV3   2021-05-03 09:43:33.552| TaskSynchronizer: Tasks CrossChecked (FastUpdate)
+KSysV3   2021-05-03 09:43:33.552| INFO: All axes of all robots are updated in micro IP task: MotionTask
+KSysV3   2021-05-03 09:43:33.552| TeachControl application is operational now
+KSysV3   2021-05-03 09:43:33.552| StartTime PlcItf (us): 42039998
+TC       2021-05-03 09:43:33.553| PLC application is running
+TC       2021-05-03 09:43:33.553| *** PLC UPDATE CHECK STARTED (cycle time = 10000us - IEC exception = FALSE) ***
+TC       2021-05-03 09:43:33.553| * Current TC time stamp:              42031425us
+TC       2021-05-03 09:43:33.553| * Last PLC time stamp (end of cycle): 42039998us
+TC       2021-05-03 09:43:33.553| *************************
+RepSys   2021-05-03 09:43:33.553| --------
+RepSys   2021-05-03 09:43:33.553| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:43:33.553| CLASS_9 Ackn (50/3450) 00000000
+RepSys   2021-05-03 09:43:33.553| ------------------------- System ready ---------------------------
+RepSys   2021-05-03 09:43:33.553| --------
+TC       2021-05-03 09:43:33.554| JointPosCheck activated for joint 'CAN_Axis1' (rob.ObserveReference)
+TC       2021-05-03 09:43:33.554| JointPosCheck activated for joint 'CAN_Axis2' (rob.ObserveReference)
+TC       2021-05-03 09:43:33.554| JointPosCheck activated for joint 'CAN_Axis3' (rob.ObserveReference)
+TC       2021-05-03 09:43:33.555| ForwKineErrors activated for robot Success7_Can
+TP3KLog  2021-05-03 09:43:33.559| SigLog IEC_CAN_IO: Offline logger CREATED
+TP3KLog  2021-05-03 09:43:33.561| SigLog IEC_CAN_IO: Online logger CREATED
+TP3KLog  2021-05-03 09:43:33.561| K_Log.SignalLogger.StaRepTrigger Callback registered
+TP3KLog  2021-05-03 09:43:33.561| K_Log.SignalLogger.StaRepWrite Callback registered
+TP3KLog  2021-05-03 09:43:33.561| K_Log.Signal.AutoSample Callback registered
+TP3KLog  2021-05-03 09:43:33.561| SigLog IEC_CAN_IO: SignalLogger.TryAttachToTask: Auto sampling attached to CAN_IO
+KSysV3   2021-05-03 09:43:33.562| Error parsing instance path name (no dot): �Io�
+TP3KLog  2021-05-03 09:43:33.562| SigLog IEC_SafetyLoop: Offline logger CREATED
+TP3KLog  2021-05-03 09:43:33.564| SigLog IEC_SafetyLoop: Online logger CREATED
+TP3KLog  2021-05-03 09:43:33.564| K_Log.SignalLogger.StaRepTrigger Callback registered
+TP3KLog  2021-05-03 09:43:33.564| K_Log.SignalLogger.StaRepWrite Callback registered
+TP3KLog  2021-05-03 09:43:33.564| K_Log.Signal.AutoSample Callback registered
+KSysV3   2021-05-03 09:43:33.564| Error parsing instance path name (no dot): �Io�
+TP3KLog  2021-05-03 09:43:33.565| SigLog IEC_SafetyLoop: SignalLogger.TryAttachToTask: Auto sampling attached to SafetyLoop
+TC       2021-05-03 09:43:33.573| RcIdentifyRobot: Robot Success7_Can focused
+TC       2021-05-03 09:43:33.573| Success7_Can: All drives are ready now
+TC       2021-05-03 09:43:33.573| Success7_Can.InterruptAllPrograms: Nothing to interrupt as there are no running flows - Flows active (i.e. interrupted) = 0
+TC       2021-05-03 09:43:33.574| Load robot project '_system.Success7_Can'
+RepSys   2021-05-03 09:43:33.578| --------
+RepSys   2021-05-03 09:43:33.578| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.578| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:43:33.578| Project Success7_Can/_global.tt / Pass 1
+RepSys   2021-05-03 09:43:33.578| --------
+DevSvc   2021-05-03 09:43:33.580| kemro.view.standard DeviceInfo = CP 505/A - "CP 505/A"
+TC       2021-05-03 09:43:33.582| Success7_Can.ResetOperatorMessage()
+RepSys   2021-05-03 09:43:33.608| --------
+RepSys   2021-05-03 09:43:33.608| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.608| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:43:33.608| Project Success7_Can/_global.tt / Pass 2
+RepSys   2021-05-03 09:43:33.608| --------
+RepSys   2021-05-03 09:43:33.628| --------
+RepSys   2021-05-03 09:43:33.628| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.628| INFO Ackn (3700/152) 1888299a
+RepSys   2021-05-03 09:43:33.628| 4 files compiled
+RepSys   2021-05-03 09:43:33.628| --------
+TC       2021-05-03 09:43:33.628| Project Success7_Can is built
+RepSys   2021-05-03 09:43:33.629| --------
+RepSys   2021-05-03 09:43:33.629| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:43:33.629| INFO Ackn (3700/282) 1888299a
+RepSys   2021-05-03 09:43:33.629| LoadProject Success7_Can
+RepSys   2021-05-03 09:43:33.629| --------
+TC       2021-05-03 09:43:33.629| Project _system.Success7_Can is loaded
+TC       2021-05-03 09:43:33.635| Imm1.core2PullPosition2.enable mapping changed
+TC       2021-05-03 09:43:33.635| Imm1.core2PullPosition1.enable mapping changed
+TC       2021-05-03 09:43:33.635| Imm1.core1PullPosition2.enable mapping changed
+TC       2021-05-03 09:43:33.635| Imm1.core1PullPosition1.enable mapping changed
+TC       2021-05-03 09:43:33.636| Imm1.ejectorsBackward.enable mapping changed
+TC       2021-05-03 09:43:33.636| Imm1.ejectorsForward.enable mapping changed
+TC       2021-05-03 09:43:33.636| Arm1Rot2.intermediate Constructor of 'ACTION'
+TC       2021-05-03 09:43:33.636| Arm1Rot2.intermediateOff mapping changed
+TC       2021-05-03 09:43:33.636| Arm1Rot2.intermediateOn mapping changed
+TC       2021-05-03 09:43:33.637| Arm1Rot2.minus mapping changed
+TC       2021-05-03 09:43:33.637| Arm1Rot2.plus mapping changed
+TC       2021-05-03 09:43:33.637| Arm1Rot1.vertical mapping changed
+TC       2021-05-03 09:43:33.637| Arm1Rot1.horizontal mapping changed
+TC       2021-05-03 09:43:33.637| Arm1Rot1 Constructor of 'ACTION'
+TC       2021-05-03 09:43:33.642| Imm1 Check if all is ready to start:
+TC       2021-05-03 09:43:33.642| Imm1 Ask to user if part grip is necessary ?
+TC       2021-05-03 09:43:33.642| Imm1 Ask to user to confirm the simulation of part made ?
+TC       2021-05-03 09:43:33.642| Imm1 Ask to user to confirm without Robot mode ?
+TC       2021-05-03 09:43:33.642| Imm1 is ready to start
+TC       2021-05-03 09:43:33.643| Arm1Rot2 Constructor of 'ACTION'
+TC       2021-05-03 09:43:33.644| Arm1Rot1 mapping changed. Activate is mapped := 'FALSE'. Deactivate is mapped := 'FALSE'.
+TC       2021-05-03 09:43:33.644| Arm1Rot1.Observer() disabled
+TC       2021-05-03 09:43:33.644| Arm1Rot1 mapping changed. Activate is mapped := 'TRUE'. Deactivate is mapped := 'TRUE'.
+TC       2021-05-03 09:43:33.644| ROT 1 : WAIT to capture initial TRUE position
+TC       2021-05-03 09:43:33.646| Arm1Rot2 mapping changed. Activate is mapped := 'FALSE'. Deactivate is mapped := 'FALSE'.
+TC       2021-05-03 09:43:33.647| Arm1Rot2.intermediate mapping changed. Activate is mapped := 'FALSE'. Deactivate is mapped := 'FALSE'.
+TC       2021-05-03 09:43:33.647| Arm1Rot2.Observer() disabled
+TC       2021-05-03 09:43:33.647| Arm1Rot2 mapping changed. Activate is mapped := 'TRUE'. Deactivate is mapped := 'TRUE'.
+TC       2021-05-03 09:43:33.647| Arm1Rot2.intermediate.Observer() disabled
+TC       2021-05-03 09:43:33.647| Arm1Rot2.intermediate mapping changed. Activate is mapped := 'TRUE'. Deactivate is mapped := 'TRUE'.
+TC       2021-05-03 09:43:33.647| ROT 2 : WAIT to capture initial TRUE position
+TC       2021-05-03 09:43:33.652| Tool DefaultTool (1) modified but MC object is in use by 1 robots - release old object later (ID 28311567)
+TC       2021-05-03 09:43:33.652| Tool DefaultTool (1) modified
+TC       2021-05-03 09:43:33.653| SetupIsActiveInMRFlag: #1 'DefaultTool' (id=103546918, idx=1)
+TC       2021-05-03 09:43:33.656| Success7_Can.jogPath: Change tool 3932163 -> 103546918
+TC       2021-05-03 09:43:33.656| Success7_Can: Release Mc-Object for tool (ID 28311567)
+TC       2021-05-03 09:43:33.657| TV Tool for robot 'Success7_Can' changed to Success7_Can.DefaultTool (1)
+TC       2021-05-03 09:43:33.657| Tool-data for DefaultTool not changed
+TC       2021-05-03 09:43:33.662| Robot Tool for robot 'Success7_Can' changed to Success7_Can.DefaultTool (1)
+TC       2021-05-03 09:43:33.676| SetupIsActiveInMRFlag: #1 'DefaultTool' (id=103546918, idx=2)
+TC       2021-05-03 09:43:33.677| Success7_Can: Workspace monitoring activated - areas added
+TC       2021-05-03 09:43:33.683| AREA_BlockMachineBottom.CreateMonitoringLimits
+TC       2021-05-03 09:43:33.683| No joint limits
+TC       2021-05-03 09:43:33.683| No cart limits
+TC       2021-05-03 09:43:33.687| AREA_BlockMachine.CreateMonitoringLimits
+TC       2021-05-03 09:43:33.687| No joint limits
+TC       2021-05-03 09:43:33.687| No cart limits
+TC       2021-05-03 09:43:33.703| AREA_ZBD1.CreateMonitoringLimits
+TC       2021-05-03 09:43:33.703| No joint limits
+TC       2021-05-03 09:43:33.703| No cart limits
+SEPRO    2021-05-03 09:43:33.710| INFO    PERIPH_CTR EntryPoint.cpp:68 StartPeriphController - Start all peripheral
+
+SEPRO    2021-05-03 09:43:33.710| INFO    PERIPH_CTR EntryPoint.cpp:94 initSeproDevices - Initialize all SEPRO devices...
+TC       2021-05-03 09:43:33.714| AREA_BHM1.CreateMonitoringLimits
+TC       2021-05-03 09:43:33.714| No joint limits
+TC       2021-05-03 09:43:33.714| No cart limits
+SEPRO    2021-05-03 09:43:33.720| INFO    PERIPH_CTR EntryPoint.cpp:129 initSeproDevices - Found Interface device SEPRO_INTERFACE at 0x7E
+SEPRO    2021-05-03 09:43:33.720| INFO    PERIPH_CTR PeriphController.cpp:125 deviceAdd - Search device SEPRO_INTERFACE for intitialization...
+SEPRO    2021-05-03 09:43:33.720| INFO    PERIPH_CTR CanOpen_Device.cpp:113 init - Device  SEPRO_INTERFACE status 4B3
+SEPRO    2021-05-03 09:43:33.720| ERROR   PERIPH_CTR CanOpen_Device.cpp:504 getDeviceType - Get device type failed on  : 0
+SEPRO    2021-05-03 09:43:33.720| INFO    PERIPH_CTR CanOpen_Device.cpp:117 init - Device SEPRO_INTERFACE unknown type
+SEPRO    2021-05-03 09:43:33.720| ERROR   PERIPH_CTR PeriphController.cpp:154 deviceAdd - Device SEPRO_INTERFACE not found
+SEPRO    2021-05-03 09:43:33.720| INFO    PERIPH_CTR PeriphController.cpp:247 dump - ================================== SEPRO devices list =======================================
+SEPRO    2021-05-03 09:43:33.720| INFO    PERIPH_CTR PeriphController.cpp:283 dump - ==========================================================================================
+SEPRO    2021-05-03 09:43:33.720| INFO    PERIPH_CTR PeriphController_checkDevice.cpp:51 checkAllDevicesToUpdate - =================================== SEPRO check all devices to update applicative firmware =======================================
+SEPRO    2021-05-03 09:43:33.720| INFO    PERIPH_CTR PeriphController_checkDevice.cpp:118 checkAllDevicesToUpdate - ==========================================================================================
+TC       2021-05-03 09:43:33.726| AREA_BH1.CreateMonitoringLimits
+TC       2021-05-03 09:43:33.726| No joint limits
+TC       2021-05-03 09:43:33.726| No cart limits
+TC       2021-05-03 09:43:33.737| AREA_AM1.CreateMonitoringLimits
+TC       2021-05-03 09:43:33.742| No joint limits
+TC       2021-05-03 09:43:33.742| No cart limits
+TC       2021-05-03 09:43:33.747| Project _system.Success7_Can is ready
+TC       2021-05-03 09:43:33.752| Global for Success7_Can is ready
+DevSvc   2021-05-03 09:43:33.766| started civetweb debug process with pid 4875
+SEPRO    2021-05-03 09:43:34.405| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 09:43:34.623| ********************************************************************************
+TC       2021-05-03 09:43:34.623| Control authority changed to 192.168.1.4_SIM_HtEx_KAIROEdit
+TC       2021-05-03 09:43:34.623|    This is Teachview simulation 'HT_EXPERT' running on 192.168.1.4
+TC       2021-05-03 09:43:34.623| ********************************************************************************
+TC       2021-05-03 09:43:34.623| Device #0: Control authority for application confirmed <192.168.1.4_SIM_HtEx_KAIROEdit>, user=KAIROEdit
+TC       2021-05-03 09:43:34.624| Device #1: Control authority for application confirmed <192.168.1.4_SIM_HtEx_KAIROEdit>, user=KAIROEdit
+Error: Could not find or load main class com.keba.kemro.kvs.control.KvsApplication
+DevSvc   2021-05-03 09:43:36.034| javaExitCodeNr:  1    PID:  4866
+RepSys   2021-05-03 09:43:37.522| --------
+RepSys   2021-05-03 09:43:37.522| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:37.522| INFO Ackn (2220/150) 6438017f
+RepSys   2021-05-03 09:43:37.522| T150R: Hardware not found
+RepSys   2021-05-03 09:43:37.522| --------
+KSysV3   2021-05-03 09:43:38.553| XSetMotorParams: CAN_Axis3 - Motor type not available
+KSysV3   2021-05-03 09:43:38.554| XSetMotorParams: CAN_Axis1 - Motor type not available
+KSysV3   2021-05-03 09:43:38.554| XSetMotorParams: CAN_Axis2 - Motor type not available
+CSRTSV3  2021-05-03 09:43:51.529| Cmp=CmpGwCommDrvTcp, Class=1, Error=0, Info=0, pszInfo=GWCommDrvTCP: gateway reachable at <address>0.0.0.0:1217</address>
+UOS      2021-05-03 09:43:57.964| CREATE Task "HMS.SystemServer_0003" 75482a4e(0)
+UOS      2021-05-03 09:43:57.974| DELETE Task 75482a4e
+RepSys   2021-05-03 09:44:01.562| --------
+RepSys   2021-05-03 09:44:01.562| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:44:01.562| INFO Ackn (2220/300) 3748022e
+RepSys   2021-05-03 09:44:01.562| Interface_board: Connected
+RepSys   2021-05-03 09:44:01.562| --------
+TC       2021-05-03 09:44:09.219| RcIdentifyRobot: No dynamic model available for robot Success7_Can
+TC       2021-05-03 09:44:09.312| RcIdentifyRobot: Robot Success7_Can focused
+SEPRO    2021-05-03 09:44:39.940| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 09:44:39.947| INFO    CONTROL    progCatalog.cpp:68 getCatalog - getCatalog
+SEPRO    2021-05-03 09:44:40.286| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 09:44:40.291| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 09:44:40.345| INFO    CONTROL    progCatalog.cpp:68 getCatalog - getCatalog
+SEPRO    2021-05-03 09:44:42.951| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 09:44:42.958| Success7_Can: McuSetTimeOverride(1,1,1) - ovr was 0.15
+TC       2021-05-03 09:44:42.958| SetKvSepro(1000) : gS_RobotData[0].SetOverride(1) function returns TRUE
+SEPRO    2021-05-03 09:44:44.629| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 09:44:46.443| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 09:44:46.455| gS_RobotData[0]: Change operation mode from '4' to '2'
+TC       2021-05-03 09:44:46.462| Success7_Can.InterruptAllPrograms: Nothing to interrupt as there are no running flows - Flows active (i.e. interrupted) = 0
+TC       2021-05-03 09:44:46.472| Success7_Can.ResetOperatorMessage()
+SEPRO    2021-05-03 09:44:48.995| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 09:44:49.006| INFO    CONTROL    production_commander.cpp:950 em_loadGlobal - em_loadGlobal
+SEPRO    2021-05-03 09:44:49.006| INFO    CONTROL    production_commander.cpp:861 em_unloadProgram - Program ID is null
+SEPRO    2021-05-03 09:44:49.008| NOTICE  CONTROL    sstAstCreator.cpp:344 readRobot - Program[global] Unrecognized SubProgram type : global.sst.d
+RepSys   2021-05-03 09:44:49.014| --------
+RepSys   2021-05-03 09:44:49.014| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:44:49.014| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:44:49.014| Project Success7_Can/SEPRO_global.tt / Pass 1
+RepSys   2021-05-03 09:44:49.014| --------
+RepSys   2021-05-03 09:44:49.015| --------
+RepSys   2021-05-03 09:44:49.015| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:44:49.015| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:44:49.015| Project Success7_Can/SEPRO_global.tt / Pass 2
+RepSys   2021-05-03 09:44:49.015| --------
+RepSys   2021-05-03 09:44:49.015| --------
+RepSys   2021-05-03 09:44:49.015| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:44:49.015| INFO Ackn (3700/152) 1888299a
+RepSys   2021-05-03 09:44:49.015| 1 files compiled
+RepSys   2021-05-03 09:44:49.015| --------
+RepSys   2021-05-03 09:44:49.017| --------
+RepSys   2021-05-03 09:44:49.017| "SystemRpc.T-16" 61e82a44
+RepSys   2021-05-03 09:44:49.017| INFO Ackn (3700/282) 1888299a
+RepSys   2021-05-03 09:44:49.017| LoadProject SEPRO_global
+RepSys   2021-05-03 09:44:49.017| --------
+SEPRO    2021-05-03 09:44:49.030| INFO    CONTROL    kairoProgramMgr.cpp:425 loadProgramForRobot - exeUnitStatus.line returned true with status : Loaded in 10 ms
+SEPRO    2021-05-03 09:44:49.030| INFO    CONTROL    production_commander.cpp:975 em_loadGlobal - em_loadGlobal - ret=1
+TC       2021-05-03 09:44:49.038| Request Task 'initRobot' accepted
+TC       2021-05-03 09:44:49.038| Execute Task 'initRobot'
+TC       2021-05-03 09:44:49.038| Success7_Can.InterruptAllPrograms: Nothing to interrupt as there are no running flows - Flows active (i.e. interrupted) = 0
+TC       2021-05-03 09:44:49.039| Success7_Can.StopAllPrograms: Nothing to stop as there are no active flows
+TC       2021-05-03 09:44:49.039| All Programs interrupted and stopped
+TC       2021-05-03 09:44:49.039| gS_RobotData[0]: Change operation mode from '2' to '1'
+TC       2021-05-03 09:44:49.044| Init motion Done
+TC       2021-05-03 09:44:49.044| Verify Override settings, if kv_old=1000 > maxKv=150
+TC       2021-05-03 09:44:49.045| Success7_Can: McuSetTimeOverride(0.15,1,1) - ovr was 1
+TC       2021-05-03 09:44:49.045| SetKvSepro(150) : gS_RobotData[0].SetOverride(0.15) function returns TRUE
+RepSys   2021-05-03 09:44:49.045| --------
+RepSys   2021-05-03 09:44:49.045| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:49.045| INFO Ackn (3700/284) 1888299a
+RepSys   2021-05-03 09:44:49.045| StartProgram axes_init
+RepSys   2021-05-03 09:44:49.045| --------
+TC       2021-05-03 09:44:49.046| Success7_Can.SetOperatorMessage(0, , , , )
+TC       2021-05-03 09:44:49.046| DEBUG - opMsgId < 0 - SetOperatorMessage(autoInit_running)
+TC       2021-05-03 09:44:49.046| Success7_Can.SEPRO_global.axes_init loaded
+TC       2021-05-03 09:44:49.046| Success7_Can.SEPRO_global.axes_init wait for program finished
+TC       2021-05-03 09:44:49.047| Started callstackObserver(0) for 'axes_init'
+TC       2021-05-03 09:44:49.047| Success7_Can.SetOperatorMessage(0, , , , )
+TC       2021-05-03 09:44:49.047| DEBUG - opMsgId < 0 - SetOperatorMessage(autoInit_pressStart)
+TC       2021-05-03 09:44:49.047| Success7_Can: ObserveStepMode: Step mode mapping changed
+TC       2021-05-03 09:44:49.047| Success7_Can.InterruptAllPrograms: Nothing to interrupt as there are no running flows - Flows active (i.e. interrupted) = 1
+TC       2021-05-03 09:44:49.048| Success7_Can: ObserveStepMode: chg = TRUE
+TC       2021-05-03 09:44:49.052| Success7_Can.SetOperatorMessage(11, , , , )
+TC       2021-05-03 09:44:49.052| DEBUG - SetOperatorMessage(autoInit_pressStart)
+TC       2021-05-03 09:44:49.147| Success7_Can.GetStartablePrograms: Available user flows (active/running) = 1/0
+TC       2021-05-03 09:44:49.147| Success7_Can.GetStartablePrograms: Starting flow iteration
+TC       2021-05-03 09:44:49.148| Success7_Can.GetStartablePrograms: Flow iteration done
+SEPRO    2021-05-03 09:44:50.760| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 09:44:50.782| ActivateDeactivateDrives
+TC       2021-05-03 09:44:50.842| RC controls CAN_Axis3
+TC       2021-05-03 09:44:50.842| RC controls CAN_Axis2
+TC       2021-05-03 09:44:50.843| RC controls CAN_Axis1
+TC       2021-05-03 09:44:50.892| Success7_Can: New motion mode <Stop> requested, actual mode <StopJoints>
+TC       2021-05-03 09:44:50.893| Success7_Can: Switch from motion mode <StopJoints> to <Stop> initiated
+TC       2021-05-03 09:44:50.893| Success7_Can: Local repos rejected for joint #1 (delta > maxRetractionTolerance (1400 > 2))
+RepSys   2021-05-03 09:44:50.893| --------
+RepSys   2021-05-03 09:44:50.893| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:50.893| CLASS_9 Ackn (50/3451) 009c0006
+RepSys   2021-05-03 09:44:50.893| Success7_Can activated
+RepSys   2021-05-03 09:44:50.893| --------
+TC       2021-05-03 09:44:50.894| Drives are ON
+TC       2021-05-03 09:44:50.902| Success7_Can.GetStartablePrograms: Available user flows (active/running) = 1/0
+TC       2021-05-03 09:44:50.902| Success7_Can.GetStartablePrograms: Starting flow iteration
+TC       2021-05-03 09:44:50.903| Success7_Can.GetStartablePrograms: Flow iteration done
+TC       2021-05-03 09:44:50.903| Start-key pressed, start program 'Success7_Can.SEPRO_global.axes_init' (hdl: 81793556)
+TC       2021-05-03 09:44:50.903| Success7_Can: Switch to motion mode <Stop> succeeded
+TC       2021-05-03 09:44:50.903| Success7_Can.SetOperatorMessage(10, , , , )
+TC       2021-05-03 09:44:50.903| DEBUG - SetOperatorMessage(autoInit_running)
+TC       2021-05-03 09:44:50.905| Success7_Can: New motion mode <Auto> requested, actual mode <Stop>
+TC       2021-05-03 09:44:50.905| Success7_Can: Switch from motion mode <Stop> to <Auto> initiated
+TC       2021-05-03 09:44:50.913| Restore tool for robot 'Success7_Can' to Success7_Can.DefaultTool (1)
+TC       2021-05-03 09:44:50.913| Success7_Can: Set actual refSys on object 'World'
+TC       2021-05-03 09:44:50.913| Success7_Can.progPath.Reset: refSys reset to defaults because of usePersistentPathSettings=false
+TC       2021-05-03 09:44:50.942| Success7_Can: Switch to motion mode <Auto> succeeded
+TC       2021-05-03 09:44:50.943| ######################################## on up PAS currentStep
+TC       2021-05-03 09:44:50.943| axes_init registered to callstack
+TC       2021-05-03 09:44:50.943| axes_init.Step(-1) execute Motion
+TC       2021-05-03 09:44:50.943| No Teach
+TC       2021-05-03 09:44:50.945| Success7_Can: Active request for motion mode <Auto> aborted by new request for motion mode <ShutDown>
+TC       2021-05-03 09:44:50.945| Success7_Can: Switch from motion mode <Auto> to <ShutDown> initiated
+TC       2021-05-03 09:44:50.945| Success7_Can: McuStopJoints/McuStopMicroIP: use default stop factors
+TC       2021-05-03 09:44:50.962| Success7_Can: Switch to motion mode <ShutDown> succeeded
+TC       2021-05-03 09:44:51.003| Success7_Can: Workspace monitoring deactivated
+TC       2021-05-03 09:44:51.003| JointPosCheck deactivated for joint 'CAN_Axis3' (rob.ObserveReference)
+TC       2021-05-03 09:44:51.003| Success7_Can: Workspace monitoring deactivated
+TC       2021-05-03 09:44:51.003| ForwKineErrors deactivated for robot Success7_Can
+TC       2021-05-03 09:44:51.005| Success7_Can.GetStartablePrograms: Available user flows (active/running) = 1/1
+TC       2021-05-03 09:44:51.005| Success7_Can.GetStartablePrograms: Starting flow iteration
+TC       2021-05-03 09:44:51.006| Success7_Can.GetStartablePrograms: Flow iteration done
+TC       2021-05-03 09:44:51.022| Success7_Can: Clear for Success7_Can.progPath
+TC       2021-05-03 09:44:51.102| Success7_Can: New motion mode <Stop> requested, actual mode <ShutDown>
+TC       2021-05-03 09:44:51.103| Success7_Can: Switch from motion mode <ShutDown> to <Stop> initiated
+TC       2021-05-03 09:44:51.103| Success7_Can: New motion mode <Auto> requested, actual mode <ShutDown>
+TC       2021-05-03 09:44:51.103| Success7_Can: Active request for motion mode <Stop> aborted by new request for motion mode <Auto>
+TC       2021-05-03 09:44:51.103| Success7_Can: Switch from motion mode <ShutDown> to <Auto> initiated
+TC       2021-05-03 09:44:51.142| Success7_Can: Switch to motion mode <Auto> succeeded
+RepSys   2021-05-03 09:44:51.143| --------
+RepSys   2021-05-03 09:44:51.143| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:51.143| CLASS_9 Ackn (50/3415) 0b38010f
+RepSys   2021-05-03 09:44:51.143| Drive CAN_Axis3 referenced (Success7_Can.SEPRO_global.axes_init:7)
+RepSys   2021-05-03 09:44:51.143| --------
+TC       2021-05-03 09:44:51.152| Segment 'axes_init Move(..execData.axisPos.a)' #16#07FC_002F appended
+TC       2021-05-03 09:44:51.152| Success7_Can.progPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 09:44:51.152| Success7_Can.progPath.AppendSegment.pathStartPos.ReleaseDbObject(): Object 132120622 released
+TC       2021-05-03 09:44:51.153| Success7_Can.itf.MoveKin.dynCleanup.Finish: Calling mapped function to clean up
+SEPRO    2021-05-03 09:44:51.181| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 09:44:51.182| Segment #16#07FC_002F is active
+TC       2021-05-03 09:44:53.862| Time for segment #16#07FC_002F = 2679.65ms
+TC       2021-05-03 09:44:53.862| Time for last movement = 2679.65ms
+TC       2021-05-03 09:44:53.863| Success7_Can: Workspace monitoring activated
+TC       2021-05-03 09:44:53.863| JointPosCheck activated for joint 'CAN_Axis3' (rob.ObserveReference)
+TC       2021-05-03 09:44:53.863| Success7_Can: Workspace monitoring activated
+TC       2021-05-03 09:44:53.863| ForwKineErrors activated for robot Success7_Can
+TC       2021-05-03 09:44:53.884| Set axes_init.Step -1 to 0
+TC       2021-05-03 09:44:53.884| ######################################## on up PAS currentStep
+TC       2021-05-03 09:44:53.885| axes_init.Step(0) execute Motion
+TC       2021-05-03 09:44:53.885| No Teach
+TC       2021-05-03 09:44:53.886| Success7_Can: Active request for motion mode <Auto> aborted by new request for motion mode <ShutDown>
+TC       2021-05-03 09:44:53.886| Success7_Can: Switch from motion mode <Auto> to <ShutDown> initiated
+TC       2021-05-03 09:44:53.886| Success7_Can: Path position saved
+TC       2021-05-03 09:44:53.886| Success7_Can: McuStopJoints/McuStopMicroIP: use default stop factors
+TC       2021-05-03 09:44:53.902| Success7_Can: Switch to motion mode <ShutDown> succeeded
+TC       2021-05-03 09:44:53.943| Success7_Can: Workspace monitoring deactivated
+TC       2021-05-03 09:44:53.943| JointPosCheck deactivated for joint 'CAN_Axis1' (rob.ObserveReference)
+TC       2021-05-03 09:44:53.943| Success7_Can: Workspace monitoring deactivated
+TC       2021-05-03 09:44:53.943| ForwKineErrors deactivated for robot Success7_Can
+TC       2021-05-03 09:44:53.962| Success7_Can: Clear for Success7_Can.progPath
+TC       2021-05-03 09:44:54.043| Success7_Can: New motion mode <Stop> requested, actual mode <ShutDown>
+TC       2021-05-03 09:44:54.043| Success7_Can: Switch from motion mode <ShutDown> to <Stop> initiated
+TC       2021-05-03 09:44:54.043| Success7_Can: New motion mode <Auto> requested, actual mode <ShutDown>
+TC       2021-05-03 09:44:54.043| Success7_Can: Active request for motion mode <Stop> aborted by new request for motion mode <Auto>
+TC       2021-05-03 09:44:54.043| Success7_Can: Switch from motion mode <ShutDown> to <Auto> initiated
+TC       2021-05-03 09:44:54.082| Success7_Can: Switch to motion mode <Auto> succeeded
+RepSys   2021-05-03 09:44:54.083| --------
+RepSys   2021-05-03 09:44:54.083| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:54.083| CLASS_9 Ackn (50/3415) 7bf80083
+RepSys   2021-05-03 09:44:54.083| Drive CAN_Axis1 referenced (Success7_Can.SEPRO_global.axes_init:11)
+RepSys   2021-05-03 09:44:54.083| --------
+TC       2021-05-03 09:44:54.085| Segment 'axes_init Move(..execData.axisPos.a)' #16#08F4_0035 appended
+TC       2021-05-03 09:44:54.085| Success7_Can.progPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 09:44:54.085| Success7_Can.progPath.AppendSegment.pathStartPos.ReleaseDbObject(): Object 148373556 released
+TC       2021-05-03 09:44:54.085| Success7_Can.itf.MoveKin.dynCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 09:44:54.112| Success7_Can: Workspace monitoring activated
+TC       2021-05-03 09:44:54.112| JointPosCheck activated for joint 'CAN_Axis1' (rob.ObserveReference)
+TC       2021-05-03 09:44:54.113| Success7_Can: Workspace monitoring activated
+TC       2021-05-03 09:44:54.113| ForwKineErrors activated for robot Success7_Can
+TC       2021-05-03 09:44:54.134| Set axes_init.Step 0 to 1
+TC       2021-05-03 09:44:54.134| ######################################## on up PAS currentStep
+TC       2021-05-03 09:44:54.134| axes_init.Step(1) execute Motion
+TC       2021-05-03 09:44:54.135| No Teach
+TC       2021-05-03 09:44:54.136| Success7_Can: Active request for motion mode <Auto> aborted by new request for motion mode <ShutDown>
+TC       2021-05-03 09:44:54.136| Success7_Can: Switch from motion mode <Auto> to <ShutDown> initiated
+TC       2021-05-03 09:44:54.136| Success7_Can: Path position saved
+TC       2021-05-03 09:44:54.136| Success7_Can: McuStopJoints/McuStopMicroIP: use default stop factors
+TC       2021-05-03 09:44:54.152| Success7_Can: Switch to motion mode <ShutDown> succeeded
+TC       2021-05-03 09:44:54.193| Success7_Can: Workspace monitoring deactivated
+TC       2021-05-03 09:44:54.193| JointPosCheck deactivated for joint 'CAN_Axis2' (rob.ObserveReference)
+TC       2021-05-03 09:44:54.193| Success7_Can: Workspace monitoring deactivated
+TC       2021-05-03 09:44:54.193| ForwKineErrors deactivated for robot Success7_Can
+TC       2021-05-03 09:44:54.212| Success7_Can: Clear for Success7_Can.progPath
+TC       2021-05-03 09:44:54.292| Success7_Can: New motion mode <Stop> requested, actual mode <ShutDown>
+TC       2021-05-03 09:44:54.292| Success7_Can: Switch from motion mode <ShutDown> to <Stop> initiated
+TC       2021-05-03 09:44:54.293| Success7_Can: New motion mode <Auto> requested, actual mode <ShutDown>
+TC       2021-05-03 09:44:54.293| Success7_Can: Active request for motion mode <Stop> aborted by new request for motion mode <Auto>
+TC       2021-05-03 09:44:54.293| Success7_Can: Switch from motion mode <ShutDown> to <Auto> initiated
+TC       2021-05-03 09:44:54.332| Success7_Can: Switch to motion mode <Auto> succeeded
+RepSys   2021-05-03 09:44:54.333| --------
+RepSys   2021-05-03 09:44:54.333| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:54.333| CLASS_9 Ackn (50/3415) 039800c9
+RepSys   2021-05-03 09:44:54.333| Drive CAN_Axis2 referenced (Success7_Can.SEPRO_global.axes_init:15)
+RepSys   2021-05-03 09:44:54.333| --------
+TC       2021-05-03 09:44:54.335| Segment 'axes_init Move(..execData.axisPos.a)' #16#09EC_003B appended
+TC       2021-05-03 09:44:54.335| Success7_Can.progPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 09:44:54.335| Success7_Can.progPath.AppendSegment.pathStartPos.ReleaseDbObject(): Object 164626490 released
+TC       2021-05-03 09:44:54.335| Success7_Can.itf.MoveKin.dynCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 09:44:54.362| Segment #16#09EC_003B is active
+TC       2021-05-03 09:44:57.042| Time for segment #16#09EC_003B = 2679.64ms
+TC       2021-05-03 09:44:57.042| Time for last movement = 2679.64ms
+TC       2021-05-03 09:44:57.043| Success7_Can: Workspace monitoring activated
+TC       2021-05-03 09:44:57.043| JointPosCheck activated for joint 'CAN_Axis2' (rob.ObserveReference)
+TC       2021-05-03 09:44:57.043| Success7_Can: Workspace monitoring activated
+TC       2021-05-03 09:44:57.043| ForwKineErrors activated for robot Success7_Can
+TC       2021-05-03 09:44:57.064| Set axes_init.Step 1 to 2
+TC       2021-05-03 09:44:57.066| Stopped callstackObserver(0) for 'axes_init'
+TC       2021-05-03 09:44:57.067| Success7_Can: New motion mode <Stop> requested, actual mode <Auto>
+TC       2021-05-03 09:44:57.067| Success7_Can: stop mode: ALLAXIS - stop move and stop joints
+TC       2021-05-03 09:44:57.067| Success7_Can: Active request for motion mode <Auto> aborted by new request for motion mode <Stop>
+TC       2021-05-03 09:44:57.067| Success7_Can: Switch from motion mode <Auto> to <Stop> initiated
+TC       2021-05-03 09:44:57.067| Success7_Can: McuStopMove: Use default stop factors
+TC       2021-05-03 09:44:57.067| Success7_Can: Path position saved
+TC       2021-05-03 09:44:57.068| Success7_Can: ObserveStepMode: Step mode mapping changed
+TC       2021-05-03 09:44:57.072| Success7_Can: Switch to motion mode <Stop> succeeded
+TC       2021-05-03 09:44:57.072| Success7_Can: Stopmode: ALLAXIS - joints stopped on path
+TC       2021-05-03 09:44:57.073| Success7_Can: New motion mode <Stop> requested, actual mode <Stop>
+TC       2021-05-03 09:44:57.076| Init motion Done
+TC       2021-05-03 09:44:57.076| Success7_Can: RELEASE on Success7_Can.progPath
+TC       2021-05-03 09:44:57.076| Success7_Can: Robot released, tool and refSys reset to defaults because of usePersistentPathSettings=false
+TC       2021-05-03 09:44:57.076| Tool-data for DefaultTool not changed
+TC       2021-05-03 09:44:57.077| Success7_Can: Set actual refSys on object 'World'
+TC       2021-05-03 09:44:57.077| Relative path speed limit deactivated
+TC       2021-05-03 09:44:57.077| Success7_Can.SetOperatorMessage(267, , , , )
+TC       2021-05-03 09:44:57.077| DEBUG - SetOperatorMessage(autoInit_finished)
+TC       2021-05-03 09:44:57.077| Success7_Can.SEPRO_global.axes_init finished
+TC       2021-05-03 09:44:57.077| Robot is stopped
+TC       2021-05-03 09:44:57.077| Reset Override Value to '100%'
+TC       2021-05-03 09:44:57.078| actOvrMc < cOvrEps: TRUE (0)
+TC       2021-05-03 09:44:57.078| actExecData.mIsTracking: FALSE
+TC       2021-05-03 09:44:57.078| rAbs(deltaOvr - deltaOvrMc) > (0.02 + 0.5 * deltaOvr): FALSE (d_rc=0.85, d_mc=1)
+TC       2021-05-03 09:44:57.078| Success7_Can: McuSetTimeOverride(1,1,1) - ovr was 0.15
+TC       2021-05-03 09:44:57.078| SetKvSepro(1000) : gS_RobotData[0].SetOverride(1) function returns TRUE
+TC       2021-05-03 09:44:57.082| initRobot ended, deactivate drives
+TC       2021-05-03 09:44:57.082| ActivateDeactivateDrives
+TC       2021-05-03 09:44:57.082| Success7_Can: Initiate QuickStop on all drives
+TC       2021-05-03 09:44:57.083| RC released control over CAN_Axis1
+TC       2021-05-03 09:44:57.083| RC released control over CAN_Axis2
+TC       2021-05-03 09:44:57.083| RC released control over CAN_Axis3
+TC       2021-05-03 09:44:57.103| Success7_Can: QuickStop on all connected drives completed
+TC       2021-05-03 09:44:57.103| Success7_Can: Switch from motion mode <Stop> to <ShutDown> initiated
+TC       2021-05-03 09:44:57.103| Success7_Can: McuStopJoints/McuStopMicroIP: use default stop factors
+TC       2021-05-03 09:44:57.123| Success7_Can: Switch to motion mode <ShutDown> succeeded
+TC       2021-05-03 09:44:57.162| Drives are OFF
+TC       2021-05-03 09:44:57.163| Success7_Can.ResetOperatorMessage()
+TC       2021-05-03 09:44:57.183| Success7_Can.GetStartablePrograms: No available user flows
+SEPRO    2021-05-03 09:45:01.054| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 09:45:01.061| INFO    CONTROL    production_commander.cpp:898 em_prepareProgram - em_prepareProgram 800
+SEPRO    2021-05-03 09:45:01.061| INFO    CONTROL    production_commander.cpp:861 em_unloadProgram - Program ID is null
+RepSys   2021-05-03 09:45:01.066| --------
+RepSys   2021-05-03 09:45:01.066| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:45:01.066| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:45:01.066| Project Success7_Can/SEPRO_project.tt / Pass 1
+RepSys   2021-05-03 09:45:01.066| --------
+RepSys   2021-05-03 09:45:01.069| --------
+RepSys   2021-05-03 09:45:01.069| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:45:01.069| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:45:01.069| Project Success7_Can/SEPRO_project.tt / Pass 2
+RepSys   2021-05-03 09:45:01.069| --------
+RepSys   2021-05-03 09:45:01.070| --------
+RepSys   2021-05-03 09:45:01.070| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:45:01.070| INFO Ackn (3700/152) 1888299a
+RepSys   2021-05-03 09:45:01.070| 2 files compiled
+RepSys   2021-05-03 09:45:01.070| --------
+RepSys   2021-05-03 09:45:01.073| --------
+RepSys   2021-05-03 09:45:01.073| "SystemRpc.T-16" 61e82a44
+RepSys   2021-05-03 09:45:01.073| INFO Ackn (3700/282) 1888299a
+RepSys   2021-05-03 09:45:01.073| LoadProject SEPRO_project
+RepSys   2021-05-03 09:45:01.073| --------
+SEPRO    2021-05-03 09:45:01.086| INFO    CONTROL    kairoProgramMgr.cpp:425 loadProgramForRobot - exeUnitStatus.line returned true with status : Loaded in 10 ms
+TC       2021-05-03 09:45:01.112| Request Task 'homeReturn' accepted
+TC       2021-05-03 09:45:01.113| Execute Task 'homeReturn'
+TC       2021-05-03 09:45:01.113| Success7_Can.InterruptAllPrograms: Nothing to interrupt as there are no running flows - Flows active (i.e. interrupted) = 0
+TC       2021-05-03 09:45:01.113| Success7_Can.StopAllPrograms: Nothing to stop as there are no active flows
+TC       2021-05-03 09:45:01.113| All Programs interrupted and stopped
+TC       2021-05-03 09:45:01.113| gS_RobotData[0]: Change operation mode from '1' to '3'
+TC       2021-05-03 09:45:01.116| Init motion Done
+TC       2021-05-03 09:45:01.116| Verify Override settings, if kv_old=1000 > maxKv=150
+TC       2021-05-03 09:45:01.116| Success7_Can: McuSetTimeOverride(0.15,1,1) - ovr was 1
+TC       2021-05-03 09:45:01.117| SetKvSepro(150) : gS_RobotData[0].SetOverride(0.15) function returns TRUE
+RepSys   2021-05-03 09:45:01.117| --------
+RepSys   2021-05-03 09:45:01.117| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:45:01.117| INFO Ackn (3700/284) 1888299a
+RepSys   2021-05-03 09:45:01.117| StartProgram hr001
+RepSys   2021-05-03 09:45:01.117| --------
+TC       2021-05-03 09:45:01.117| Success7_Can.SetOperatorMessage(4, , , , )
+TC       2021-05-03 09:45:01.117| DEBUG - SetOperatorMessage(HR_running)
+TC       2021-05-03 09:45:01.118| Success7_Can.SEPRO_project.hr001 loaded
+TC       2021-05-03 09:45:01.118| Success7_Can.SEPRO_project.hr001 wait for program finished
+TC       2021-05-03 09:45:01.122| Started callstackObserver(0) for 'hr001'
+TC       2021-05-03 09:45:01.123| Success7_Can.SetOperatorMessage(3, , , , )
+TC       2021-05-03 09:45:01.123| DEBUG - SetOperatorMessage(HR_pressStart)
+TC       2021-05-03 09:45:01.123| Success7_Can: ObserveStepMode: Step mode mapping changed
+TC       2021-05-03 09:45:01.123| Success7_Can: ObserveStepMode: chg = TRUE
+TC       2021-05-03 09:45:01.123| Success7_Can.InterruptAllPrograms: Nothing to interrupt as there are no running flows - Flows active (i.e. interrupted) = 1
+TC       2021-05-03 09:45:01.132| Success7_Can.SetOperatorMessage(3, , , , )
+TC       2021-05-03 09:45:01.132| DEBUG - SetOperatorMessage(HR_pressStart)
+SEPRO    2021-05-03 09:45:01.142| INFO    CONTROL    production_commander.cpp:931 em_prepareProgram - em_prepareProgram 800 - ret=1
+TC       2021-05-03 09:45:01.222| Success7_Can.GetStartablePrograms: Available user flows (active/running) = 1/0
+TC       2021-05-03 09:45:01.222| Success7_Can.GetStartablePrograms: Starting flow iteration
+TC       2021-05-03 09:45:01.223| Success7_Can.GetStartablePrograms: Flow iteration done
+SEPRO    2021-05-03 09:45:01.332| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 09:45:01.346| INFO    CONTROL    command_handler.cpp:220 luaWrap_SCH_getProgramContent - luaWrap_SCH_getProgramContent 800
+SEPRO    2021-05-03 10:03:00.476| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 10:03:00.484| INFO    CONTROL    progCatalog.cpp:68 getCatalog - getCatalog
+SEPRO    2021-05-03 10:03:00.712| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 10:03:00.715| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 10:03:00.758| INFO    CONTROL    progCatalog.cpp:68 getCatalog - getCatalog
+SEPRO    2021-05-03 10:03:01.254| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 10:03:01.261| INFO    CONTROL    command_handler.cpp:220 luaWrap_SCH_getProgramContent - luaWrap_SCH_getProgramContent 800
+SEPRO    2021-05-03 10:03:04.436| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 10:03:04.444| gS_RobotData[0]: Change operation mode from '3' to '2'
+TC       2021-05-03 10:03:04.452| Success7_Can.InterruptAllPrograms: Nothing to interrupt as there are no running flows - Flows active (i.e. interrupted) = 1
+TC       2021-05-03 10:03:04.462| Success7_Can.SetOperatorMessage(0, , , , )
+TC       2021-05-03 10:03:04.462| DEBUG - opMsgId < 0 - SetOperatorMessage(HR_pressStart)
+SEPRO    2021-05-03 10:03:07.287| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 10:03:07.302| ActivateDeactivateDrives
+TC       2021-05-03 10:03:07.362| RC controls CAN_Axis3
+TC       2021-05-03 10:03:07.363| RC controls CAN_Axis2
+TC       2021-05-03 10:03:07.363| RC controls CAN_Axis1
+TC       2021-05-03 10:03:07.412| Success7_Can: New motion mode <Stop> requested, actual mode <ShutDown>
+TC       2021-05-03 10:03:07.413| Success7_Can: Switch from motion mode <ShutDown> to <Stop> initiated
+TC       2021-05-03 10:03:07.413| Success7_Can: Local repos not required
+TC       2021-05-03 10:03:07.413| Success7_Can: New motion mode <Stop> requested, actual mode <ShutDown>
+RepSys   2021-05-03 10:03:07.413| --------
+RepSys   2021-05-03 10:03:07.413| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 10:03:07.413| CLASS_9 Ackn (50/3451) 009c0006
+RepSys   2021-05-03 10:03:07.413| Success7_Can activated
+RepSys   2021-05-03 10:03:07.413| --------
+TC       2021-05-03 10:03:07.414| Drives are ON
+TC       2021-05-03 10:03:07.422| Success7_Can: Switch to motion mode <Stop> succeeded
+TC       2021-05-03 10:03:07.422| Success7_Can.jogItf.ObserveJogKey.jogRequest.Init: Calling init function to initialize
+TC       2021-05-03 10:03:07.423| Success7_Can: New motion mode <Jog> requested, actual mode <Stop>
+TC       2021-05-03 10:03:07.423| Success7_Can: Switch from motion mode <Stop> to <Jog> initiated
+TC       2021-05-03 10:03:07.424| Success7_Can.jogItf.JogRamp.destructor.Init: Calling init function to initialize
+TC       2021-05-03 10:03:07.443| Success7_Can: Switch to motion mode <Jog> succeeded
+TC       2021-05-03 10:03:07.445| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:07.445| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:07.452| Segment 'Success7_Can.jogPath.seg0' #16#0AE4_0040 appended
+TC       2021-05-03 10:03:07.452| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:07.453| Success7_Can.jogPath.AppendSegment.pathStartPos.ReleaseDbObject(): Object 180879423 released
+TC       2021-05-03 10:03:07.482| Segment #16#0AE4_0040 is active
+TC       2021-05-03 10:03:07.543| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:07.544| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:07.545| Segment 'Success7_Can.jogPath.seg1' #16#0B60_0044 appended
+TC       2021-05-03 10:03:07.545| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:07.692| Time for segment #16#0AE4_0040 = 209.738ms
+TC       2021-05-03 10:03:07.692| Segment #16#0B60_0044 is active
+TC       2021-05-03 10:03:07.703| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:07.704| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:07.705| Segment 'Success7_Can.jogPath.seg2' #16#0BDC_0048 appended
+TC       2021-05-03 10:03:07.705| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:07.822| Time for segment #16#0B60_0044 = 130.282ms
+TC       2021-05-03 10:03:07.822| Segment #16#0BDC_0048 is active
+TC       2021-05-03 10:03:07.833| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:07.834| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:07.835| Segment 'Success7_Can.jogPath.seg3' #16#0C58_004C appended
+TC       2021-05-03 10:03:07.835| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:07.952| Time for segment #16#0BDC_0048 = 129.665ms
+TC       2021-05-03 10:03:07.952| Segment #16#0C58_004C is active
+TC       2021-05-03 10:03:07.963| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:07.964| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:07.965| Segment 'Success7_Can.jogPath.seg4' #16#0CD4_0050 appended
+TC       2021-05-03 10:03:07.965| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:08.082| Time for segment #16#0C58_004C = 130.365ms
+TC       2021-05-03 10:03:08.082| Segment #16#0CD4_0050 is active
+TC       2021-05-03 10:03:08.093| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:08.094| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:08.095| Segment 'Success7_Can.jogPath.seg5' #16#0D50_0054 appended
+TC       2021-05-03 10:03:08.095| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:08.212| Time for segment #16#0CD4_0050 = 129.664ms
+TC       2021-05-03 10:03:08.212| Segment #16#0D50_0054 is active
+TC       2021-05-03 10:03:08.223| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:08.224| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:08.225| Segment 'Success7_Can.jogPath.seg6' #16#0DCC_0058 appended
+TC       2021-05-03 10:03:08.225| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:08.342| Time for segment #16#0D50_0054 = 130.308ms
+TC       2021-05-03 10:03:08.342| Segment #16#0DCC_0058 is active
+TC       2021-05-03 10:03:08.353| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:08.354| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:08.355| Segment 'Success7_Can.jogPath.seg7' #16#0E48_005C appended
+TC       2021-05-03 10:03:08.355| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:08.472| Time for segment #16#0DCC_0058 = 129.698ms
+TC       2021-05-03 10:03:08.472| Segment #16#0E48_005C is active
+TC       2021-05-03 10:03:08.483| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:08.484| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:08.485| Segment 'Success7_Can.jogPath.seg8' #16#0EC4_0060 appended
+TC       2021-05-03 10:03:08.485| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:08.602| Time for segment #16#0E48_005C = 130.325ms
+TC       2021-05-03 10:03:08.602| Segment #16#0EC4_0060 is active
+TC       2021-05-03 10:03:08.613| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:08.614| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:08.615| Segment 'Success7_Can.jogPath.seg9' #16#0F40_0064 appended
+TC       2021-05-03 10:03:08.615| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:08.732| Time for segment #16#0EC4_0060 = 129.658ms
+TC       2021-05-03 10:03:08.732| Segment #16#0F40_0064 is active
+TC       2021-05-03 10:03:08.743| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:08.744| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:08.745| Segment 'Success7_Can.jogPath.seg10' #16#0FBC_0068 appended
+TC       2021-05-03 10:03:08.745| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:08.862| Time for segment #16#0F40_0064 = 130.303ms
+TC       2021-05-03 10:03:08.862| Segment #16#0FBC_0068 is active
+TC       2021-05-03 10:03:08.873| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:08.874| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:08.875| Segment 'Success7_Can.jogPath.seg11' #16#0038_006C appended
+TC       2021-05-03 10:03:08.875| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:08.992| Time for segment #16#0FBC_0068 = 129.728ms
+TC       2021-05-03 10:03:08.992| Segment #16#0038_006C is active
+TC       2021-05-03 10:03:09.003| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:09.004| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:09.005| Segment 'Success7_Can.jogPath.seg12' #16#00B4_0070 appended
+TC       2021-05-03 10:03:09.005| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:09.122| Time for segment #16#0038_006C = 130.311ms
+TC       2021-05-03 10:03:09.122| Segment #16#00B4_0070 is active
+TC       2021-05-03 10:03:09.133| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:09.134| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:09.135| Segment 'Success7_Can.jogPath.seg13' #16#0130_0074 appended
+TC       2021-05-03 10:03:09.135| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:09.252| Time for segment #16#00B4_0070 = 129.659ms
+TC       2021-05-03 10:03:09.252| Segment #16#0130_0074 is active
+TC       2021-05-03 10:03:09.263| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:09.264| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:09.265| Segment 'Success7_Can.jogPath.seg14' #16#01AC_0078 appended
+TC       2021-05-03 10:03:09.265| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:09.382| Time for segment #16#0130_0074 = 130.323ms
+TC       2021-05-03 10:03:09.382| Segment #16#01AC_0078 is active
+TC       2021-05-03 10:03:09.393| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:09.394| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:09.395| Segment 'Success7_Can.jogPath.seg15' #16#0228_007C appended
+TC       2021-05-03 10:03:09.395| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:09.512| Time for segment #16#01AC_0078 = 129.889ms
+TC       2021-05-03 10:03:09.512| Segment #16#0228_007C is active
+TC       2021-05-03 10:03:09.523| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:09.524| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:09.525| Segment 'Success7_Can.jogPath.seg16' #16#02A4_0080 appended
+TC       2021-05-03 10:03:09.525| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:09.642| Time for segment #16#0228_007C = 130.087ms
+TC       2021-05-03 10:03:09.642| Segment #16#02A4_0080 is active
+TC       2021-05-03 10:03:09.653| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:09.654| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:09.655| Segment 'Success7_Can.jogPath.seg17' #16#0320_0084 appended
+TC       2021-05-03 10:03:09.655| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:09.772| Time for segment #16#02A4_0080 = 129.904ms
+TC       2021-05-03 10:03:09.772| Segment #16#0320_0084 is active
+TC       2021-05-03 10:03:09.783| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:09.784| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:09.785| Segment 'Success7_Can.jogPath.seg18' #16#039C_0088 appended
+TC       2021-05-03 10:03:09.785| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:09.902| Time for segment #16#0320_0084 = 130.15ms
+TC       2021-05-03 10:03:09.902| Segment #16#039C_0088 is active
+TC       2021-05-03 10:03:09.913| Segment length ok because of dominant joint (1.1925)
+TC       2021-05-03 10:03:09.914| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:09.915| Segment 'Success7_Can.jogPath.seg19' #16#0418_008C appended
+TC       2021-05-03 10:03:09.915| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+SEPRO    2021-05-03 10:03:09.918| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 10:03:09.933| ActivateDeactivateDrives
+TC       2021-05-03 10:03:09.933| Success7_Can: New motion mode <Stop> requested, actual mode <Jog>
+TC       2021-05-03 10:03:09.933| Success7_Can: Active request for motion mode <Jog> aborted by new request for motion mode <Stop>
+TC       2021-05-03 10:03:09.933| Success7_Can: Switch from motion mode <Jog> to <Stop> initiated
+TC       2021-05-03 10:03:09.934| Success7_Can.jogPath.JogAction.destructor.DELETE: Calling mapped function to clean up
+TC       2021-05-03 10:03:09.934| Success7_Can.jogPath.DeactivateJob(): Job 70779021 released
+TC       2021-05-03 10:03:10.072| Time for segment #16#039C_0088 = 169.504ms
+TC       2021-05-03 10:03:10.072| Time for last movement = 2589.56ms
+TC       2021-05-03 10:03:10.082| Success7_Can: Switch to motion mode <Stop> succeeded
+TC       2021-05-03 10:03:10.082| Success7_Can: Initiate QuickStop on all drives
+TC       2021-05-03 10:03:10.083| RC released control over CAN_Axis1
+TC       2021-05-03 10:03:10.083| RC released control over CAN_Axis2
+TC       2021-05-03 10:03:10.083| RC released control over CAN_Axis3
+TC       2021-05-03 10:03:10.103| Success7_Can: QuickStop on all connected drives completed
+TC       2021-05-03 10:03:10.103| Success7_Can: Switch from motion mode <Stop> to <ShutDown> initiated
+TC       2021-05-03 10:03:10.103| Success7_Can: McuStopJoints/McuStopMicroIP: use default stop factors
+TC       2021-05-03 10:03:10.123| Success7_Can: Switch to motion mode <ShutDown> succeeded
+TC       2021-05-03 10:03:10.162| Drives are OFF
+TC       2021-05-03 10:03:10.172| Success7_Can.jogItf.ObserveJogKey.jogRequest.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:10.172| Success7_Can.jogItf.JogRamp.destructor.Finish: Calling mapped function to clean up
+SEPRO    2021-05-03 10:03:11.428| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 10:03:11.438| actOvrMc < cOvrEps: FALSE (1)
+TC       2021-05-03 10:03:11.438| actExecData.mIsTracking: FALSE
+TC       2021-05-03 10:03:11.438| rAbs(deltaOvr - deltaOvrMc) > (0.02 + 0.5 * deltaOvr): TRUE (d_rc=0.85, d_mc=0)
+TC       2021-05-03 10:03:11.438| Success7_Can: McuSetTimeOverride(1,1,1) - ovr was 0.15
+TC       2021-05-03 10:03:11.438| SetKvSepro(1000) : gS_RobotData[0].SetOverride(1) function returns TRUE
+SEPRO    2021-05-03 10:03:12.430| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 10:03:12.444| ActivateDeactivateDrives
+TC       2021-05-03 10:03:12.502| RC controls CAN_Axis3
+TC       2021-05-03 10:03:12.502| RC controls CAN_Axis2
+TC       2021-05-03 10:03:12.502| RC controls CAN_Axis1
+TC       2021-05-03 10:03:12.552| Success7_Can: New motion mode <Stop> requested, actual mode <ShutDown>
+TC       2021-05-03 10:03:12.552| Success7_Can: Switch from motion mode <ShutDown> to <Stop> initiated
+TC       2021-05-03 10:03:12.553| Success7_Can: Local repos not required
+RepSys   2021-05-03 10:03:12.553| --------
+RepSys   2021-05-03 10:03:12.553| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 10:03:12.553| CLASS_9 Ackn (50/3451) 009c0006
+RepSys   2021-05-03 10:03:12.553| Success7_Can activated
+RepSys   2021-05-03 10:03:12.553| --------
+TC       2021-05-03 10:03:12.553| Drives are ON
+TC       2021-05-03 10:03:12.562| Success7_Can: Switch to motion mode <Stop> succeeded
+TC       2021-05-03 10:03:12.562| Success7_Can.jogItf.ObserveJogKey.jogRequest.Init: Calling init function to initialize
+TC       2021-05-03 10:03:12.562| Success7_Can: New motion mode <Jog> requested, actual mode <Stop>
+TC       2021-05-03 10:03:12.563| Success7_Can: Switch from motion mode <Stop> to <Jog> initiated
+TC       2021-05-03 10:03:12.564| Success7_Can.jogItf.JogRamp.destructor.Init: Calling init function to initialize
+TC       2021-05-03 10:03:12.583| Success7_Can: Switch to motion mode <Jog> succeeded
+TC       2021-05-03 10:03:12.585| Segment length ok because of dominant joint (7.94971)
+TC       2021-05-03 10:03:12.585| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:12.592| Segment 'Success7_Can.jogPath.seg0' #16#0510_0093 appended
+TC       2021-05-03 10:03:12.592| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:12.593| Success7_Can.jogPath.AppendSegment.pathStartPos.ReleaseDbObject(): Object 83099794 released
+TC       2021-05-03 10:03:12.622| Segment #16#0510_0093 is active
+TC       2021-05-03 10:03:12.683| Segment length ok because of dominant joint (7.94971)
+TC       2021-05-03 10:03:12.684| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:12.685| Segment 'Success7_Can.jogPath.seg1' #16#058C_0097 appended
+TC       2021-05-03 10:03:12.685| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:12.832| Time for segment #16#0510_0093 = 209.67ms
+TC       2021-05-03 10:03:12.832| Segment #16#058C_0097 is active
+TC       2021-05-03 10:03:12.843| Segment length ok because of dominant joint (7.94971)
+TC       2021-05-03 10:03:12.844| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:12.845| Segment 'Success7_Can.jogPath.seg2' #16#0608_009B appended
+TC       2021-05-03 10:03:12.845| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:12.962| Time for segment #16#058C_0097 = 130.282ms
+TC       2021-05-03 10:03:12.962| Segment #16#0608_009B is active
+TC       2021-05-03 10:03:12.973| Segment length ok because of dominant joint (3.68335)
+TC       2021-05-03 10:03:12.973| Joint limit reached - end of jogging
+TC       2021-05-03 10:03:12.974| #1 (joints): rescale segment - factor = 0.463331
+TC       2021-05-03 10:03:12.975| Segment length ok because of dominant joint (3.68335)
+TC       2021-05-03 10:03:12.975| Valid jog segment (joints) calculated after 2 iterations
+TC       2021-05-03 10:03:12.977| Segment 'Success7_Can.jogPath.seg3' #16#0684_009F appended
+TC       2021-05-03 10:03:12.977| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:13.092| Time for segment #16#0608_009B = 129.717ms
+TC       2021-05-03 10:03:13.092| Segment #16#0684_009F is active
+TC       2021-05-03 10:03:13.103| 0: Movement (1450 -> 1450) too short (0)
+TC       2021-05-03 10:03:13.103| 0: Movement away (1450 -> 1457.95) from limit (1450) is not permitted
+TC       2021-05-03 10:03:13.103| #1 (joints) no need to rescale segment - retest with final settings
+TC       2021-05-03 10:03:13.104| 0: Movement (1450 -> 1450) too short (0)
+TC       2021-05-03 10:03:13.104| 0: Movement away (1450 -> 1457.95) from limit (1450) is not permitted
+TC       2021-05-03 10:03:13.104| #2 (joints): no need to rescale segment - iteration done
+TC       2021-05-03 10:03:13.104| No valid jog segment (joints) calculated after 2 iterations
+RepSys   2021-05-03 10:03:13.104| --------
+RepSys   2021-05-03 10:03:13.104| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 10:03:13.104| CLASS_8 Ackn (50/2325) 18f80cb3
+RepSys   2021-05-03 10:03:13.104| Success7_Can: Software limit switch A1+ reached
+RepSys   2021-05-03 10:03:13.104| --------
+TC       2021-05-03 10:03:13.282| Time for segment #16#0684_009F = 190.064ms
+TC       2021-05-03 10:03:13.282| Time for last movement = 659.733ms
+SEPRO    2021-05-03 10:03:14.324| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 10:03:14.342| ActivateDeactivateDrives
+TC       2021-05-03 10:03:14.342| Success7_Can: New motion mode <Stop> requested, actual mode <Jog>
+TC       2021-05-03 10:03:14.342| Success7_Can: Active request for motion mode <Jog> aborted by new request for motion mode <Stop>
+TC       2021-05-03 10:03:14.343| Success7_Can: Switch from motion mode <Jog> to <Stop> initiated
+TC       2021-05-03 10:03:14.343| Success7_Can.jogPath.JogAction.destructor.DELETE: Calling mapped function to clean up
+TC       2021-05-03 10:03:14.352| Success7_Can: Switch to motion mode <Stop> succeeded
+TC       2021-05-03 10:03:14.352| Success7_Can: Initiate QuickStop on all drives
+TC       2021-05-03 10:03:14.352| RC released control over CAN_Axis1
+TC       2021-05-03 10:03:14.352| RC released control over CAN_Axis2
+TC       2021-05-03 10:03:14.353| RC released control over CAN_Axis3
+TC       2021-05-03 10:03:14.373| Success7_Can: QuickStop on all connected drives completed
+TC       2021-05-03 10:03:14.373| Success7_Can: Switch from motion mode <Stop> to <ShutDown> initiated
+TC       2021-05-03 10:03:14.373| Success7_Can: McuStopJoints/McuStopMicroIP: use default stop factors
+TC       2021-05-03 10:03:14.392| Success7_Can: Switch to motion mode <ShutDown> succeeded
+TC       2021-05-03 10:03:14.432| Drives are OFF
+TC       2021-05-03 10:03:14.442| Success7_Can.jogItf.ObserveJogKey.jogRequest.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:14.442| Success7_Can.jogItf.JogRamp.destructor.Finish: Calling mapped function to clean up
+SEPRO    2021-05-03 10:03:17.545| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 10:03:17.663| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 10:03:18.567| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+SEPRO    2021-05-03 10:03:20.148| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 10:03:20.165| ActivateDeactivateDrives
+TC       2021-05-03 10:03:20.222| RC controls CAN_Axis3
+TC       2021-05-03 10:03:20.222| RC controls CAN_Axis2
+TC       2021-05-03 10:03:20.222| RC controls CAN_Axis1
+TC       2021-05-03 10:03:20.272| Success7_Can: New motion mode <Stop> requested, actual mode <ShutDown>
+TC       2021-05-03 10:03:20.273| Success7_Can: Switch from motion mode <ShutDown> to <Stop> initiated
+TC       2021-05-03 10:03:20.273| Success7_Can: Local repos not required
+RepSys   2021-05-03 10:03:20.273| --------
+RepSys   2021-05-03 10:03:20.273| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 10:03:20.273| CLASS_9 Ackn (50/3451) 009c0006
+RepSys   2021-05-03 10:03:20.273| Success7_Can activated
+RepSys   2021-05-03 10:03:20.273| --------
+TC       2021-05-03 10:03:20.274| Drives are ON
+TC       2021-05-03 10:03:20.282| Success7_Can: Switch to motion mode <Stop> succeeded
+TC       2021-05-03 10:03:20.282| Success7_Can.jogItf.ObserveJogKey.jogRequest.Init: Calling init function to initialize
+TC       2021-05-03 10:03:20.283| Success7_Can: New motion mode <Jog> requested, actual mode <Stop>
+TC       2021-05-03 10:03:20.283| Success7_Can: Switch from motion mode <Stop> to <Jog> initiated
+TC       2021-05-03 10:03:20.284| Success7_Can.jogItf.JogRamp.destructor.Init: Calling init function to initialize
+TC       2021-05-03 10:03:20.303| Success7_Can: Switch to motion mode <Jog> succeeded
+TC       2021-05-03 10:03:20.305| Segment length ok because of dominant joint (7.94971)
+TC       2021-05-03 10:03:20.305| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:20.312| Segment 'Success7_Can.jogPath.seg0' #16#077C_00A6 appended
+TC       2021-05-03 10:03:20.312| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:20.313| Success7_Can.jogPath.AppendSegment.pathStartPos.ReleaseDbObject(): Object 123732133 released
+TC       2021-05-03 10:03:20.342| Segment #16#077C_00A6 is active
+TC       2021-05-03 10:03:20.403| Segment length ok because of dominant joint (7.94971)
+TC       2021-05-03 10:03:20.404| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:20.405| Segment 'Success7_Can.jogPath.seg1' #16#07F8_00AA appended
+TC       2021-05-03 10:03:20.405| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:20.552| Time for segment #16#077C_00A6 = 209.658ms
+TC       2021-05-03 10:03:20.552| Segment #16#07F8_00AA is active
+TC       2021-05-03 10:03:20.563| Segment length ok because of dominant joint (7.94971)
+TC       2021-05-03 10:03:20.564| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:20.565| Segment 'Success7_Can.jogPath.seg2' #16#0874_00AE appended
+TC       2021-05-03 10:03:20.565| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:20.682| Time for segment #16#07F8_00AA = 130.343ms
+TC       2021-05-03 10:03:20.682| Segment #16#0874_00AE is active
+TC       2021-05-03 10:03:20.693| Segment length ok because of dominant joint (7.94971)
+TC       2021-05-03 10:03:20.694| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:20.695| Segment 'Success7_Can.jogPath.seg3' #16#08F0_00B2 appended
+TC       2021-05-03 10:03:20.695| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:20.812| Time for segment #16#0874_00AE = 129.674ms
+TC       2021-05-03 10:03:20.812| Segment #16#08F0_00B2 is active
+TC       2021-05-03 10:03:20.823| Segment length ok because of dominant joint (7.94971)
+TC       2021-05-03 10:03:20.824| Valid jog segment (joints) calculated after 1 iterations
+TC       2021-05-03 10:03:20.825| Segment 'Success7_Can.jogPath.seg4' #16#096C_00B6 appended
+TC       2021-05-03 10:03:20.825| Success7_Can.jogPath.AppendSegment.appendCleanup.Finish: Calling mapped function to clean up
+SEPRO    2021-05-03 10:03:20.896| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+
+TC       2021-05-03 10:03:20.909| ActivateDeactivateDrives
+TC       2021-05-03 10:03:20.909| Success7_Can: New motion mode <Stop> requested, actual mode <Jog>
+TC       2021-05-03 10:03:20.912| Success7_Can: Active request for motion mode <Jog> aborted by new request for motion mode <Stop>
+TC       2021-05-03 10:03:20.912| Success7_Can: Switch from motion mode <Jog> to <Stop> initiated
+TC       2021-05-03 10:03:20.913| Success7_Can.jogPath.JogAction.destructor.DELETE: Calling mapped function to clean up
+TC       2021-05-03 10:03:20.913| Success7_Can.jogPath.DeactivateJob(): Job 160170167 released
+TC       2021-05-03 10:03:20.942| Time for segment #16#08F0_00B2 = 130.07ms
+TC       2021-05-03 10:03:20.942| Segment #16#096C_00B6 is active
+TC       2021-05-03 10:03:21.052| Time for segment #16#096C_00B6 = 109.777ms
+TC       2021-05-03 10:03:21.052| Time for last movement = 709.522ms
+TC       2021-05-03 10:03:21.062| Success7_Can: Switch to motion mode <Stop> succeeded
+TC       2021-05-03 10:03:21.062| Success7_Can: Initiate QuickStop on all drives
+TC       2021-05-03 10:03:21.063| RC released control over CAN_Axis1
+TC       2021-05-03 10:03:21.063| RC released control over CAN_Axis2
+TC       2021-05-03 10:03:21.063| RC released control over CAN_Axis3
+TC       2021-05-03 10:03:21.083| Success7_Can: QuickStop on all connected drives completed
+TC       2021-05-03 10:03:21.083| Success7_Can: Switch from motion mode <Stop> to <ShutDown> initiated
+TC       2021-05-03 10:03:21.083| Success7_Can: McuStopJoints/McuStopMicroIP: use default stop factors
+TC       2021-05-03 10:03:21.102| Success7_Can: Switch to motion mode <ShutDown> succeeded
+TC       2021-05-03 10:03:21.142| Drives are OFF
+TC       2021-05-03 10:03:21.152| Success7_Can.jogItf.ObserveJogKey.jogRequest.Finish: Calling mapped function to clean up
+TC       2021-05-03 10:03:21.152| Success7_Can.jogItf.JogRamp.destructor.Finish: Calling mapped function to clean up
+SEPRO    2021-05-03 10:03:21.424| INFO    CONTROL    command_handler.cpp:1254 createGlobalVars_init - SEPRO_CTRL attempts copy /home/sepro/global/Success7_Can/global.sst.d in /opt/kecontrolapplication/application/control/teachcontrol/Success7_Can
+

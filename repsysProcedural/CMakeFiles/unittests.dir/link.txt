@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic -m32 -march=i586 --coverage CMakeFiles/unittests.dir/tests/unittests/TestRunner.cpp.o CMakeFiles/unittests.dir/src/DisplayChecker.cpp.o CMakeFiles/unittests.dir/src/Message.cpp.o CMakeFiles/unittests.dir/src/MessageProcessor.cpp.o CMakeFiles/unittests.dir/src/ReporterMessages.cpp.o  -o bin/unittests -lcppunit -lgcov -lBPApi -lK2Ctrl 

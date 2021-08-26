@@ -1,0 +1,284 @@
+CSRTSV3  2021-05-03 09:43:23.976| Cmp=CM, Class=1, Error=0, Info=10, pszInfo=Dynamic: <cmp>CmpKLog2RepSys</cmp>, <id>0x100b0016</id> <ver>4.3.2.3</ver>
+RepSys   2021-05-03 09:43:24.612| ReportSystem BEGIN init
+RepSys   2021-05-03 09:43:24.828| --------
+RepSys   2021-05-03 09:43:24.828| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:24.828| INFO Ackn (4700/24) 00000000
+RepSys   2021-05-03 09:43:24.828| uos.cfg(2,22): entry 'systemTraceEventMask' exists, overwritten
+RepSys   2021-05-03 09:43:24.828| --------
+RepSys   2021-05-03 09:43:24.828| --------
+RepSys   2021-05-03 09:43:24.828| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:24.828| INFO Ackn (4700/24) 00000000
+RepSys   2021-05-03 09:43:24.828| system.cfg(77,15): entry 'motionControl' exists, overwritten
+RepSys   2021-05-03 09:43:24.828| --------
+RepSys   2021-05-03 09:43:24.829| --------
+RepSys   2021-05-03 09:43:24.829| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:24.829| INFO Ackn (4700/24) 00000000
+RepSys   2021-05-03 09:43:24.829| system.cfg(78,14): entry 'teachControl' exists, overwritten
+RepSys   2021-05-03 09:43:24.829| --------
+UOS      2021-05-03 09:43:24.830| CREATE Task "RepSys.PCallTask" 38880f9a(4730)
+RepSys   2021-05-03 09:43:24.830| ReportSystem END init, ok, t = 0.22s
+RepSys   2021-05-03 09:43:26.081| --------
+RepSys   2021-05-03 09:43:26.081| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:26.081| INFO Ackn (3700/150) 00000000
+RepSys   2021-05-03 09:43:26.081| Project _base.tt / Pass 1
+RepSys   2021-05-03 09:43:26.081| --------
+RepSys   2021-05-03 09:43:29.555| --------
+RepSys   2021-05-03 09:43:29.555| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:29.555| INFO Ackn (3700/150) 00000000
+RepSys   2021-05-03 09:43:29.555| Project _base.tt / Pass 2
+RepSys   2021-05-03 09:43:29.555| --------
+RepSys   2021-05-03 09:43:31.587| --------
+RepSys   2021-05-03 09:43:31.587| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:31.587| INFO Ackn (3700/152) 00000000
+RepSys   2021-05-03 09:43:31.587| 351 files compiled
+RepSys   2021-05-03 09:43:31.587| --------
+RepSys   2021-05-03 09:43:31.609| --------
+RepSys   2021-05-03 09:43:31.609| "SLx.Root-Task" 02e80e34
+RepSys   2021-05-03 09:43:31.609| INFO Ackn (2220/120) 35b80167
+RepSys   2021-05-03 09:43:31.609| IO: 'freeze'
+RepSys   2021-05-03 09:43:31.609| --------
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:31.611| INFO Ackn (2220/300) 340808e2
+RepSys   2021-05-03 09:43:31.611| BL570: Connected
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:31.611| INFO Ackn (2220/300) 1468021c
+RepSys   2021-05-03 09:43:31.611| CP500_Switch: Connected
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.611| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:31.611| INFO Ackn (2220/300) 23e80224
+RepSys   2021-05-03 09:43:31.611| FM500: Connected
+RepSys   2021-05-03 09:43:31.611| --------
+RepSys   2021-05-03 09:43:31.613| --------
+RepSys   2021-05-03 09:43:31.613| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:31.613| INFO Ackn (2220/300) 438808ea
+RepSys   2021-05-03 09:43:31.613| DM570: Connected
+RepSys   2021-05-03 09:43:31.613| --------
+RepSys   2021-05-03 09:43:32.021| --------
+RepSys   2021-05-03 09:43:32.021| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.021| INFO Ackn (2220/300) 2f080332
+RepSys   2021-05-03 09:43:32.021| SEPRO_INTERFACE: Connected
+RepSys   2021-05-03 09:43:32.021| --------
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.181| INFO Ackn (2220/300) 46c80236
+RepSys   2021-05-03 09:43:32.181| SICK: Connected
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.181| INFO Ackn (2220/300) 67b80247
+RepSys   2021-05-03 09:43:32.181| SEPRO_16IO_N4: Connected
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.181| INFO Ackn (2220/300) 7548024e
+RepSys   2021-05-03 09:43:32.181| SEPRO_16IO_N5: Connected
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.181| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.181| INFO Ackn (2220/300) 02d80255
+RepSys   2021-05-03 09:43:32.181| SEPRO_16IO_N7: Connected
+RepSys   2021-05-03 09:43:32.181| --------
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.271| INFO Ackn (2220/300) 3d980929
+RepSys   2021-05-03 09:43:32.271| XtrapulsPAC_A1: Connected
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.271| INFO Ackn (2220/300) 44d80a35
+RepSys   2021-05-03 09:43:32.271| XtrapulsPAC_A2: Connected
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.271| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:32.271| INFO Ackn (2220/300) 4c180b41
+RepSys   2021-05-03 09:43:32.271| XtrapulsPAC_A3: Connected
+RepSys   2021-05-03 09:43:32.271| --------
+RepSys   2021-05-03 09:43:32.364| --------
+RepSys   2021-05-03 09:43:32.364| "CMHooksTask" 18380e3f
+RepSys   2021-05-03 09:43:32.364| INFO Ackn (7512/3) 00000000
+RepSys   2021-05-03 09:43:32.364| Download of application Application successful
+RepSys   2021-05-03 09:43:32.364| --------
+RepSys   2021-05-03 09:43:32.366| --------
+RepSys   2021-05-03 09:43:32.366| "CMHooksTask" 18380e3f
+RepSys   2021-05-03 09:43:32.366| INFO Ackn (7512/7) 00000000
+RepSys   2021-05-03 09:43:32.366| Loading bootproject Application successful
+RepSys   2021-05-03 09:43:32.366| --------
+RepSys   2021-05-03 09:43:32.474| --------
+RepSys   2021-05-03 09:43:32.474| "CMHooksTask" 18380e3f
+RepSys   2021-05-03 09:43:32.474| INFO Ackn (7512/8) 00000000
+RepSys   2021-05-03 09:43:32.474| Starting bootproject Application successful
+RepSys   2021-05-03 09:43:32.474| --------
+RepSys   2021-05-03 09:43:32.915| --------
+RepSys   2021-05-03 09:43:32.915| "SLx.Root-Task" 02e80e34
+RepSys   2021-05-03 09:43:32.915| INFO Ackn (2220/120) 35b80167
+RepSys   2021-05-03 09:43:32.915| IO: 'unfreeze'
+RepSys   2021-05-03 09:43:32.915| --------
+RepSys   2021-05-03 09:43:32.918| --------
+RepSys   2021-05-03 09:43:32.918| "SLx.Root-Task" 02e80e34
+RepSys   2021-05-03 09:43:32.918| INFO Ackn (3700/282) 00000000
+RepSys   2021-05-03 09:43:32.918| LoadProject _base
+RepSys   2021-05-03 09:43:32.918| --------
+RepSys   2021-05-03 09:43:33.323| --------
+RepSys   2021-05-03 09:43:33.323| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:43:33.323| CLASS_8 Ackn (50/2346) 69b00627
+RepSys   2021-05-03 09:43:33.323| Success7_Can.jogPath: unsupported or not achievable defaultsettings have been corrected
+RepSys   2021-05-03 09:43:33.323| --------
+RepSys   2021-05-03 09:43:33.337| --------
+RepSys   2021-05-03 09:43:33.337| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:43:33.337| CLASS_9 Ackn (50/3480) 009c0006
+RepSys   2021-05-03 09:43:33.337| Robot Success7_Can (ROBOT) has been created
+RepSys   2021-05-03 09:43:33.337| --------
+RepSys   2021-05-03 09:43:33.502| --------
+RepSys   2021-05-03 09:43:33.502| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.502| INFO Ackn (3700/150) 00000000
+RepSys   2021-05-03 09:43:33.502| Project _system.tt / Pass 1
+RepSys   2021-05-03 09:43:33.502| --------
+RepSys   2021-05-03 09:43:33.524| --------
+RepSys   2021-05-03 09:43:33.524| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.524| INFO Ackn (3700/150) 00000000
+RepSys   2021-05-03 09:43:33.524| Project _system.tt / Pass 2
+RepSys   2021-05-03 09:43:33.524| --------
+RepSys   2021-05-03 09:43:33.540| --------
+RepSys   2021-05-03 09:43:33.540| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.540| INFO Ackn (3700/152) 00000000
+RepSys   2021-05-03 09:43:33.540| 4 files compiled
+RepSys   2021-05-03 09:43:33.540| --------
+RepSys   2021-05-03 09:43:33.547| --------
+RepSys   2021-05-03 09:43:33.547| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:33.547| INFO Ackn (3700/282) 00000000
+RepSys   2021-05-03 09:43:33.547| LoadProject _system
+RepSys   2021-05-03 09:43:33.547| --------
+RepSys   2021-05-03 09:43:33.550| --------
+RepSys   2021-05-03 09:43:33.550| "UOS.Root-Task" 3468001c
+RepSys   2021-05-03 09:43:33.550| INFO Ackn (7512/1) 00000000
+RepSys   2021-05-03 09:43:33.550| Started application Application
+RepSys   2021-05-03 09:43:33.550| --------
+RepSys   2021-05-03 09:43:33.553| --------
+RepSys   2021-05-03 09:43:33.553| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:43:33.553| CLASS_9 Ackn (50/3450) 00000000
+RepSys   2021-05-03 09:43:33.553| ------------------------- System ready ---------------------------
+RepSys   2021-05-03 09:43:33.553| --------
+RepSys   2021-05-03 09:43:33.578| --------
+RepSys   2021-05-03 09:43:33.578| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.578| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:43:33.578| Project Success7_Can/_global.tt / Pass 1
+RepSys   2021-05-03 09:43:33.578| --------
+RepSys   2021-05-03 09:43:33.608| --------
+RepSys   2021-05-03 09:43:33.608| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.608| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:43:33.608| Project Success7_Can/_global.tt / Pass 2
+RepSys   2021-05-03 09:43:33.608| --------
+RepSys   2021-05-03 09:43:33.628| --------
+RepSys   2021-05-03 09:43:33.628| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:43:33.628| INFO Ackn (3700/152) 1888299a
+RepSys   2021-05-03 09:43:33.628| 4 files compiled
+RepSys   2021-05-03 09:43:33.628| --------
+RepSys   2021-05-03 09:43:33.629| --------
+RepSys   2021-05-03 09:43:33.629| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:43:33.629| INFO Ackn (3700/282) 1888299a
+RepSys   2021-05-03 09:43:33.629| LoadProject Success7_Can
+RepSys   2021-05-03 09:43:33.629| --------
+RepSys   2021-05-03 09:43:37.522| --------
+RepSys   2021-05-03 09:43:37.522| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:43:37.522| INFO Ackn (2220/150) 6438017f
+RepSys   2021-05-03 09:43:37.522| T150R: Hardware not found
+RepSys   2021-05-03 09:43:37.522| --------
+RepSys   2021-05-03 09:44:01.562| --------
+RepSys   2021-05-03 09:44:01.562| "IO.Msg-Task" 5ad814d5
+RepSys   2021-05-03 09:44:01.562| INFO Ackn (2220/300) 3748022e
+RepSys   2021-05-03 09:44:01.562| Interface_board: Connected
+RepSys   2021-05-03 09:44:01.562| --------
+RepSys   2021-05-03 09:44:49.014| --------
+RepSys   2021-05-03 09:44:49.014| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:44:49.014| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:44:49.014| Project Success7_Can/SEPRO_global.tt / Pass 1
+RepSys   2021-05-03 09:44:49.014| --------
+RepSys   2021-05-03 09:44:49.015| --------
+RepSys   2021-05-03 09:44:49.015| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:44:49.015| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:44:49.015| Project Success7_Can/SEPRO_global.tt / Pass 2
+RepSys   2021-05-03 09:44:49.015| --------
+RepSys   2021-05-03 09:44:49.015| --------
+RepSys   2021-05-03 09:44:49.015| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:44:49.015| INFO Ackn (3700/152) 1888299a
+RepSys   2021-05-03 09:44:49.015| 1 files compiled
+RepSys   2021-05-03 09:44:49.015| --------
+RepSys   2021-05-03 09:44:49.017| --------
+RepSys   2021-05-03 09:44:49.017| "SystemRpc.T-16" 61e82a44
+RepSys   2021-05-03 09:44:49.017| INFO Ackn (3700/282) 1888299a
+RepSys   2021-05-03 09:44:49.017| LoadProject SEPRO_global
+RepSys   2021-05-03 09:44:49.017| --------
+RepSys   2021-05-03 09:44:49.045| --------
+RepSys   2021-05-03 09:44:49.045| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:49.045| INFO Ackn (3700/284) 1888299a
+RepSys   2021-05-03 09:44:49.045| StartProgram axes_init
+RepSys   2021-05-03 09:44:49.045| --------
+RepSys   2021-05-03 09:44:50.893| --------
+RepSys   2021-05-03 09:44:50.893| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:50.893| CLASS_9 Ackn (50/3451) 009c0006
+RepSys   2021-05-03 09:44:50.893| Success7_Can activated
+RepSys   2021-05-03 09:44:50.893| --------
+RepSys   2021-05-03 09:44:51.143| --------
+RepSys   2021-05-03 09:44:51.143| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:51.143| CLASS_9 Ackn (50/3415) 0b38010f
+RepSys   2021-05-03 09:44:51.143| Drive CAN_Axis3 referenced (Success7_Can.SEPRO_global.axes_init:7)
+RepSys   2021-05-03 09:44:51.143| --------
+RepSys   2021-05-03 09:44:54.083| --------
+RepSys   2021-05-03 09:44:54.083| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:54.083| CLASS_9 Ackn (50/3415) 7bf80083
+RepSys   2021-05-03 09:44:54.083| Drive CAN_Axis1 referenced (Success7_Can.SEPRO_global.axes_init:11)
+RepSys   2021-05-03 09:44:54.083| --------
+RepSys   2021-05-03 09:44:54.333| --------
+RepSys   2021-05-03 09:44:54.333| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:44:54.333| CLASS_9 Ackn (50/3415) 039800c9
+RepSys   2021-05-03 09:44:54.333| Drive CAN_Axis2 referenced (Success7_Can.SEPRO_global.axes_init:15)
+RepSys   2021-05-03 09:44:54.333| --------
+RepSys   2021-05-03 09:45:01.066| --------
+RepSys   2021-05-03 09:45:01.066| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:45:01.066| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:45:01.066| Project Success7_Can/SEPRO_project.tt / Pass 1
+RepSys   2021-05-03 09:45:01.066| --------
+RepSys   2021-05-03 09:45:01.069| --------
+RepSys   2021-05-03 09:45:01.069| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:45:01.069| INFO Ackn (3700/150) 1888299a
+RepSys   2021-05-03 09:45:01.069| Project Success7_Can/SEPRO_project.tt / Pass 2
+RepSys   2021-05-03 09:45:01.069| --------
+RepSys   2021-05-03 09:45:01.070| --------
+RepSys   2021-05-03 09:45:01.070| "TC.Compiler-Task" 10e82154
+RepSys   2021-05-03 09:45:01.070| INFO Ackn (3700/152) 1888299a
+RepSys   2021-05-03 09:45:01.070| 2 files compiled
+RepSys   2021-05-03 09:45:01.070| --------
+RepSys   2021-05-03 09:45:01.073| --------
+RepSys   2021-05-03 09:45:01.073| "SystemRpc.T-16" 61e82a44
+RepSys   2021-05-03 09:45:01.073| INFO Ackn (3700/282) 1888299a
+RepSys   2021-05-03 09:45:01.073| LoadProject SEPRO_project
+RepSys   2021-05-03 09:45:01.073| --------
+RepSys   2021-05-03 09:45:01.117| --------
+RepSys   2021-05-03 09:45:01.117| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 09:45:01.117| INFO Ackn (3700/284) 1888299a
+RepSys   2021-05-03 09:45:01.117| StartProgram hr001
+RepSys   2021-05-03 09:45:01.117| --------
+RepSys   2021-05-03 10:03:07.413| --------
+RepSys   2021-05-03 10:03:07.413| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 10:03:07.413| CLASS_9 Ackn (50/3451) 009c0006
+RepSys   2021-05-03 10:03:07.413| Success7_Can activated
+RepSys   2021-05-03 10:03:07.413| --------
+RepSys   2021-05-03 10:03:12.553| --------
+RepSys   2021-05-03 10:03:12.553| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 10:03:12.553| CLASS_9 Ackn (50/3451) 009c0006
+RepSys   2021-05-03 10:03:12.553| Success7_Can activated
+RepSys   2021-05-03 10:03:12.553| --------
+RepSys   2021-05-03 10:03:13.104| --------
+RepSys   2021-05-03 10:03:13.104| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 10:03:13.104| CLASS_8 Ackn (50/2325) 18f80cb3
+RepSys   2021-05-03 10:03:13.104| Success7_Can: Software limit switch A1+ reached
+RepSys   2021-05-03 10:03:13.104| --------
+RepSys   2021-05-03 10:03:20.273| --------
+RepSys   2021-05-03 10:03:20.273| "TC.Interpreter-Task" 16982199
+RepSys   2021-05-03 10:03:20.273| CLASS_9 Ackn (50/3451) 009c0006
+RepSys   2021-05-03 10:03:20.273| Success7_Can activated
+RepSys   2021-05-03 10:03:20.273| --------
